@@ -1,9 +1,27 @@
 # Preface {.unnumbered}
 
-This is a Quarto book.
+My name is [Miles Williams](https://milesdwilliams15.github.io/), and I authored this free and open access book for students taking a 300 level undergraduate class at Denison University called "Death, Destruction, and Data." 
 
-To learn more about Quarto books visit <https://quarto.org/docs/books>.
+This provocatively named course is an introduction to using data to study international conflict. This is a specialized class that assumes some prior knowledge of the R programming language and, ideally, some experience with the `{tidyverse}` dialect. If you don't have prior experience with either, that's not the end of the world. I'll go slowly, and because this class is focused on studying one issue (international conflict) that also means that much of the material will center on conceptual issues rather than an emphasis on technical know-how (though there will be some of that, so don't rest too easy, and I will expect you to do some original data analysis and writing along the way.).
 
-```{r}
-1 + 1
-```
+The book is divided into two parts. 
+
+## Part I: Trends in conflict
+
+Part I is all about studying historical trends in international conflict. I begin with an introduction to conflict (including war) and how international relations scholars define armed conflict between countries. 
+
+I then talk about how conflict is measured using data, and show how to use this data to answer a pair of important questions: is war becoming more or less common, and is it becoming more or less deadly? 
+
+Both questions were foundational to the quantitative study of war, but they faded in relevance for a time as conflict scholars turned their attention to dyadic (country-pair) analyses of factors that explain why some countries tend to fight while others don't. These questions have witnessed some renewed interest, however, due to recent debates about the "decline of war theory" in response to popularized claims by a prominent Harvard Psychologist.
+
+On the technical side, we'll spend a lot of time thinking about how conflict is measured, how to visualize trends in conflict onset and deadliness, and detect whether changes in each have taken place.
+
+## Part II: Who fights whom and why?
+
+Part II moves the focus to country dyads with the goal of answering the question: why do certain countries fight each other more than others?
+
+The literature on why countries fight is much too broad to cover in a short book about using data to study conflict, but I will draw on a sample of prominent theories of conflict and peace to motivate a variety of analysis examples and expose you to some of the ins and outs of constructing datasets for studying international conflict. I'll also introduce you to the standard set of statistical tools conflict scholars use in their research (so get ready to learn about logit models!).
+
+## My hope
+
+I will not be able to address every single technical issue or measurement question that comes along with conflict research. I do hope, however, that these instructional materials will give you a solid enough foundation to start asking your own questions, testing novel hypotheses, and conducting empirical research. This is the start of your journey rather than the end, if you choose to keep going long after this course wraps up.

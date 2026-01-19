@@ -2,8 +2,9 @@ project:
   type: book
 
 book:
-  title: "death-destruction-data"
-  author: "Norah Jones"
+  title: "Death, Destruction, and Data"
+  subtitle: "An Intro to Using Data to Study International Conflict"
+  author: "Miles D. Williams"
   date: "1/18/2026"
   chapters:
     - index.qmd
