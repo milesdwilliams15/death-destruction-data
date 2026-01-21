@@ -92,7 +92,7 @@ They discovered thousands of data entry errors, including phantom conflicts (con
 
 This was a bold claim, and a damning one if true. The maintainers of the MID dataset obviously responded, and the result was a series of publications that would slowly come out over several years documenting the argument that ensued. Eventually, the group of scholars who documented these data issues would get a National Science Foundation grant to reconstruct all the data from the ground up, and along the way they made some conceptual and technical improvements. 
 
-Perhaps the two most relevant updates are their rigorous reporting of battle fatalities and their choice to redefine wars as a subset of all conflicts rather than a distinct phenomenon. (In the MID dataset, an observation leavese the dataset the moment it escalates to a war.) Their new concept is called the militarized interstate confrontation (or MIC), which can include threats, shows, or uses of force short of war, but also all-out wars. 
+Perhaps the two most relevant updates are their rigorous reporting of battle fatalities and their choice to redefine wars as a subset of all conflicts rather than a distinct phenomenon. (In the MID dataset, an observation leaves the dataset the moment it escalates to a war.) Their new concept is called the militarized interstate confrontation (or MIC), which can include threats, shows, or uses of force short of war, but also all-out wars. 
 
 Even better, these scholars documented specific militarized interstate events (MIEs), their specific timing, and deadliness. These events are the individual threats, uses of force, and battles that comprise MICs. 
 
