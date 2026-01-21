@@ -1,0 +1,49 @@
+# The Data
+
+**Main ideas:**
+
+-   The Militarized Interstate Disputes (MID) dataset has been the foundation for decades of peace science research on international conflict.
+
+-   But a dispute over its quality in the last decade spurred the creation of a an alternative set of data: jointly, Militarized Interstate Events (MIEs) and Militarized Interstate Confrontations (MICs).
+
+-   We'll use the latter (MIEs in particular) in this course given its purported quality and high level of granular detail.
+
+-   Once you download the data, you can see it has lots of useful information, which we'll spend some time exploring.
+
+## Nothing Good Lasts Forever
+
+In the last chapter I talked about war, how it's defined, and how it's measured. I also ended that chapter by noting a controversy that arose about the most commonly used conflict dataset available for studying international conflict: The Militarized Interstate Dispute (MID) dataset.
+
+MIDs are ubiquitous in conflict research, so when a group of scholars come along and say the data is unreliable for vast stretches of time (every year from 1816 to 2002 to be exact), that creates a stir. It also led to the publication of a series of articles where the competing research teams behind the MID data and the group of discontents duked it out. [Many of the articles](https://academic.oup.com/isq/search-results?f_TocHeadingTitleList=THE+MILITARIZED+INTERSTATE+DISPUTE+DATA+PROJECT%3a+AN+EXCHANGE) in the exchange were published in the journal *International Studies Quarterly*, one of the top journals in the field of international relations.
+
+One of the most significant things to come out of this back-and-forth was the creation of a novel set of datasets by the group of scholars that raised concerns about MIDs. In a pair of articles, the political scientists Douglas Gibler and Steve Miller [-@gibler2024mic; -@gibler2024mie] introduced the Militarized Interstate Confrontations (MIC) dataset and the Militarized Interstate Events (MIE) dataset. The former is actually an aggregated version of the latter: MIEs are embedded in larger MICs.
+
+The rationale for these new datasets is summarized pretty well [in the codebook](https://internationalconflict.ua.edu/wp-content/uploads/2023/07/MICcodebook.pdf) (a manual about what's in the dataset) for MICs:
+
+> We found an overwhelming number of errors in the original data and corrected those data, providing all of our suggested changes to the CoWMID Project dataset hosts. However, after more than nine years of communications with CoWMID and several exchanges in *International Studies Quarterly*, it is apparent that CoWMID admits their pre-2002 data is incredibly error-prone but that they have neither the resources nor inclination to fix those thousands of admitted errors. Therefore, we are introducing the Militarized Interstate Confrontation (MICs) data, which are based on proper use of MID coding rules and include numerous advancements in both information and presentation.
+
+While the MIE and MIC datasets include some innovations in the way events are coded, and what information is either included or excluded from the data, both datasets are premised on the foundational ideas behind the concept of MIDs proposed by @jones1996militarized, along with updates made by subsequent iterations of the Correlates of War (COW) MID project.
+
+In short, Gibler and Miller didn't try to measure a new concept; they tried to measure an old concept better.
+
+That doesn't mean they didn't innovate. One of the most important updates Gibler and Miller made was to keep wars in the data. Recall from the last chapter that MIDs are considered threats, shows, or uses of force between countries *short of war*. Once a conflict escalates to a war, this is noted in the data and then everything from there on out is dropped. Gibler and Miller decided to keep conflicts in the data, even after they escalate to a war. This is why their main aggregate dataset is called the Militarized Interstate *Confrontations* dataset instead of Militarized Interstate *Disputes*. They wanted to signal that they aren't sticking to the original criteria for disputes (events short of war). Instead, they're capturing everything short of war, and all-out-war as well.
+
+I think this is a really useful innovation, because if someone wants to study something closer to the original definition of MIDs, they can do that with this data. And if someone wants to just study all-out-wars, they can use this data to do that, too.
+
+A person can do this in way that's more consistent that with current data as well. One of the oddest features of the COW MID dataset and the COW Wars dataset is that they can't be easily merged together [@reidsarkees2010resort]. This isn't good. Remember from the last chapter that the COW Wars dataset uses a 1,000 battle death threshold to mark if a dispute escalates to a war. Unfortunately, the COW Wars and COW MID datasets don't totally overlap in their death statistics or even cases they consider conflicts. The MIC and MIE datasets, to the contrary, are unified and completely overlap, and they don't base inclusion on fatality statistics. Instead, they leave it to the researcher to make a judgement call about how to analyze the data, using their own death thresholds or other criteria to study conflicts if that's what they want to do.
+
+I admit that I don't really have a dog in this fight, but for practical reasons I favor the MIE/MIC datasets over the COW MID dataset.
+
+First, I like the consistency of all events ranging from threats to war being included in one dataset. That makes my life easier because I don't have to download multiple datasets or toggle between them if I want to study only low-level disputes versus wars.
+
+Second, I haven't personally validated either the MID or MIE/MIC datasets, but I find the case made by Gibler and Miller compelling, and for two reasons.
+
+For one, as they noted in the quote I shared above, the folks at COW MID admitted that the errors Gibler and Miller found exist, and they said they don't plan to fix them. When people with a vested interest in the validity of a dataset own up to the fact that errors others found were real, that's telling, and then when they say they don't plan to do anything about it, that's frustrating.
+
+Also, while this isn't the most scientifically valid justification, I find it hard to believe that Gibler and Miller would have bothered to get a National Science Foundation grant, put together a research team, and engage in the tedious and lengthy process of reconstructing a dataset that purports to capture *every single* conflict that has taken place between countries from 1816 to 2014 just to win an argument when a good-enough dataset already exists. This seems like the work of sincere researchers who want to make sure fellow peace scientists have the best data possible for doing their work, and who feel like the community of conflict researchers is being let down by current resources.
+
+For these reasons, we will use the Gibler and Miller data in this class. In particular, we'll use the MIE dataset since the MIC dataset is just an aggregated version of its MIE counterpart.
+
+Speaking of which, let me introduce you to the MIE dataset and give you a tour of what it has to offer.
+
+## The Militarized Interstate Events Dataset
