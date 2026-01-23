@@ -9,6 +9,7 @@ book:
   chapters:
     - index.qmd
     - 01_what_is_war.qmd
+    - 02_the_data.qmd
     - references.qmd
 
 bibliography: references.bib

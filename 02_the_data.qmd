@@ -20,15 +20,15 @@ The most significant development to come out of this back-and-forth was the crea
 
 The rationale for these new datasets is summarized pretty well [in the codebook](https://internationalconflict.ua.edu/wp-content/uploads/2023/07/MICcodebook.pdf) (a manual about what's in the dataset) for MICs:
 
-> We found an overwhelming number of errors in the original data and corrected those data, providing all of our suggested changes to the CoWMID Project dataset hosts. However, after more than nine years of communications with CoWMID and several exchanges in *International Studies Quarterly*, it is apparent that CoWMID admits their pre-2002 data is incredibly error-prone but that they have neither the resources nor inclination to fix those thousands of admitted errors. Therefore, we are introducing the Militarized Interstate Confrontation (MICs) data, which are based on proper use of MID coding rules and include numerous advancements in both information and presentation.
+> We found an overwhelming number of errors in the original \[MID\] data and corrected those data, providing all of our suggested changes to the CoWMID Project dataset hosts. However, after more than nine years of communications with CoWMID and several exchanges in *International Studies Quarterly*, it is apparent that CoWMID admits their pre-2002 data is incredibly error-prone but that they have neither the resources nor inclination to fix those thousands of admitted errors. Therefore, we are introducing the Militarized Interstate Confrontation (MICs) data, which are based on proper use of MID coding rules and include numerous advancements in both information and presentation.
 
-While the MIE and MIC datasets include some innovations in the way events are coded, and what information is either included or excluded from the data, both datasets are premised on the foundational ideas behind the concept of MIDs cristalized by @jones1996militarized, along with updates made by subsequent iterations of the COW MID project.
+While the MIE and MIC datasets include some innovations in the way events are coded, and what information is either included or excluded from the data, both datasets are premised on the foundational ideas behind the concept of MIDs crystallized by @jones1996militarized, along with updates made by subsequent iterations of the COW MID project.
 
 In short, Gibler and Miller didn't try to measure a new concept; they tried to measure an old concept better.
 
 That doesn't mean they didn't innovate. One of the most important updates Gibler and Miller made was to keep wars in the data. Recall from the last chapter that MIDs are considered threats, shows, or uses of force between countries *short of war*. Once a conflict escalates to a war, this is noted in the data and then everything from there on out is dropped. Gibler and Miller decided to keep conflicts in the data, even after they escalate to a war. This is why their main aggregate dataset is called the Militarized Interstate *Confrontations* dataset instead of Militarized Interstate *Disputes*. They wanted to signal that they aren't sticking to the original criteria for disputes (events short of war). Instead, they're capturing everything short of war, and all-out-war as well.
 
-I think this is a really useful innovation, because if someone wants to study something closer to the original definition of MIDs, they can do that with this data. And if someone wants to just study all-out-wars, they can use this data to do that, too.
+I think this is a really useful innovation, because if someone wants to study something closer to the original definition of MIDs, they can do that with this data. And if someone wants to just study all-out-wars based on their own fatality threshold, they can use this data to do that, too.
 
 The way that disputes and wars seamlessly line up in the MIC/MIE datasets is, itself, another helpful innovation. One of the oddest features of the COW MID dataset and the COW Wars dataset is that they can't be easily merged together [@reidsarkees2010resort]. This isn't good. Remember from the last chapter that the COW Wars dataset uses a 1,000 battle death threshold to mark if a dispute escalates to a war. Unfortunately, the COW Wars and COW MID datasets don't totally overlap in their death statistics or even cases they consider conflicts. The MIC and MIE datasets, to the contrary, are unified and completely overlap, and they don't base inclusion on fatality statistics. Instead, they leave it to the researcher to make a judgement call about how to analyze the data, using their own death thresholds or other criteria to study conflicts if that's what they want to do.
 
@@ -52,9 +52,9 @@ First, some background. The Militarized Interstate Events (MIE) dataset and its 
 
 When you go to the download page for the data, you'll see that multiple datasets are hosted on the site ([you can check that out here](https://internationalconflict.ua.edu/data-download/)). In addition to the MIE and MIC datasets, there are: Militarized Interstate Participants, Militarized Interstate Confrontation Endings, Militarized Interstate Confrontation Names (useful if you want to know the historical names of many conflicts that escalated to wars), Protest-Dependent Militarized Interstate Disputes, and Formal War Declarations (which is treated as a separate action from fighting, since declaring war is technically a distinct political behavior from actually going to war).
 
-There's a lot of rich material to draw on here for studying international conflict. Some datasets are just useful summaries of the MIE, while others, like the endings dataset or confrontation names dataset provide additional information. For someone like me, it's very easy to spend hours poking around all the files.
+There's a lot of rich material to draw on here for studying international conflict. Some datasets are just useful summaries of MIE, while others, like the endings dataset or confrontation names dataset provide additional information. For someone like me, it's very easy to spend hours poking around all the files.
 
-But, I have some things to teach you, and you probably want to get a move on, so let me show you the relevant stuff you need to know about the MIE dataset in particular.
+But, I have some things to teach you, and you probably want to get a move on, so let me show you the relevant stuff you need to know about the MIE dataset.
 
 First, here's a screenshot of what the download page looks like focusing just on the MIE dataset:
 
@@ -72,7 +72,7 @@ You can see there are four tabs associated with the dataset:
 
 Don't worry about the last one because I did you a solid and downloaded the data myself and then saved it on my GitHub. This will make it possible for you to read the data into your software (R) directly from online without having to deal with downloading and storing it permanently on your computer.
 
-Before we get to that step though, I think it's a good idea to just look at the information on offer in the dataset. I've copied below the relevant details from the [MIE codebook](https://internationalconflict.ua.edu/wp-content/uploads/2023/07/MIEcodebook.pdf):
+Before we get to that step though, I think it's a good idea to just look at the information on offer in the dataset. I've copied below the relevant details from the [MIE codebook](https://internationalconflict.ua.edu/wp-content/uploads/2023/07/MIEcodebook.pdf). Each bullet point tells you the name of a column in the dataset and what it represents.
 
 -   `micnum`: The Militarized Interstate Confrontation (MIC) number for each case. If the event is part of a Militarized Interstate Dispute (MID) originally coded by CoW, we use that number. Note that we have also added numerous confrontation cases that are not in the CoWMID data as events or disputes. These cases begin with micnum values in the 9000’s to demonstrate completely new cases.
 -   `eventnum`: This is the individual event number within the confrontation. Note that these numbers are meaningful. An event number value of “1” denotes the first threat, display, or use of force in that particular confrontation. The highest event number is the last onset of a threat, display, or use of force that confrontation—previous events may still last longer and cause the duration of the confrontation to extend. A large number of events have missing start and/or end dates. We researched the cases in which the missing-day event could be the first or last participation of the state in the confrontation and confirmed the temporal placement of the missing-day event using a meaningful event number. We have not yet sequentially ordered the missing-day events that could not have been first or last events, but we hope to add that feature soon.
@@ -92,7 +92,7 @@ Before we get to that step though, I think it's a good idea to just look at the 
 -   `fatalmax2`: This is an estimate of the maximum number of military battle-deaths for ccode2 in the event.
 -   `version`: The MIE version number. We are constantly reviewing and updating our datasets, and we ask users of our data to always report which version number of the data they are using in their research.
 
-Wow, this is a lot of detail to take in. But once you take a moment to absorb the information, it boils down to a few key things: identifiers for confrontations and events, identifiers for the country on either side of the event (where the country on side 1 is responsible for engaging in an action against side 2), information about the timing of the event, a classification for what kind of action took place, and classification for how severe the action was, and information about how many people died on each side.
+This is a lot of detail to take in, buut once you have a moment to absorb the information, it boils down to a few key things: identifiers for confrontations and events, identifiers for the country on either side of the event (where the country on side 1 is responsible for engaging in an action against side 2), information about the timing of the event, a classification for what kind of action took place, a classification for how severe the action was, and information about how many people died on each side.
 
 There's enough here that a person can write a lengthy report based solely on what's in this dataset (which you'll do at the end of Part I of this class).
 
@@ -110,17 +110,19 @@ But all that in due time. Let me start by showing you how to get the data.
 
 First, you need to make sure you're in RStudio. If your a Denison student, you can access RStudio remotely by going to [r.denison.edu](r.denison.edu), where you can sign in using your Denison credentials. You can also install the software directly to your computer. Just follow [these instructions here](https://posit.co/download/rstudio-desktop/).
 
+Second, I recommend opening a Quarto file (.qmd) which will give you a single document where you can write in plain text and write and run code. To do this, just go the "File" tab, then "New File," and then select "Quarto Document."
+
 Because my goal in this class is to focus on doing peace science research rather than introducing you to all the basics of using R and navigating RStudio, I'm going to proceed with the naive assumption that you have some background in using these tools.
 
 However, if you don't have this background, all is not lost. Because I have a habit of making textbooks (glorified lecture notes) for all the technical classes I teach, I have written a bunch of guides already about R and RStudio, like this one called "[R Basics](https://milesdwilliams15.quarto.pub/data-and-research-design/01_prereqs.html)." If you need some help getting up to speed, I recommend checking this out, and I strongly recommend visiting me during office hours. I'll do my best to coach you up.
 
-One more thing, for those not familiar with R. If you follow along with the code I'll show you for accessing the data and cleaning in up, I think you'll get a sense for how the language works.
+One more thing, for those not familiar with R. If you follow along with the code I'll show you for accessing the data and cleaning in up, I think you'll quickly get a sense for how the language works.
 
 ### Reading the Data into R
 
 The first step in any data analysis task is to access the data you need. In this case, this step is pretty easy, both because a clean dataset already exists, and because I have saved that dataset in a format that makes it possible to read it directly into your computer using some simple R code. I've done so below.
 
-The MIE dataset exists as a CSV file on my GitHub, so I need to give my computer (or if you're using the cloud-based version of RStudio, the server you have remote access to) the location of the file online and instructions to download its contents into its working memory. The below R code allows me to talk to my computer (or the server) to tell it what to do.
+The MIE dataset exists as a CSV file on my GitHub, so I need to give my computer (or if you're using the cloud-based version of RStudio, the server you have remote access to) the location of the file online and instructions to download its contents into its working memory. The below R code allows me to talk to my computer (or the server) to tell it what to do. (This, by the way, is the proper way to think about what R is doing: it's a language that lets you interface directly with your computer, or a remote server, to give it explicit instructions about what to do.)
 
 ```{r}
 #| message: false
@@ -134,9 +136,9 @@ read_csv(
 ) -> dt
 ```
 
-The first thing I did is write `library(tidyverse)`. The R language is supported by a vast ecosystem of specialized software packages that allow you to run different kinds of routines (*functions*) in your R session. The `{tidyverse}` package is one of the most popular, and it offers more than just a useful set of functions. It supports an entire dialect in the R language. To install it (if you don't have it already), you can run the following code in the R console: `install.packages("tidyverse")`.
+The first thing I did in the above code is write `library(tidyverse)`. The R language is supported by a vast ecosystem of specialized software packages that allow you to run different kinds of routines (*functions*) in your R session. The `{tidyverse}` package is one of the most popular, and it offers more than just a useful set of functions. It supports an entire dialect in the R language. To install it (if you don't have it already), you can run the following code in the R console: `install.packages("tidyverse")`.
 
-This is the R dialect that I personally speak, and it's become increasingly popular over time. The reason is that speaking R the "tidyverse" way is meant to improve the human readability of code. In short, to help you be nice to the people who need to read your code at a later point in time. I'll use this approach to coding throughout most of the examples in this book.
+This is the R dialect that I personally speak, and it's become increasingly popular over time. The reason is that speaking R the "tidyverse" way is meant to improve the human readability of code. In short: to help you be nice to the people who need to read your code at a later point in time. I'll use this approach to coding throughout most of the examples in this book.
 
 Once I opened the `{tidyverse}`, I then ran the following code:
 
@@ -151,7 +153,7 @@ read_csv(
 
 Note, too, that after I closed the parentheses of the `read_csv` function around the url (and this is also important: make sure you close parentheses), I wrote `-> dt`. In R-speak, this means I assigned the content of the CSV file to be saved as an *object* called `dt`. The arrow is what lets me assign names, and its direction controls what output gets saved with what name. Because the arrow is pointing away from `read_csv()` to `dt`, my computer gets the message that I want it to read a CSV file into its working memory and use "dt" as shorthand for anytime I want to tell it to do something else with this data.
 
-This step is crucial. If I don't save the data as an object, my computer will just read the contents of the CSV file and report them back to me, which isn't helpful. Below, you can see what happens when I don't assign the output to an object and just run the function. Underneath the code you can see a snippet of the output. I told my computer to read in the content of the MIE dataset, and then it just read its content back out to me. Because it isn't saved as an object, I now have no way to refer back to it (except by just re-running the `read_csv` function every time I need the data, which is just painful).
+This step is crucial. If I don't save the data as an object, my computer will just read the contents of the CSV file and report them back to me, which isn't helpful. Below, you can see what happens when I don't assign the output to an object and just run the function. Underneath the code you can see a snippet of the output. I told my computer to read in the content of the MIE dataset, and then it just read its contents back to me. Because it isn't saved as an object, I now have no way to refer back to it (except by just re-running the `read_csv` function every time I need the data, which is just painful).
 
 ```{r}
 #| message: false
@@ -167,13 +169,13 @@ If you can wrap your head around this simple framework, then I think you'll be s
 
 ### Cleaning the Data
 
-Compared to many real-life datasets, this one is in great shape. First of all, it's **tidy**, which isn't synonymous with "clean." Tidy is a technical term used to describe a dataset where:
+Compared to many real-life datasets, the MIE dataset is in great shape. First of all, it's **tidy**, which isn't synonymous with "clean." Tidy is a technical term used to describe a dataset where:
 
 1.  Each row is one observation.
 2.  Each column is one variable.
 3.  Each data entry per row and column is one value.
 
-The MIE dataset ticks these boxes. But what is an observation in the dataset?
+The MIE dataset ticks these boxes. But what, exactly, is an observation in the dataset?
 
 According to the MIE codebook, each row is a unique militarized event that took place between a pair of countries. The below code will let me look at just the first few rows of data. Take a look at the output.
 
@@ -183,15 +185,15 @@ slice_head(dt, n = 5)
 
 For each event in the data, there are variables (columns) to help identify the event, indicate which countries were involved, the date it happened, and other details about the kind of military action that took place along with fatality statistics.
 
-If you look down each row, you'll also notice that all the variables are numerical. In some cases, this is sensible, but not so much in others. For example, the `action` column is meant to be a set of categories for the kind of militarized action that took place, but it's all numbers. These numbers are stand-in numerical codes for categories, and the codebook provides information for what each number represents. This is true for the `hostlev` column as well.
+Again, in essence, it's tidy: each row is an observation (event), each column is a variable (a different bit of info about the event), and each row-column entry is a single value.
 
-This is a common database management strategy. It's annoying from the perspective of the analyst, but sensible from the perspective of people who store and manage data. Numerical codes eat up less memory than writing out values in plain English. MIE dataset is 28,011 rows long. This isn't exactly "big data," but it's big enough that some measures needed to be taken to make the overall data file smaller.
+However, even though the data is tidy, it isn't fully ready for analysis. Notice that all the variables are numerical (except the `version` column). For some variables, this is sensible, but not so much for others. For example, the `action` column is meant to be a set of categories for the kind of militarized action that took place, but it's all numbers. The same is true for `hostlev`. These numbers are stand-in numerical codes for categories, and the codebook provides information for what each number represents.
 
-The downside for the analyst is that you have to do some cleaning (or "recoding") of variables to make them more useful. Fortunately, in a dataset with only 18 columns, this process isn't too involved. And a nice bonus for you is that I'm about to show you code for cleaning up this data that you can use throughout this course because I'm going to use the MIE dataset as the foundation for all examples in the coming chapters.
+This is a common database management strategy. It's annoying from the perspective of the analyst, but sensible from the perspective of people who store and manage data. Numerical codes eat up less memory than writing out values in plain English. The MIE dataset is 28,011 rows long. This isn't exactly "big data," but it's big enough that some measures needed to be taken to make the overall data file smaller.
 
-I'm also going to aggregate this data to years rather than days. The reason is that (1) some days have missing values, unlike months and years, and (2) with rare exceptions, most conflict research is done at the year level, often because other datasets that we might want to merge with the conflict data are usually only ever stored at the year level, too.
+The downside for the analyst is that you have to do some cleaning (or "recoding") of variables to make them more useful. Fortunately, in a dataset with only 18 columns, this process isn't too involved. And a nice bonus for you is that I'm about to show you code for cleaning up this data so you don't have to figure it out from scratch. (And down the road I'm going to give you tools that automate this cleaning process even more, so you can focus on the details of your analysis.)
 
-Alright, here's the code. It's a bit more involved than simply reading in data, and I introduced a new kind of operator into the mix called a pipe. This is the `|>` symbol. This is R for "give this thing to that thing." Instead of putting an object inside a function to perform a routine on it, the pipe lets you put the object first. Piping is a way to improve the human readability of code. It also is a way to conveniently chain together a succession of operations you want to perform on your data. The below code tells my computer to convert the numerical codes for `action` and `hostlev` into their qualitative category names. Then it creates a `date` column that is a specialized "date class" variable at the year-month level for when each event started (there are missing values for days, so I'm going to just get as precise as months). Finally, it creates a column called `year`, which is just the start year (this will help with merging this data with other data down the road). On the tail end of the code I write `-> dt` which saves the output by writing over the old content saved in `dt`.
+Alright, here's the code. It's a bit more involved than simply reading in data, and I introduced a new kind of operator into the mix called a pipe. This is the `|>` symbol. This is R-speak for "give this thing to that thing." Instead of putting an object inside a function to perform a routine on it, the pipe lets you put the object first. Piping is a way to improve the human readability of code. It also is a way to conveniently chain together a succession of operations you want to perform on your data. The below code tells my computer to convert the numerical codes for `action` and `hostlev` into their qualitative category names. Then it creates a `date` column that is a specialized "date class" variable at the year-month level for when each event started (there are missing values for days, so I'm going to just get as precise as months). Finally, it creates a column called `year`, which is just the event start year (this will help with merging this data with other data down the road). On the tail end of the code I write `-> dt` which saves the output by writing over the old content saved in `dt`.
 
 ```{r}
 library(socsci)
@@ -229,4 +231,203 @@ dt |>
   ) -> dt
 ```
 
+One more thing: I started the code by telling my computer to pull out some tools from a package called `{socsci}`. Remember, packages contain groups of functions (specialized routines). In this case, I want to use a function called `frcode()` to help me turn numerical codes into qualitative categories, and this function isn't already in `{tidyverse}`. To install `{socsci}`, you'll need to run the following code:
+
+```{r}
+#| eval: false
+
+install.packages("devtools")
+devtools::install_github("ryanburge/socsci")
+
+```
+
 ### Some Simple Descriptive Summaries
+
+Now that I have some cleaned up data, I can use R to tell my computer to do various summaries with the data. For example, I can ask it how many rows are in the data, which will also be a summary of how many unique militarized interstate events (MIEs) took place since each row is a unique event. I can do this by running the function `nrow()` on `dt`. According to the output, the answer is 28,011.
+
+```{r}
+nrow(dt)
+```
+
+I can also ask what time span the data covers. I can do this by running the `range()` function specifically on the `date` variable, which I can pull out of `dt` using a dollar sign (`$`). The first documented MIE took place in July of 1816, and the last happened in December of 2014.
+
+```{r}
+range(dt$date)
+```
+
+I now can say something really important to know about MIEs. According to the dataset, 28,011 is the number of times that one country threatened to use force, showed force, used force, or did battle in a war with another country between 1816 and 2014 (a nearly 2 century-long period). In absolute terms, that seems like an awful lot of conflict (or the potential for it).
+
+I can also ask my computer (through R) to perform even more detailed summaries. For example, I can ask how common different kinds of military actions took place, and order them by their frequency from highest to lowest. The below code will do just that, and as an added bonus, the `ct()` function that I use below (which comes from `{socsci}`) will also return proportions.
+
+```{r}
+dt |>
+  ct(action) |>
+  arrange(desc(n))
+```
+
+Now I can say some other interesting things about international conflict. First of all, the most common type of MIE is an attack. From 1816 to 2014 these happened 11,562 times, accounting for more than 41% of all militarized actions by one country against another. The next most common kind of action is battle in an all-out war. From 1816 to 2014, a total of 4,471 war battles took place, accounting for 16% of all militarized actions during this period. Shows of force aren't far behind.
+
+From there the frequency of events declines rapidly. The three least common kinds of actions are threats to blockade, use of CBR (chemical, biological, and radiological) weapons, and the threat to use CBRs. Only 31 blockade threats took place from 1816 to 2014, accounting for 0.1% of all militarized events. CBR use and threats are vanishingly rare. They were only used by one country against another 5 times (short of war) and only one country ever threatened to use them against another. With rounding error, these actions accounted for 0% of all events.
+
+I can also ask my computer questions about the intensity of conflict. Each of the types of military actions is recorded in the MIE dataset as meeting different thresholds for intensity. These intensities are documented in the `hostlev` column in the data. I can run the following code to ask my computer tell me how common these hostility levels are:
+
+```{r}
+dt |>
+  ct(hostlev) |>
+  arrange(desc(n))
+```
+
+Use of force (short of war) is the most common kind of event in the data, accounting for nearly 54% of all military actions by one country against another from 1816 to 2014. Displays of force were the second most common, but occur at only half the rate of uses of force. 7,310 displays of force are recorded in the data, and make up 26% of all events. War battles are even less common, with only 4,471 recorded, accounting for 16% of all events. Threats to use force are the least common. 1,171 in total took place from 1816 to 2014, accounting for only 4% of all events.
+
+I can notch up the complexity of the summaries I ask for yet again. The data also has information about battle deaths. I can write R code that will tell my computer to summarize the minimum and maximum estimated fatalities from different kinds of events based on hostility level:
+
+```{r}
+dt |>
+  group_by(hostlev) |>
+  summarize(
+    fatalmin = sum(fatalmin1 + fatalmin2),
+    fatalmax = sum(fatalmax1 + fatalmax2)
+  ) |>
+  ungroup() |>
+  mutate(
+    minpct = fatalmin / sum(fatalmin),
+    maxpct = fatalmax / sum(fatalmax)
+  ) |>
+  arrange(desc(fatalmin))
+```
+
+This summary offers some really eye-catching headline figures. First of all, wars account for the greatest share of battlefield deaths from MIEs. This fact alone isn't surprising, but the disparity is. A low-end estimate of how many people died in MIEs that were battles in a war from 1816 to 2014 is 25.7 million. The high-end estimate is 31.5 million. Both of those figures in absolute terms are staggering, but they are in relative terms, too. Both the low- and high-end estimates account for more than 99% of all battle-related deaths from international conflicts over a two-century period.
+
+Uses of force short of war can still deadly though. While making up less than a percentage point of all battle-related deaths from MIEs, in absolute terms the totals are still large. On the low-end, 163,900 deaths from 1816 to 2014 can be attributed to uses of force short of war between countries. On the high-end, the figure is 235,873.
+
+Threats and displays of force aren't deadly at all, which isn't a big shock. Neither involves using actual military force. Therefore, they aren't fatal.
+
+### Making Some Graphs of Data Summaries
+
+Another thing you can do with your data is make graphs of your summaries. This process is called data visualization, and it involves taking tabular data or data summaries and representing them using geometry, colors, and other graphics.
+
+The R programming language is a great way to interface directly with your computer to get it to produce nice looking graphs. The `{tidyverse}` way to do this is with `{ggplot2}`, which is in the universe of packages supported by `{tidyverse}`. That means you can start using its functions once you've written and run `library(tidyverse)`.
+
+I'm not going to get too bogged down in the details of data visualization here. But if you want to know the whole range of things you can do in terms of data visualization, you can check out [some brief lecture notes](https://milesdwilliams15.quarto.pub/data-and-research-design/02_look_at_data.html) I've written for my 200-level class on research design, or [more detailed notes](https://milesdwilliams15.quarto.pub/dpr-101-data-visualization-for-political-research/) I've written for a 100-level class I teach on data visualization.
+
+I won't have you do anything too fancy with data visualization in this class, so don't think you need to master everything there is to know. I'll provide you with plenty of examples that you can borrow from and build on throughout this book.
+
+Speaking of examples, it might be nice to have some decent looking graphs of the summaries I showed you in the previous section. Since these examples just involved counting things up, a nice data visualization choice is a simple bar/column plot. These let you summarize how some quantity of interest differs across different qualitative categories.
+
+Here's how I might make such a plot using the summary for militarized actions:
+
+```{r}
+#| fig-height: 4
+#| fig-width: 6
+dt |>
+  ct(action) |>
+  ggplot() +
+  aes(x = reorder(action, -n), y = n) +
+  geom_col() +
+  labs(
+    title = "Attacks are the most common military action between countries",
+    subtitle = "MIEs by action type, 1816-2014",
+    x = NULL,
+    y = "Frequency"
+  ) +
+  scale_y_continuous(
+    labels = scales::comma
+  ) +
+  theme(
+    axis.text.x = element_text(
+      angle = 45, hjust = 1
+    )
+  )
+
+```
+
+Here's another one for hostility level:
+
+```{r}
+#| fig-height: 4
+#| fig-width: 6
+dt |>
+  ct(hostlev) |>
+  ggplot() +
+  aes(x = reorder(hostlev, -n), y = n) +
+  geom_col() +
+  labs(
+    title = "Use of force is the most common hostility level between countries",
+    subtitle = "MIEs by hostility level, 1816-2014",
+    x = NULL,
+    y = "Frequency"
+  ) +
+  scale_y_continuous(
+    labels = scales::comma
+  ) 
+```
+
+Finally, I can use a bar chart to show fatalities by hostility level:
+
+```{r}
+#| fig-height: 4
+#| fig-width: 6
+dt |>
+  group_by(hostlev) |>
+  summarize(
+    fatalmin = sum(fatalmin1 + fatalmin2),
+    fatalmax = sum(fatalmax1 + fatalmax2)
+  ) |>
+  ungroup() |>
+  mutate(
+    minpct = fatalmin / sum(fatalmin),
+    maxpct = fatalmax / sum(fatalmax)
+  ) |> 
+  pivot_longer(
+    fatalmin:fatalmax,
+    names_to = "minmax",
+    values_to = "fatal"
+  ) |>
+  ggplot() +
+  aes(x = fatal, y = hostlev, fill = minmax) +
+  geom_col(
+    width = .5,
+    position = "dodge"
+  ) +
+  labs(
+    title = "Nearly all MIE fatalities are due to wars",
+    subtitle = "Min. and max. fatality estimates by hostility level, 1816-2014",
+    x = "Deaths in Millions",
+    y = NULL,
+    fill = "Fatalities"
+  ) +
+  scale_x_continuous(
+    labels = ~ scales::comma(.x / 1e06)
+  ) +
+  scale_fill_manual(
+    values = c("steelblue", "orange2"),
+    labels = c("Max.", "Min.")
+  )
+
+```
+
+One more graph you can put together, which provides a nice segue to the next chapter, is to summarize the number of events by the `date` column in the dataset and then show the results using a line plot. Line plots are a good way to show how some quantity varies over time. The below code shows you one way to do this. The results offer two interesting bits of trivia. First, World War I witnessed the highest number of unique militarized events per month than any other period of time from 1816 to 2014 (far more than even World War II). Second, the monthly frequency of events during the Cold War was elevated compared to previous periods, suggesting a higher baseline level of conflict relative to the previous century.
+
+```{r}
+#| fig-height: 4
+#| fig-width: 6
+dt |>
+  ct(date) |>
+  ggplot() +
+  aes(x = date, y = n) +
+  geom_line(linewidth = 1) +
+  labs(
+    title = "MIEs peaked in WWI, and stayed elevated during the Cold War",
+    subtitle = "MIEs per month, 1816-2014",
+    x = NULL,
+    y = "Frequency"
+  )
+```
+
+In the coming chapters I'll talk more about measuring conflict occurrence and deadliness over time, and I'll use ggplot to show these trends. As I said before, I'll also provide you with plenty of examples that you can build on to suit your goals.
+
+## Summary
+
+The Militarized Interstate Events (MIE) dataset is going to serve as the foundation for all subsequent analysis we do in this class. This is a high quality dataset that ostensibly corrects thousands of documented errors in other commonly used datasets by peace scientists (such as the COW MID dataset) and offers some helpful innovations (like keeping events in the data even after escalation to war).
+
+I provided some helpful code for accessing the data, cleaning it, and doing some interesting data summaries. In the chapters that come, I'll provide you with additional resources that help to automate the process of accessing and cleaning the data so you can spend more time thinking about analysis choices and what the data actually says.
