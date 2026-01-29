@@ -10,6 +10,7 @@ book:
     - index.qmd
     - 01_what_is_war.qmd
     - 02_the_data.qmd
+    - 03_is_war_disappearing.qmd
     - references.qmd
 
 bibliography: references.bib

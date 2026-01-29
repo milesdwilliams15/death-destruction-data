@@ -1,0 +1,101 @@
+# Is War Disappearing?
+
+**Main ideas**:
+
+-   The decline of war thesis is the argument that conflict is becoming less common and deadly, and that this trend is decades (if not centuries) old.
+
+-   A well-known criticism of this position was put forth by the political scientist Bear Braumoeller, first in a well-circulated conference paper [@braumoeller2013war], and then in a well-received book that fleshed out his criticisms even more [@braumoeller2019only].
+
+-   Braumoeller raises many concerns with the decline of war thesis, but two key issues for him were: (1) paying attention to what quantities are counted over time and (2) accounting for the role of chance in war and peace.
+
+-   What you count over time concerns not just the numerator (conflict) but the denominator (how you adjust for changes in opportunities for countries to fight).
+
+-   Doing statistical inference matters because changes can occur over time that *look* like real changes, when in fact they could just as easily be the result of random chance.
+
+## The Decline of War Thesis & Why It Matters
+
+In this section, I plan to introduce you to the *decline of war thesis*. But before I do, I have a meandering anecdote for you...
+
+I first learned about the decline of war thesis when I read Bear Braumoeller's [-@braumoeller2019only] book, *Only the Dead: The Persistence of War in the Modern Age*. I was starting my third year as a Ph.D. student, and I learned that Prof. Braumoeller would be visiting my school, the University of Illinois at Urbana-Champaign, to give a talk at the political science department about his book.
+
+I also learned that I'd been volunteered to pick him up from his hotel to take him to campus. I wanted to be prepared when I met Braumoeller for the first time, so I bought and read his book before he flew in from Columbus, OH where he was a professor at *The* Ohio State University. I think I read the whole thing, cover to cover, in just three days (including the R code in the book's appendix for some of the analyses he did).
+
+I devoured the book this quickly for two reasons, neither of which were a pathological need to appear like a smart graduate student to a well-known and respected scholar.
+
+First, Braumoeller's previous book, *The Great Powers and the International System: Systemic Theory in Empirical Perspective* [-@braumoeller2013great], solidified my desire to study international relations for a living. He published it in 2013, and I read it in 2016. I had been a fan ever since, so when I learned that the scholar whose work inspired me to go down the path of getting a Ph.D. to study international relations had just published another book, I couldn't get my hands on it fast enough.
+
+Second, with this new book (much like his first) Braumoeller sought to answer a *big* question in international relations: *is war going away?* Braumoeller had a reputation for doing incredibly smart and cutting edge quantitative work in international relations. If he had applied this same aptitude to one of the most important issues in international relations, I had to know what he found.
+
+Needless to say, I had really high expectations going into my first meeting with Braumoeller. That meant I also had a lot of nerves. Because of those nerves, I never directly asked him questions about his book. Also, I thought I'd appear far too creepy expressing how inspiring his work was to me, so I never mentioned it. He asked me some questions about my own research interests, and I think my brain fell out of the back of my head when he did, because I neither sounded eloquent nor coherent as I explained the volatile brew of interconnected research questions percolating in my head.
+
+I kick myself every time I think back on this experience. I met my hero, and I was too star-struck to make the most of it.
+
+So, when I learned that I got a job at Denison, and that the suburb I would live in was the same that Braumoeller lived in (I promise this wasn't on purpose), I thought I could try again. Instead, I got a tough lesson in not letting fear or nerves get in the way of the opportunities life gives you. When I first moved to the area, I learned Braumoeller was overseas on an extended leave doing further research, building on the work he did for *Only the Dead*. And then I learned some tragic news. In the summer of 2023 he unexpectedly passed away while abroad.
+
+I was shocked, as was seemingly the whole field of international relations and even those in political science more generally. I also felt incredibly sad, because I new he had a wife and young daughter.
+
+I didn't intend to stumble into some "real-talk" when I sat down to write this chapter, but you never truly know the thoughts working themselves out in your mind until you start writing. Consider this detour a nudge to meditate on the value of courage and of taking advantage of the chances life gives you. This nudge comes from a (*still*) young man who's unfortunately already old enough to have accumulated some regrets in life. The experience that fueled this detour (and many others) serve as my own reminders that a little courage will take you a long way.
+
+As off topic as that story may seem, I think it helps me make a key point.
+
+It's this: studying war with data has an ethical valence to it. Yes, the goal of a peace scientist is to be objective and quantitative about studying war, but because the object of this study is *war*, a life-and-death matter, it should be taken seriously. Above all, I think it requires some *courage* (I knew I could link this back to my anecdote in some way). To make claims about war, using data, is to make claims about the "iron dice" that, when rolled, may lead to no bloodshed and a quick resolution, or to thousands or (in rare cases) millions of deaths. You should make sure that you're serious about the claims you make about war, but you also need to have the courage to make said claims if you think you're right.
+
+In the next chapter I'll talk about how war size can be incredibly volatile and hard to predict, which makes the content of this chapter that deals with the onset of conflict, all the more important. If countries are more willing, or less, to roll the iron dice today than in the past, this has existential implications for human lives.
+
+The moral culpability of the peace scientist enters the equation when considering how the message that war is going way, versus one that says war remains a persistent problem, can affect foreign policy and international politics. By making a claim that conflict is becoming rarer, more frequent, or as common as ever, you are making a policy recommendation whether you intend to or not. If the world is getting more peaceful, why should countries continue to invest in international institutions that help prevent conflict? If the world is getting more violent, shouldn't major powers double-down on building up their military might?
+
+I don't mean to imply that the arc of international relations pivots on the conclusions drawn from a single data analysis. But the goal of data analysis for many social scientists (including those in the peace science tradition) is to make convincing arguments using data. If enough people in a field are convinced of an idea, it can start to catch the attention of practitioners operating in the policy world. Even very niche ideas can attract the attention of a decision-maker. So, while minute, a single analysis is part of the body of knowledge and claims accumulated about a subject, and for that reason, it matters.
+
+This, in sum, is why the *decline of war thesis* deserves your attention. It is the argument, founded on a variety of data sources and theoretical propositions, that international conflict is becoming less likely *and* less deadly. Put another way, it's the claim that countries are less apt to roll the iron dice today than decades or even a century ago, and that when the iron dice must roll, they are far less likely to land on another world war. You can imagine that an idea like this catching on can have tangle implications if enough people in the policy world think it's true.
+
+*If* true, this is great news. But if it's false, it could be a "self-defeating prophesy" (the opposite of its equally devious twin of the self-fulfilling sort).
+
+@braumoeller2019only disagreed with the decline of war thesis for a variety of reasons, including its self-defeating implications, but in the next section I want to introduce just two of his data-driven critiques, because these will be the basis for the applied examples that follow. Importantly, his data-driven critiques do not on their own disprove the decline of war thesis; they deal with methodological rigor rather than substantive findings. But, Braumoeller claimed that when he applied appropriate measures and methods, the argument in favor of the decline of war thesis looked much less convincing.
+
+## Braumoeller's Critique
+
+Many researchers fall into the decline of war camp, but Braumoeller directs the brunt of his critique at the Harvard Psychologist Steven Pinker who wrote two important books that made their way into the public discourse on war. The first was titled *Better Angels of Our Nature* [@pinker2012better], and the second was titled *Enlightenment Now* [@pinker2018enlightenment]. In the first, Pinker makes a data-driven case that international war is on the decline and has been for centuries. In the second, Pinker builds on this argument and claims that the Enlightenment movement from the 17th and 18th centuries helps explain why war is going away. He makes the additional argument that the development of modern nation-states also played a role in fostering peace due to their "civilizing" effect on societies.
+
+Braumoeller takes issue with both the data Pinker used, and his theoretical rationales for why war is declining. With respect to the role of the nation-state in promoting peace, Braumoeller notes that the historical record is a mixed bag. On the one hand, when smaller polities organize themselves into larger states, there's more internal peace. On the other hand, states can mobilize for war on a scale that small polities never could. States also have the capacity to commit mass atrocities (think of the Holocaust, or Stalinist USSR).
+
+Braumoeller similarly argues that the Enlightenment is a mixed bag. Some ideas, like valuing reason and respect for rights, are good, but some Enlightenment ideas have borne some rotten fruit. Karl Marx was just as much a product of the Enlightenment as Immanuel Kant, and many atrocities were committed in the name of Marx's ideas, especially in the 20th century. But even seemingly less controversial ideas, like respect for rights, can become a basis for war. The Responsibility to Protect (R2P) was a policy supported by the United Nations (driven in part in response to tragedies like the Rwandan Genocide). Endorsed in 2005, it upholds the idea that if the government of a country is committing human rights violations or mass murder, other countries have a responsibility to intervene, *which can include using military force*.
+
+But these theoretical complaints about the decline of war thesis aren't the focus of this chapter. Independent of these issues, Braumoeller raises two important methodological concerns about the analysis used to support the decline of war thesis.
+
+The first is that many prior analyses (including Pinker's) measured conflict *frequency* over time, when in fact they should have measured the conflict *rate*. Frequencies are just raw counts, while rates are counts *per* some other quantity of interest. For example, GDP *per* capita is GDP divided by a country's population. For Braumoeller, only counting conflicts over time misses half of the equation. As I'll discuss more in the next section, Braumoeller argues that you need to divide conflict counts by the number of possible chances countries have to fight each other, which doesn't remain constant over time.
+
+The second is that many prior analyses (again, including Pinker's) don't rely heavily, or at all, on statistical inference. Researchers use statistics to quantify the role of random chance in explaining patterns in data. In any variable that goes up and down over time, some of the hills and valleys might indicate a truly new trend in said variable. They could also just be the product of perfectly natural random fluctuations. If you don't account for the role of chance, you might draw overly optimistic (or pessimistic) conclusions from data. I'll discuss this more in the section after the one below.
+
+## What You Count Matters
+
+In the last data analysis example I showed you in the previous chapter, I produced a monthly count of the number of militarized interstate events (MIEs) over time. While this plot provides some interesting fodder for conversation, it doesn't pass Braumoeller's test for a good measure of conflict occurrence. It only shows the frequency of conflict events; not the rate. Further, Braumoeller would probably take issue with counting all the events in the data.
+
+To measure conflict over time to test the decline of war thesis, you need a measure that accurately encodes two important quantities: (1) how often countries were willing to "roll the iron dice," or to make the decision to use conflict as a means of doing politics; and (2) how often countries had a realistic chance of reaching each other to fight. If you have both quantities, you can then calculate the conflict rate.
+
+It's probably a good idea to express this more formally, which (sorry) means I need to throw a little math your way (it's sums and fractions, so don't sweat it too much). Let me use $P$ to stand for the conflict rate, or what I could also call the *propensity* for war. Further, I'll use $I$ to stand for conflict *initiations*, and $O$ to stand for *opportunities*.
+
+To calculate $P$ for a given point in time $t$, I need to measure $I$ and $O$ at time $t$. Theoretically, both are simple to get. $I_t$ is the sum of all conflict initiations at $t$, and $O_t$ is the sum of all conflict opportunities at $t$:
+
+$$
+I_t = \sum_{i = 1}^N I_{it}, \quad O_t = \sum_{i = 1}^N O_{it}
+$$
+
+In the above, $I_{it}$ is an indicator that is 1 if a country decided to roll the iron dice against another; 0 otherwise. $O_{it}$ is between 0 and 1, and it's value represents the probability that a country can reach another to initiate a fight. The $i$ subscript represents a unique *pair* of countries. In the field of international relations, we call this a *dyad*.
+
+Once you have $I_t$ and $O_t$, propensity for war is as simple as dividing the former by the latter:
+
+$$
+P_t = \frac{I_t}{O_t}
+$$
+
+That math looks temptingly easy, making it dangerous in the hands of someone who doesn't yet know what they're doing. The real challenge is that you, the researcher, need to make some judgment calls about how to get $I_t$ and $O_t$. Should you count every instance of conflict or only the first instance between a pair of countries? Should threats or shows of force count, or only at minimum when a country decides to use actual military force? How should you measure the opportunity to fight? Maybe by whether countries border each other? But don't some powerful countries have the ability to send their armed forces anywhere in the world? How should you handle that?
+
+Let me tell you how Braumoeller answered these questions (note that his answers are also quite standard among peace scientists).
+
+First of all, in his own analysis, which includes his conference paper [-@braumoeller2013war] and book [-@braumoeller2019only], Braumoeller used the Militarized Interstate Disputes (MID) dataset, which at the time of his book was in its fourth major iteration. Now, I just spent part of the last chapter talking about issues with the MID dataset which the MIE (Militarized Interstate Events) dataset that we'll use in this book claims to fix. At the time he did his analysis, though, the MID data was the best available. @pinker2012better used a variety of other datasets in his own analysis to give him longer historical coverage, but many of these have not seen widespread use in the peace science community due to concerns about data quality. Compared to everything available, the MID dataset was best-in-class when Braumoeller used it.
+
+Braumoeller didn't just use the MID data because of its superior quality to other options; he also believed that the concept of the MID did the best job of capturing the willingness of countries to roll the iron dice. More specifically, he thought the onset or *initiation* of a MID should be what counts. Anything beyond the initiation of a MID he treated as difficult to predict *ex ante*. Recall that a MID reflects any threat to use force, show of force, or use of force short of war by one country against another. To him this seemed as good a way as any to empirically verify the willingness to risk war.
+
+## Accounting for Random Chance Matters
+
+## Summary
