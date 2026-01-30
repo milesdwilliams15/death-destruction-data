@@ -92,9 +92,101 @@ That math looks temptingly easy, making it dangerous in the hands of someone who
 
 Let me tell you how Braumoeller answered these questions (note that his answers are also quite standard among peace scientists).
 
-First of all, in his own analysis, which includes his conference paper [-@braumoeller2013war] and book [-@braumoeller2019only], Braumoeller used the Militarized Interstate Disputes (MID) dataset, which at the time of his book was in its fourth major iteration. Now, I just spent part of the last chapter talking about issues with the MID dataset which the MIE (Militarized Interstate Events) dataset that we'll use in this book claims to fix. At the time he did his analysis, though, the MID data was the best available. @pinker2012better used a variety of other datasets in his own analysis to give him longer historical coverage, but many of these have not seen widespread use in the peace science community due to concerns about data quality. Compared to everything available, the MID dataset was best-in-class when Braumoeller used it.
+### Measuring Incidents
 
-Braumoeller didn't just use the MID data because of its superior quality to other options; he also believed that the concept of the MID did the best job of capturing the willingness of countries to roll the iron dice. More specifically, he thought the onset or *initiation* of a MID should be what counts. Anything beyond the initiation of a MID he treated as difficult to predict *ex ante*. Recall that a MID reflects any threat to use force, show of force, or use of force short of war by one country against another. To him this seemed as good a way as any to empirically verify the willingness to risk war.
+First of all, in his own analysis, which includes his conference paper [-@braumoeller2013war] and book [-@braumoeller2019only], Braumoeller used the Militarized Interstate Disputes (MID) dataset, which at the time his book was published was in its fourth major iteration. Now, I just spent part of the last chapter talking about issues with the MID dataset which the MIE (Militarized Interstate Events) dataset that we'll use in this book claims to fix. At the time he did his analysis, though, the MID data was the best available. @pinker2012better used a variety of other datasets in his own analysis to give him longer historical coverage, but many of these have not seen widespread use in the peace science community due to concerns about data quality. Compared to everything available, the MID dataset was best-in-class when Braumoeller used it.
+
+Braumoeller didn't just use the MID data because of its superior quality over other options; he also believed that the *concept* of the MID did the best job of capturing the willingness of countries to roll the iron dice. More specifically, he thought the onset or *initiation* of a MID should be what counts. Anything beyond the initiation of a MID he treated as difficult to predict *ex ante*. Recall that a MID reflects any threat to use force, show of force, or use of force short of war by one country against another. To him this seemed as good a way as any to empirically verify the willingness to risk war. If you recall the discussion in Chapter 1, the definition of a MID comes close to approximating Carl von Clausewitz's definition of "real" war (that is, a continuation of politics by other means).
+
+However, there still is some debate over which MID-like cases should be counted. On the one hand, it makes sense to count everything, including threats and shows of force short of actual violence, because acting threatening is a form of aggression meant to *communicate* resolve and power. And, remember, that use of military force to communicate information about strength and the will to fight is an important part of the Clausewitzian way of understanding war.
+
+On the other hand, it makes sense to ignore any event short of use of force because use of force is the only action that empirically demonstrates a willingness to fight. Threats and shows of force might just be "cheap talk," but using force reveals that a country will accept bloodshed to achieve its goals. Uses of force also risk reciprocation from the target far more than a threat. If you want to understand the risk of deadly war, you should focus on uses of force where the chance for escalation seems more likely.
+
+Both of these views have merit, which is why Braumoeller (consistent with the practice of many other peace scientists) used the more liberal approach of counting everything, and the more conservative one of ignoring threats and shows of force. The idea is to use both, since each has its merits, and see if it makes a big difference in the results. Sometimes, but not often, it actually doesn't matter.
+
+So how can you measure the yearly frequency of conflict incidence using the MIE dataset? In short, it's going to require some work to whittle out irrelevant events.
+
+Let me show you a sensible way to proceed. First, I need to get the data, which I do in the below code. Note that the code is a bit different than before. I promised you that I'd provide some tools that make getting and cleaning the data easier, and now I'm delivering on that promise. The below code, like what I showed you before, opens up the packages I need in my R session (`{tidyverse}` and `{socsci}`), but then I use a function called `source()` to which I give a link for a .R file on my GitHub. This is an R "script" file (essentially one giant code block saved as a separate file). This script contains code that creates a function called `get_mie_data()` that performs a straightforward routine when I use it: it reads in the MIE .csv file from my GitHub and then implements the recodes I showed you in the last chapter before returning the data. This is a major time-saver and makes my code easier to read. After running the `source()` function on my R script I now can use the function called `get_mie_data()` and then save the output as an object (in this case, one called `dt`).
+
+```{r}
+## set up
+library(tidyverse)
+library(socsci)
+source("https://raw.githubusercontent.com/milesdwilliams15/death-destruction-data/refs/heads/main/helpers/get_mie_data.R")
+
+## get the cleaned up data
+get_mie_data() -> dt
+```
+
+Now that I have the data, I can start working on a measure of conflict incidents over time. While the data has a `date` variable that documents the unique month and year a conflict starts, most conflict research aggregates data to the year, so I'll do the same. This approach has some practical advantages, like the fact that most variables people want to use to study conflict are only at the year level, and the fact that with nearly 200 years worth of data, monthly variation isn't quite as important as yearly variation.
+
+But what, exactly, should I count per year? To capture what Braumoeller was after, I need to count up two quantities: (1) the total number of unique conflicts documented in the data—not *events*—and (2) the total number of unique conflicts that at minimum rise to the level of a use of force. Remember that the MIE dataset documents each an every event associated with a conflict (or *confrontation*, to use their terminology). This makes for a really rich dataset, but for the purpose of simply measuring war propensity, I need to cut some fat.
+
+The below code lets me extract the relevant quantities from the data. I start by grouping the data by `micnum` (the unique confrontation, or MIC, identifier). I then get the first year for which the MIC appeared, and the maximum hostility level observed. Next, I have to group the data by year to get a count of the unique number of MICs that occurred per year, and the sum of MICs that at least rose to the level of use of force. Finally, I use the `complete()` function to fill in gaps in the data (years that didn't witness any MICs) with zero values. I then save the output as a new object called `incident_dt`. I annotated the code so you can see where each step takes place.
+
+```{r}
+dt |>
+  # for each MIC get the start year and max hostlev
+  group_by(micnum) |>
+  summarize(
+    year = min(year),
+    hostlev = max(hostlev)
+  ) |>
+  # for each year get total MICs and only MICs with >= use of force
+  group_by(year) |>
+  summarize(
+    incidents_any = n(),
+    incidents_force = sum(hostlev >= "Use of force")
+  ) |>
+  # complete the series by filling in years without MICs with zeros
+  complete(
+    year = full_seq(year, 1),
+    fill = list(incidents_any = 0, incidents_force = 0)
+  ) -> incident_dt # save as incident_dt
+  
+```
+
+If you print out the first 10 rows of the data, you can see that I now have a simple dataset. Each row is a year from 1816 to 2014, and for each year I have two counts of conflict incidents—one that counts every conflict regardless of its hostility level, and another that counts only conflicts that at minimum involved use of force. I have everything I need for the numerator in the equation for war *propensity*, but that still leaves the other half of the equation.
+
+```{r}
+head(incident_dt, 10)
+```
+
+### Measuring Opportunities
+
+To accurately measure war propensity, a simple count of yearly conflict won't do. I need to know how common new conflicts are relative to the opportunities that exist for new conflicts to arise.
+
+The problem (you knew there'd have to be a problem, right?) is that there isn't one universally accepted definition of what counts as an opportunity. However, the basket of options is, thankfully, limited.
+
+The first option is to naively assume that all countries in the world can reach each other with equal ease, no matter geography or ability. If you want to make this assumption, your measure of opportunity is straightforward: just count up the total number of unique country pairs (*dyads*) that exist in the world at a given point in time. Put another way, you'll assume that for a single country, like the United States, any other country in the world is fair game. Therefore, the U.S. has as many opportunities to go to war as there are countries in the world. Multiply that total by a count of all countries in the world and there's your measure of opportunity.
+
+You can probably see that this approach has some conceptual problems, however. For argument's sake, assume that the U.S. can really fight any other country it wants. Can you say the same of Zimbabwe? Or Jamaica? What about Switzerland? It seems silly to assume that any other country in the world is fair game for every country in the world.
+
+This takes me to the second option, which is on the opposite end of the spectrum. One idea, which @braumoeller2013war explored in his conference paper, is to only count country pairs or dyads that are *contiguous*. This term just means that countries border each other (though some define it more broadly to include countries that are separated by no more than 400 miles of water). This definition of an opportunity to fight rules out the vast majority of other countries in the world for each individual country.
+
+While this approach seems sensible for some cases, it definitely doesn't work so well in others. For example, this approach would say that the U.S. has only three opportunities for war: Mexico, Canada, and Russia (Alaska is only separated from it by 50 miles of water). It should go without saying the U.S. has many more opportunities for war, as recent events attest.
+
+There is, thankfully, a middle ground between counting everything and only counting contiguous country pairs. The solution that most peace scientists use today involves a compromise: for some countries, only contiguity applies, while for others, any other country is on the table. The countries for whom every other country in the world is a possible target are called "major powers." These are countries that, in theory, have sufficiently powerful armed forces and resources to project their military might anywhere in the world. At the moment, this list includes countries the United States, China, and Russia. This measure is known as *politically relevant dyads* (PRDs).
+
+Admittedly, this solution also has some issues because most sensible people would agree that the U.S. has very different capabilities than Russia. Nonetheless, it's probably better than the alternatives. However, there is another option, which, funnily enough, also comes from Braumoeller along with his colleague Austin Carson [-@braumoeller2011political].
+
+Their approach bases opportunities on quantities generated from a sophisticated statistical model that uses major power status, contiguity, and the distance between countries to quantify the probability that one country could fight another (assuming it wanted to). The difference with this measure compared with the alternatives is that opportunities are probabilistic rather than deterministic. It also means that even geography can be a limiting factor for major powers. While the U.S. can certainly send its forces anywhere it wants, it is logistically harder to do so in Iran than in Venezuela. To keep things concise, I'll just call this measure of opportunities *Braumoeller-Carson dyads* (or BCDs).
+
+There are issues with this measure, too. For instance, it still treats major powers equally, and it assumes that distance means the same thing to the U.S. that it does to Bolivia. However, it's probably a stronger option than the other three, but given the prevalent use of the the previous one (PRDs), it's wise to use both it and the Braumoeller-Carson measure to see if using one or the other makes a big difference.
+
+Now that we have two concepts we can use to measure opportunities (PRDs and BCDs), the next step is to get some data. Thankfully, because of the hard work of the peace science community, the relevant data and tools to access it only require writing a few lines of R code. I also did some leg work by creating another R script file that gives you a pre-canned routine for generating the data. All you need to do is run the `source()` function on the url address for the relevant script saved on my GitHub, and then you can use the function `get_opportunity_data()` to access yearly counts of conflict opportunities.
+
+```{r}
+source("")
+
+get_opportunity_data() -> opp_dt
+```
+
+If you take a peek at the object `opp_dt` created by the above code, you can see what's in the data. For each year, it counts up opportunities using all four of the methods outlined above (I wanted to be comprehensive, and also give you some options). By looking across the rows you can see that these methods give very different values.
+
+```{r}
+slice_head(opp_dt, n = 10)
+```
 
 ## Accounting for Random Chance Matters
 

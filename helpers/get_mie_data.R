@@ -36,7 +36,7 @@ get_mie_data <- function() {
         hostlev == 3 ~ "Display of force",
         hostlev == 4 ~ "Use of force",
         hostlev == 5 ~ "War"
-      ),
+      ) |> factor(ordered = T),
       date = ym(paste0(styear, "-", stmon)),
       year = styear
     ) -> dt
