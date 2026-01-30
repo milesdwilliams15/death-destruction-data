@@ -149,7 +149,7 @@ dt |>
 If you print out the first 10 rows of the data, you can see that I now have a simple dataset. Each row is a year from 1816 to 2014, and for each year I have two counts of conflict incidents—one that counts every conflict regardless of its hostility level, and another that counts only conflicts that at minimum involved use of force. I have everything I need for the numerator in the equation for war *propensity*, but that still leaves the other half of the equation.
 
 ```{r}
-head(incident_dt, 10)
+slice_head(incident_dt, n = 10)
 ```
 
 ### Measuring Opportunities
@@ -177,17 +177,98 @@ There are issues with this measure, too. For instance, it still treats major pow
 Now that we have two concepts we can use to measure opportunities (PRDs and BCDs), the next step is to get some data. Thankfully, because of the hard work of the peace science community, the relevant data and tools to access it only require writing a few lines of R code. I also did some leg work by creating another R script file that gives you a pre-canned routine for generating the data. All you need to do is run the `source()` function on the url address for the relevant script saved on my GitHub, and then you can use the function `get_opportunity_data()` to access yearly counts of conflict opportunities.
 
 ```{r}
-source("")
+source("https://raw.githubusercontent.com/milesdwilliams15/death-destruction-data/refs/heads/main/helpers/peacesceincer_extras.R")
 
 get_opportunity_data() -> opp_dt
 ```
 
-If you take a peek at the object `opp_dt` created by the above code, you can see what's in the data. For each year, it counts up opportunities using all four of the methods outlined above (I wanted to be comprehensive, and also give you some options). By looking across the rows you can see that these methods give very different values.
+If you take a peek at the object `opp_dt` created by the above code, you can see what's in the data. For each year, it counts up opportunities using all four of the methods outlined above (I wanted to be comprehensive, and also give you some options). By looking across the rows you can see that these methods give very different values. As you'd expect, `dyads` (which counts every possible pairing per country) is the most liberal count, while `contdyads` (which only counts contiguous pairings per country) is the most conservative. Both the PRD and BCD measures are in the middle, with the latter a bit more conservative, which isn't surprising since BCD is probabilistic rather than deterministic, and it also accounts for the distance between countries. For this reason, the BCD sum per year isn't a whole number. Unlike the other measures, a pair of countries isn't a 0 or 1, but something in between.
 
 ```{r}
 slice_head(opp_dt, n = 10)
 ```
 
+### Measuring War Propensity
+
+Now that I've made a dataset of new conflict incidents per year, and another of conflict opportunities per year, I need to combine them together so that I can construct a measure of war propensity. This step is easy, because propensity is just the sum of incidents divided by the sum of opportunities.
+
+I do, however, have alternative measures for these different concepts. I have two ways of quantifying incidents, and another two sensible ways of quantifying opportunities. That gives me four alternative measures of war propensity.
+
+To create all four, I first need to combine the incidents and opportunity datasets together, which I can do easily with tools from the `{tidyverse}`. The below code uses a function called `full_join()` that joins the datasets together based on matches in the `year` column in each:
+
+```{r}
+full_join(
+  incident_dt,
+  opp_dt,
+  by = "year"
+) -> final_dt
+```
+
+I saved the combined data as an object called `final_dt`. If I print out the first 10 rows, I can confirm that the datasets merged together as intended:
+
+```{r}
+slice_head(final_dt, n = 10)
+```
+
+The next step is to modify the data by including columns for the four possible measures of war propensity. You can do this with the `mutate()` function, as I do below. This code will add four new columns to the dataset called `prop1` up to `prop4` that are made by taking one of the incidents measures and dividing by one of the opportunity measures.
+
+```{r}
+final_dt |>
+  mutate(
+    prop1 = incidents_any / prd,
+    prop2 = incidents_force / prd,
+    prop3 = incidents_any / bcd,
+    prop4 = incidents_force / bcd
+  ) -> final_dt
+```
+
+### Looking at the Trend
+
+At long last, we have some data to measure variation in war propensity over time. So let's take a look at the results.
+
+The below code will create a line plot showing, per year from 1816 to 2014, war propensity based on each of the four measures created in the previous section. As you can see, the measures aren't identical, but they do move in parallel fairly well, which tells me the choice of measure may not have too much of an impact on the conclusions you draw about conflict over time.
+
+```{r}
+#| fig-height: 4
+#| fig-width: 6
+final_dt |>
+  pivot_longer(prop1:prop4) |>
+  ggplot() +
+  aes(x = year, y = value, color = name) +
+  geom_line(linewidth = .75) +
+  scale_color_manual(
+    values = c("navy", "steelblue", "green4", "red3"),
+    labels = c("Any per PRD", "Force per PRD", "Any per BCD", "Force per BCD")
+  ) +
+  scale_y_continuous(
+    labels = scales::percent
+  ) +
+  labs(
+    title = "All four measures of war propensity move in similar directions",
+    subtitle = "% war propensity, 1816-2014",
+    x = NULL,
+    y = NULL,
+    color = "Measure"
+  )
+```
+
+This just leaves us with with one final question: does the data support the decline of war thesis? Stated differently: are conflicts becoming less common over time?
+
+One way to answer this question is to simply look at the results in the above figure. This is what folks like Steven Pinker did, so why not do the same? However, as I'll discuss in the next section, looking at the data is too subjective an approach. It's much better to rely on statistical inference to help separate random noise from true signals in the data.
+
 ## Accounting for Random Chance Matters
+
+Getting the right data and the right way to measure conflict over time is essential for testing the decline of war thesis, but for Braumoeller, this doesn't go far enough. His other methodological critique of past work on the decline of war is the failure to account for the role of chance in war and peace. Statistical analysis can help solve this problem.
+
+There are many ways of defining statistics, but I think the most helpful is to think of it as a set of tools for reasoning about, and quantifying, the role of random chance in generating data. Imagine that when you measure something in the world, the final number that you record is the product of two things: (1) a signal and (2) some background noise. Statistics provides a way to quantify on average how much the estimate you got from data might be expected to vary from one case to the next due to background noise.
+
+When doing statistical analysis, researchers will apply certain thresholds of random variation to make a judgment about whether background noise can be rejected as the best explanation for some change or difference observed in data. These thresholds are called the *level of the test*, and they are pivotal to the practice of *hypothesis testing*. The idea is simple:
+
+1.  Start from the assumption that differences or changes you observe in data are the result of background noise.
+2.  Estimate a quantity, or quantities, of interest (a difference, a change, maybe multiple estimates).
+3.  Caculate how much you expect the quantity of interest to vary due to random noise.
+4.  Reject the hypothesis that background noise explains the estimates you observe if a difference is bigger than a pre-specified threshold of random variation.
+
+If you've never taken a statistics course before
 
 ## Summary
