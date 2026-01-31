@@ -20,35 +20,35 @@ I first learned about the decline of war thesis when I read Bear Braumoeller's [
 
 I also learned that I'd been volunteered to pick him up from his hotel to take him to campus. I wanted to be prepared when I met Braumoeller for the first time, so I bought and read his book before he flew in from Columbus, OH where he was a professor at *The* Ohio State University. I think I read the whole thing, cover to cover, in just three days (including the R code in the book's appendix for some of the analyses he did).
 
-I devoured the book this quickly for two reasons, neither of which were a pathological need to appear like a smart graduate student to a well-known and respected scholar.
+I devoured the book this quickly for two reasons, neither of which were a pathological need to appear like a smart graduate student to a well-known and respected scholar (or so I tell myself).
 
-First, Braumoeller's previous book, *The Great Powers and the International System: Systemic Theory in Empirical Perspective* [-@braumoeller2013great], solidified my desire to study international relations for a living. He published it in 2013, and I read it in 2016. I had been a fan ever since, so when I learned that the scholar whose work inspired me to go down the path of getting a Ph.D. to study international relations had just published another book, I couldn't get my hands on it fast enough.
+First, Braumoeller's previous book, *The Great Powers and the International System: Systemic Theory in Empirical Perspective* [-@braumoeller2013great], solidified my desire to study international relations for a living. He published it in 2013, and I read it in 2016 while working on my master's. I had been wondering what would come next once I graduated. Reading Braumoeller's book made my path very clear: I wanted to get my Ph.D. and do what Braumoeller was doing. I've been a fan of his work ever since. So, when I learned that the scholar whose work inspired me to go down the path of getting a Ph.D. to study international relations had just published another book, I couldn't get my hands on it fast enough.
 
-Second, with this new book (much like his first) Braumoeller sought to answer a *big* question in international relations: *is war going away?* Braumoeller had a reputation for doing incredibly smart and cutting edge quantitative work in international relations. If he had applied this same aptitude to one of the most important issues in international relations, I had to know what he found.
+Second, with this new book (much like his first) Braumoeller sought to answer a *big* question in international relations: *is war going away?* Braumoeller had a reputation for doing incredibly smart and cutting edge quantitative work in international relations. If he had applied this same aptitude to one of the most important issues in the field, I had to know what he found.
 
-Needless to say, I had really high expectations going into my first meeting with Braumoeller. That meant I also had a lot of nerves. Because of those nerves, I never directly asked him questions about his book. Also, I thought I'd appear far too creepy expressing how inspiring his work was to me, so I never mentioned it. He asked me some questions about my own research interests, and I think my brain fell out of the back of my head when he did, because I neither sounded eloquent nor coherent as I explained the volatile brew of interconnected research questions percolating in my head.
+Needless to say, I had really high expectations going into my first meeting with Braumoeller. That meant I also had a lot of nerves. Because of those nerves, I never directly asked him questions about his book while I drove him from his hotel to UIUC's campus. Also, I thought I'd appear far too creepy expressing how inspiring his work was to me, so I never mentioned it. He asked me some questions about my own research interests, and I think my brain fell out of the back of my head when he did, because I neither sounded eloquent nor coherent as I explained the volatile brew of interconnected research questions percolating in my head.
 
 I kick myself every time I think back on this experience. I met my hero, and I was too star-struck to make the most of it.
 
 So, when I learned that I got a job at Denison, and that the suburb I would live in was the same that Braumoeller lived in (I promise this wasn't on purpose), I thought I could try again. Instead, I got a tough lesson in not letting fear or nerves get in the way of the opportunities life gives you. When I first moved to the area, I learned Braumoeller was overseas on an extended leave doing further research, building on the work he did for *Only the Dead*. And then I learned some tragic news. In the summer of 2023 he unexpectedly passed away while abroad.
 
-I was shocked, as was seemingly the whole field of international relations and even those in political science more generally. I also felt incredibly sad, because I new he had a wife and young daughter.
+I was shocked, as was seemingly the whole field of international relations and even those in political science more generally. I think nearly the whole discipline new him in some way. I also felt incredibly sad, because he had a wife and young daughter that he'd be leaving behind.
 
 I didn't intend to stumble into some "real-talk" when I sat down to write this chapter, but you never truly know the thoughts working themselves out in your mind until you start writing. Consider this detour a nudge to meditate on the value of courage and of taking advantage of the chances life gives you. This nudge comes from a (*still*) young man who's unfortunately already old enough to have accumulated some regrets in life. The experience that fueled this detour (and many others) serve as my own reminders that a little courage will take you a long way.
 
-As off topic as that story may seem, I think it helps me make a key point.
+As off topic as that story may seem, I think it helps me make a key point about studying war.
 
 It's this: studying war with data has an ethical valence to it. Yes, the goal of a peace scientist is to be objective and quantitative about studying war, but because the object of this study is *war*, a life-and-death matter, it should be taken seriously. Above all, I think it requires some *courage* (I knew I could link this back to my anecdote in some way). To make claims about war, using data, is to make claims about the "iron dice" that, when rolled, may lead to no bloodshed and a quick resolution, or to thousands or (in rare cases) millions of deaths. You should make sure that you're serious about the claims you make about war, but you also need to have the courage to make said claims if you think you're right.
 
-In the next chapter I'll talk about how war size can be incredibly volatile and hard to predict, which makes the content of this chapter that deals with the onset of conflict, all the more important. If countries are more willing, or less, to roll the iron dice today than in the past, this has existential implications for human lives.
+In the next chapter I'll talk about how war size can be incredibly volatile and hard to predict, which makes the content of this chapter that deals with the onset of conflict all the more important. If countries are more willing, or less, to roll the iron dice today than in the past, this has existential implications for human lives.
 
-The moral culpability of the peace scientist enters the equation when considering how the message that war is going way, versus one that says war remains a persistent problem, can affect foreign policy and international politics. By making a claim that conflict is becoming rarer, more frequent, or as common as ever, you are making a policy recommendation whether you intend to or not. If the world is getting more peaceful, why should countries continue to invest in international institutions that help prevent conflict? If the world is getting more violent, shouldn't major powers double-down on building up their military might?
+The moral culpability of peace scientists enters the equation when considering how their findings can affect foreign policy and international politics. By making a claim that conflict is becoming rarer, more frequent, or as common as ever, they are making a policy recommendation whether they intend to or not. If the world is getting more peaceful, why should countries continue to invest in international institutions that help prevent conflict? If the world is getting more violent, shouldn't major powers double-down on building up their military might, potentially diverting funds from domestic priorities?
 
-I don't mean to imply that the arc of international relations pivots on the conclusions drawn from a single data analysis. But the goal of data analysis for many social scientists (including those in the peace science tradition) is to make convincing arguments using data. If enough people in a field are convinced of an idea, it can start to catch the attention of practitioners operating in the policy world. Even very niche ideas can attract the attention of a decision-maker. So, while minute, a single analysis is part of the body of knowledge and claims accumulated about a subject, and for that reason, it matters.
+I don't mean to imply that the arc of international relations pivots on the conclusions drawn from a single data analysis. But the goal of data analysis for many social scientists (including those in the peace science tradition) is to make convincing arguments using data. If enough people in a field are convinced of an idea, it can start to catch the attention of practitioners operating in the policy world. Even very niche ideas can attract the attention of a decision-maker. So, while minuscule, a single analysis is part of the body of knowledge and claims accumulated about a subject, and for that reason, it matters.
 
 This, in sum, is why the *decline of war thesis* deserves your attention. It is the argument, founded on a variety of data sources and theoretical propositions, that international conflict is becoming less likely *and* less deadly. Put another way, it's the claim that countries are less apt to roll the iron dice today than decades or even a century ago, and that when the iron dice must roll, they are far less likely to land on another world war. You can imagine that an idea like this catching on can have tangle implications if enough people in the policy world think it's true.
 
-*If* true, this is great news. But if it's false, it could be a "self-defeating prophesy" (the opposite of its equally devious twin of the self-fulfilling sort).
+*If* true, this is great news. But if it's false, it could be a "self-defeating prophesy" (the opposite of its equally devious twin of the self-fulfilling sort). Therefore, getting the decline of war issue right matters.
 
 @braumoeller2019only disagreed with the decline of war thesis for a variety of reasons, including its self-defeating implications, but in the next section I want to introduce just two of his data-driven critiques, because these will be the basis for the applied examples that follow. Importantly, his data-driven critiques do not on their own disprove the decline of war thesis; they deal with methodological rigor rather than substantive findings. But, Braumoeller claimed that when he applied appropriate measures and methods, the argument in favor of the decline of war thesis looked much less convincing.
 
@@ -58,7 +58,7 @@ Many researchers fall into the decline of war camp, but Braumoeller directs the 
 
 Braumoeller takes issue with both the data Pinker used, and his theoretical rationales for why war is declining. With respect to the role of the nation-state in promoting peace, Braumoeller notes that the historical record is a mixed bag. On the one hand, when smaller polities organize themselves into larger states, there's more internal peace. On the other hand, states can mobilize for war on a scale that small polities never could. States also have the capacity to commit mass atrocities (think of the Holocaust, or Stalinist USSR).
 
-Braumoeller similarly argues that the Enlightenment is a mixed bag. Some ideas, like valuing reason and respect for rights, are good, but some Enlightenment ideas have borne some rotten fruit. Karl Marx was just as much a product of the Enlightenment as Immanuel Kant, and many atrocities were committed in the name of Marx's ideas, especially in the 20th century. But even seemingly less controversial ideas, like respect for rights, can become a basis for war. The Responsibility to Protect (R2P) was a policy supported by the United Nations (driven in part in response to tragedies like the Rwandan Genocide). Endorsed in 2005, it upholds the idea that if the government of a country is committing human rights violations or mass murder, other countries have a responsibility to intervene, *which can include using military force*.
+Braumoeller similarly argues that the Enlightenment is a mixed bag. Some ideas, like valuing reason and respect for rights, are good, but some Enlightenment ideas have borne some rotten fruit. Karl Marx was just as much a product of the Enlightenment as Immanuel Kant, and many atrocities were committed in the name of Marx's ideas, especially in the 20th century. But even seemingly less controversial ideas, like respect for rights, can become a basis for war. The Responsibility to Protect (R2P) was a policy supported by the United Nations (driven in part in response to tragedies like the Rwandan Genocide). Endorsed in 2005, it upholds the idea that if the government of a country is committing human rights violations or mass murder, other countries have a responsibility to intervene, *which* (counterintuitively) *can include using military force*.
 
 But these theoretical complaints about the decline of war thesis aren't the focus of this chapter. Independent of these issues, Braumoeller raises two important methodological concerns about the analysis used to support the decline of war thesis.
 
@@ -70,7 +70,7 @@ The second is that many prior analyses (again, including Pinker's) don't rely he
 
 In the last data analysis example I showed you in the previous chapter, I produced a monthly count of the number of militarized interstate events (MIEs) over time. While this plot provides some interesting fodder for conversation, it doesn't pass Braumoeller's test for a good measure of conflict occurrence. It only shows the frequency of conflict events; not the rate. Further, Braumoeller would probably take issue with counting all the events in the data.
 
-To measure conflict over time to test the decline of war thesis, you need a measure that accurately encodes two important quantities: (1) how often countries were willing to "roll the iron dice," or to make the decision to use conflict as a means of doing politics; and (2) how often countries had a realistic chance of reaching each other to fight. If you have both quantities, you can then calculate the conflict rate.
+To measure conflict over time to test the decline of war thesis, you need a measure that accurately encodes two important quantities: (1) how often countries are willing to "roll the iron dice," and (2) how often countries have a realistic chance of reaching each other to fight. If you have both quantities, you can then calculate the conflict rate.
 
 It's probably a good idea to express this more formally, which (sorry) means I need to throw a little math your way (it's sums and fractions, so don't sweat it too much). Let me use $P$ to stand for the conflict rate, or what I could also call the *propensity* for war. Further, I'll use $I$ to stand for conflict *initiations*, and $O$ to stand for *opportunities*.
 
@@ -80,7 +80,7 @@ $$
 I_t = \sum_{i = 1}^N I_{it}, \quad O_t = \sum_{i = 1}^N O_{it}
 $$
 
-In the above, $I_{it}$ is an indicator that is 1 if a country decided to roll the iron dice against another; 0 otherwise. $O_{it}$ is between 0 and 1, and it's value represents the probability that a country can reach another to initiate a fight. The $i$ subscript represents a unique *pair* of countries. In the field of international relations, we call this a *dyad*.
+In the above, $I_{it}$ is an indicator that is 1 if a country decides to roll the iron dice against another; 0 otherwise. $O_{it}$ is between 0 and 1, and it's value represents whether a country can reach another to initiate a fight. The $i$ subscript represents a unique *pair* of countries. In the field of international relations, we call this a *dyad*.
 
 Once you have $I_t$ and $O_t$, propensity for war is as simple as dividing the former by the latter:
 
@@ -90,21 +90,21 @@ $$
 
 That math looks temptingly easy, making it dangerous in the hands of someone who doesn't yet know what they're doing. The real challenge is that you, the researcher, need to make some judgment calls about how to get $I_t$ and $O_t$. Should you count every instance of conflict or only the first instance between a pair of countries? Should threats or shows of force count, or only at minimum when a country decides to use actual military force? How should you measure the opportunity to fight? Maybe by whether countries border each other? But don't some powerful countries have the ability to send their armed forces anywhere in the world? How should you handle that?
 
-Let me tell you how Braumoeller answered these questions (note that his answers are also quite standard among peace scientists).
+Let me give you some possible answers these questions below.
 
 ### Measuring Incidents
 
-First of all, in his own analysis, which includes his conference paper [-@braumoeller2013war] and book [-@braumoeller2019only], Braumoeller used the Militarized Interstate Disputes (MID) dataset, which at the time his book was published was in its fourth major iteration. Now, I just spent part of the last chapter talking about issues with the MID dataset which the MIE (Militarized Interstate Events) dataset that we'll use in this book claims to fix. At the time he did his analysis, though, the MID data was the best available. @pinker2012better used a variety of other datasets in his own analysis to give him longer historical coverage, but many of these have not seen widespread use in the peace science community due to concerns about data quality. Compared to everything available, the MID dataset was best-in-class when Braumoeller used it.
+First of all, in his own analysis, which includes his conference paper [-@braumoeller2013war] and book [-@braumoeller2019only], Braumoeller used the Militarized Interstate Disputes (MID) dataset, which at the time his book was published was in its fourth major iteration. Now, I just spent part of the last chapter talking about issues with the MID dataset, which the MIE (Militarized Interstate Events) dataset that we'll use in this book claims to fix. At the time he did his analysis, though, the MID data was the best available. @pinker2012better used a variety of other datasets in his own analysis to give him longer historical coverage, but many of these have not seen widespread use in the peace science community due to concerns about data quality. Compared to everything available, the MID dataset was best-in-class when Braumoeller used it.
 
-Braumoeller didn't just use the MID data because of its superior quality over other options; he also believed that the *concept* of the MID did the best job of capturing the willingness of countries to roll the iron dice. More specifically, he thought the onset or *initiation* of a MID should be what counts. Anything beyond the initiation of a MID he treated as difficult to predict *ex ante*. Recall that a MID reflects any threat to use force, show of force, or use of force short of war by one country against another. To him this seemed as good a way as any to empirically verify the willingness to risk war. If you recall the discussion in Chapter 1, the definition of a MID comes close to approximating Carl von Clausewitz's definition of "real" war (that is, a continuation of politics by other means).
+Braumoeller didn't just use the MID data because of its superior quality over other options; he also believed that the *concept* of the MID did the best job of capturing the willingness of countries to roll the iron dice. More specifically, he thought the onset or *initiation* of a MID should be what counts. Anything beyond the initiation of a MID he treated as difficult to predict *ex ante*. Recall that a MID reflects any threat to use force, display of force, or use of force short of war by one country against another. To him this seemed as good a way as any to empirically verify the willingness to risk war. If you recall the discussion in Chapter 1, the definition of a MID comes close to approximating Carl von Clausewitz's definition of "real" war (that is, a continuation of politics by other means).
 
-However, there still is some debate over which MID-like cases should be counted. On the one hand, it makes sense to count everything, including threats and shows of force short of actual violence, because acting threatening is a form of aggression meant to *communicate* resolve and power. And, remember, that use of military force to communicate information about strength and the will to fight is an important part of the Clausewitzian way of understanding war.
+However, there still is some debate over which MID-like cases should be counted. On the one hand, it makes sense to count everything, including threats and displays of force short of actual violence, because acting threatening is a form of aggression meant to *communicate* resolve and power. And, remember, that use of military force to communicate information about strength and the will to fight is an important part of the Clausewitzian way of understanding war. Such threats can also backfire.
 
-On the other hand, it makes sense to ignore any event short of use of force because use of force is the only action that empirically demonstrates a willingness to fight. Threats and shows of force might just be "cheap talk," but using force reveals that a country will accept bloodshed to achieve its goals. Uses of force also risk reciprocation from the target far more than a threat. If you want to understand the risk of deadly war, you should focus on uses of force where the chance for escalation seems more likely.
+On the other hand, it makes sense to ignore any event short of use of force because use of force is the only action that empirically demonstrates a willingness to fight. Threats and displays of force might just be "cheap talk," but using force reveals that a country will accept bloodshed to achieve its goals. Uses of force also risk reciprocation from the target far more than a threat. If you want to understand the risk of deadly war, you should focus on uses of force where the chance for escalation seems more likely.
 
-Both of these views have merit, which is why Braumoeller (consistent with the practice of many other peace scientists) used the more liberal approach of counting everything, and the more conservative one of ignoring threats and shows of force. The idea is to use both, since each has its merits, and see if it makes a big difference in the results. Sometimes, but not often, it actually doesn't matter.
+Both of these views have merit, which is why Braumoeller (consistent with the practice of many other peace scientists) used the more liberal approach of counting everything, and the more conservative one of ignoring threats and shows of force. The idea is to use both, since each has its merits, and see if it makes a big difference in the results. In many cases, it turns out the this choice actually doesn't matter.
 
-So how can you measure the yearly frequency of conflict incidence using the MIE dataset? In short, it's going to require some work to whittle out irrelevant events.
+So how can you measure the yearly frequency of conflict incidence using the MIE dataset that I introduced in the last chapter? In short, it's going to require some work to whittle out irrelevant events.
 
 Let me show you a sensible way to proceed. First, I need to get the data, which I do in the below code. Note that the code is a bit different than before. I promised you that I'd provide some tools that make getting and cleaning the data easier, and now I'm delivering on that promise. The below code, like what I showed you before, opens up the packages I need in my R session (`{tidyverse}` and `{socsci}`), but then I use a function called `source()` to which I give a link for a .R file on my GitHub. This is an R "script" file (essentially one giant code block saved as a separate file). This script contains code that creates a function called `get_mie_data()` that performs a straightforward routine when I use it: it reads in the MIE .csv file from my GitHub and then implements the recodes I showed you in the last chapter before returning the data. This is a major time-saver and makes my code easier to read. After running the `source()` function on my R script I now can use the function called `get_mie_data()` and then save the output as an object (in this case, one called `dt`).
 
@@ -146,7 +146,7 @@ dt |>
   
 ```
 
-If you print out the first 10 rows of the data, you can see that I now have a simple dataset. Each row is a year from 1816 to 2014, and for each year I have two counts of conflict incidents—one that counts every conflict regardless of its hostility level, and another that counts only conflicts that at minimum involved use of force. I have everything I need for the numerator in the equation for war *propensity*, but that still leaves the other half of the equation.
+If you print out the first 10 rows of the data, you can see that I now have a simple dataset. Each row is a year from 1816 to 2014, and for each year I have two counts of conflict incidents—one that counts every conflict regardless of its hostility level, and another that counts only conflicts that at minimum involved use of force. In short, I have everything I need for the numerator in the equation for war *propensity*, but that still leaves the other half of the equation.
 
 ```{r}
 slice_head(incident_dt, n = 10)
@@ -158,13 +158,13 @@ To accurately measure war propensity, a simple count of yearly conflict won't do
 
 The problem (you knew there'd have to be a problem, right?) is that there isn't one universally accepted definition of what counts as an opportunity. However, the basket of options is, thankfully, limited.
 
-The first option is to naively assume that all countries in the world can reach each other with equal ease, no matter geography or ability. If you want to make this assumption, your measure of opportunity is straightforward: just count up the total number of unique country pairs (*dyads*) that exist in the world at a given point in time. Put another way, you'll assume that for a single country, like the United States, any other country in the world is fair game. Therefore, the U.S. has as many opportunities to go to war as there are countries in the world. Multiply that total by a count of all countries in the world and there's your measure of opportunity.
+The first option is to naively assume that all countries in the world can reach each other with equal ease, no matter geography or ability. If you want to make this assumption, your measure of opportunity is straightforward: just count up the total number of unique country pairs (*dyads*) that exist in the world at a given point in time. Put another way, assume that for a single country, like the United States, any other country in the world is fair game. This means that the U.S. has as many opportunities to go to war as there are countries in the world. Multiply that total by a count of all countries in the world and there's your measure of opportunity.
 
-You can probably see that this approach has some conceptual problems, however. For argument's sake, assume that the U.S. can really fight any other country it wants. Can you say the same of Zimbabwe? Or Jamaica? What about Switzerland? It seems silly to assume that any other country in the world is fair game for every country in the world.
+You can probably see that this approach has some conceptual problems, however. For argument's sake, assume that the U.S. really can fight any other country it wants. Can you say the same of Zimbabwe? Or Jamaica? What about Switzerland? It seems silly to assume that any other country in the world is fair game for every country in the world.
 
 This takes me to the second option, which is on the opposite end of the spectrum. One idea, which @braumoeller2013war explored in his conference paper, is to only count country pairs or dyads that are *contiguous*. This term just means that countries border each other (though some define it more broadly to include countries that are separated by no more than 400 miles of water). This definition of an opportunity to fight rules out the vast majority of other countries in the world for each individual country.
 
-While this approach seems sensible for some cases, it definitely doesn't work so well in others. For example, this approach would say that the U.S. has only three opportunities for war: Mexico, Canada, and Russia (Alaska is only separated from it by 50 miles of water). It should go without saying the U.S. has many more opportunities for war, as recent events attest.
+While this approach seems sensible for some cases, it definitely doesn't work in every case. For example, this approach would say that the U.S. has only three opportunities for war: Mexico, Canada, and Russia (Alaska is only separated from it by 50 miles of water). It should go without saying the U.S. has many more opportunities for war, as recent events attest.
 
 There is, thankfully, a middle ground between counting everything and only counting contiguous country pairs. The solution that most peace scientists use today involves a compromise: for some countries, only contiguity applies, while for others, any other country is on the table. The countries for whom every other country in the world is a possible target are called "major powers." These are countries that, in theory, have sufficiently powerful armed forces and resources to project their military might anywhere in the world. At the moment, this list includes countries the United States, China, and Russia. This measure is known as *politically relevant dyads* (PRDs).
 
@@ -174,7 +174,7 @@ Their approach bases opportunities on quantities generated from a sophisticated 
 
 There are issues with this measure, too. For instance, it still treats major powers equally, and it assumes that distance means the same thing to the U.S. that it does to Bolivia. However, it's probably a stronger option than the other three, but given the prevalent use of the the previous one (PRDs), it's wise to use both it and the Braumoeller-Carson measure to see if using one or the other makes a big difference.
 
-Now that we have two concepts we can use to measure opportunities (PRDs and BCDs), the next step is to get some data. Thankfully, because of the hard work of the peace science community, the relevant data and tools to access it only require writing a few lines of R code. I also did some leg work by creating another R script file that gives you a pre-canned routine for generating the data. All you need to do is run the `source()` function on the url address for the relevant script saved on my GitHub, and then you can use the function `get_opportunity_data()` to access yearly counts of conflict opportunities.
+This hard to do without data, of course, so with some measures of opportunities identified (PRDs and BCDs) the next step is to actually get some data. Thankfully, because of the hard work of the peace science community, the relevant data and tools to access it only require writing a few lines of R code. I also did some leg work by creating another R script file that gives you a pre-canned routine for generating the data based on these other tools. All you need to do is run the `source()` function on the url address for the relevant script saved on my GitHub, and then you can use the function `get_opportunity_data()` to access yearly counts of conflict opportunities.
 
 ```{r}
 source("https://raw.githubusercontent.com/milesdwilliams15/death-destruction-data/refs/heads/main/helpers/peacesceincer_extras.R")
@@ -182,7 +182,7 @@ source("https://raw.githubusercontent.com/milesdwilliams15/death-destruction-dat
 get_opportunity_data() -> opp_dt
 ```
 
-If you take a peek at the object `opp_dt` created by the above code, you can see what's in the data. For each year, it counts up opportunities using all four of the methods outlined above (I wanted to be comprehensive, and also give you some options). By looking across the rows you can see that these methods give very different values. As you'd expect, `dyads` (which counts every possible pairing per country) is the most liberal count, while `contdyads` (which only counts contiguous pairings per country) is the most conservative. Both the PRD and BCD measures are in the middle, with the latter a bit more conservative, which isn't surprising since BCD is probabilistic rather than deterministic, and it also accounts for the distance between countries. For this reason, the BCD sum per year isn't a whole number. Unlike the other measures, a pair of countries isn't a 0 or 1, but something in between.
+If you take a peek at the object `opp_dt` created by the above code, you can see what's in the data. For each year, it counts up opportunities using all four of the methods outlined above (I wanted to be comprehensive, even though I don't recommend using all four). By looking across the rows you can see that these methods give very different values. As you'd expect, `dyads` (which counts every possible pairing per country) is the most liberal count, while `contdyads` (which only counts contiguous pairings per country) is the most conservative. Both the PRD and BCD measures are in the middle, with the latter a bit more conservative, which isn't surprising since BCD is probabilistic rather than deterministic, and it also accounts for the distance between countries. For this reason, the BCD sum per year isn't a whole number. Unlike the other measures, a pair of countries isn't a 0 or 1, but something in between.
 
 ```{r}
 slice_head(opp_dt, n = 10)
@@ -210,7 +210,7 @@ I saved the combined data as an object called `final_dt`. If I print out the fir
 slice_head(final_dt, n = 10)
 ```
 
-The next step is to modify the data by including columns for the four possible measures of war propensity. You can do this with the `mutate()` function, as I do below. This code will add four new columns to the dataset called `prop1` up to `prop4` that are made by taking one of the incidents measures and dividing by one of the opportunity measures.
+The next step is to modify the data by including columns for the four possible measures of war propensity. You can do this with the `mutate()` function, as I do below. This code will add four new columns to the dataset called `prop1` up to `prop4` that are made by taking one of the incidents measures and dividing by one of the opportunity measures. Now, you have all the data you need.
 
 ```{r}
 final_dt |>
@@ -260,15 +260,138 @@ One way to answer this question is to simply look at the results in the above fi
 
 Getting the right data and the right way to measure conflict over time is essential for testing the decline of war thesis, but for Braumoeller, this doesn't go far enough. His other methodological critique of past work on the decline of war is the failure to account for the role of chance in war and peace. Statistical analysis can help solve this problem.
 
-There are many ways of defining statistics, but I think the most helpful is to think of it as a set of tools for reasoning about, and quantifying, the role of random chance in generating data. Imagine that when you measure something in the world, the final number that you record is the product of two things: (1) a signal and (2) some background noise. Statistics provides a way to quantify on average how much the estimate you got from data might be expected to vary from one case to the next due to background noise.
+There are many ways of defining statistics, but I think the most helpful is to think of it as a set of tools for reasoning about, and quantifying, the role of random chance in generating data.
 
-When doing statistical analysis, researchers will apply certain thresholds of random variation to make a judgment about whether background noise can be rejected as the best explanation for some change or difference observed in data. These thresholds are called the *level of the test*, and they are pivotal to the practice of *hypothesis testing*. The idea is simple:
+Imagine that when you measure something in the world, the final number that you record is the product of two things: (1) a signal and (2) some background noise. Statistics provides a way to quantify on average how much the recorded estimate might be expected to vary from one case to the next due to background noise.
+
+Beyond quantifying noise, when doing statistical analysis, researchers will apply certain thresholds of random variation to judge whether background noise can be rejected as the best explanation for a change or difference observed in data. These thresholds are called the *level of the test*, and they are pivotal to the practice of *hypothesis testing*. The idea is simple:
 
 1.  Start from the assumption that differences or changes you observe in data are the result of background noise.
 2.  Estimate a quantity, or quantities, of interest (a difference, a change, maybe multiple estimates).
 3.  Caculate how much you expect the quantity of interest to vary due to random noise.
 4.  Reject the hypothesis that background noise explains the estimates you observe if a difference is bigger than a pre-specified threshold of random variation.
 
-If you've never taken a statistics course before
+If you've never taken a statistics course before, don't worry. R will do all the math for you. If you can at least wrap your head around the point of doing statistical analysis, that will take you a long way.
+
+Let me help you out by showing you a quick example with the conflict dataset I put together in the last section (`final_dt`). Say I wanted to test whether the average conflict rate from 1820 to 1849 is statistically the same as the average conflict rate from 1850 to 1879. I would need to first calculate the observed average conflict rate in each of those periods, then I would need to use statistical tools to calculate intervals around those averages that capture how much variation I would see in the estimated average due to background noise. I can set the level of these intervals based on how high I want the threshold to be for ruling out background noise as the best explanation for any differences I observe between periods.
+
+The below code shows how I might go about doing this using the first war propensity measure (all new confrontations per PRDs). As I told you, I'll provide a lot of tools to streamline the process of doing analysis, and this example is no exception. It starts by reading in a script file that creates a function called `boot_mean_ci()`, which does two things. First it calculates a mean for some numerical variable, then it computes intervals for that mean that reflect how much it might vary as a result of background noise. The method it uses to do this is called [bootstrapping](https://www.datacamp.com/tutorial/bootstrapping), which is a computational method for simulating the distribution of some estimate as a result of random noise. It then uses this distribution to calculate upper and lower bounds for *confidence intervals*. By using the `ci =` option I can control how wide I want these intervals to be. In this case, I set them to .84 (on a scale from 0 to 1) which means it will return 84% confidence intervals. Intervals of this size are the most common level chosen for checking if two quantities are different from each other based on whether the intervals for the quantities overlap. (There's another interval that you might be more familiar with, the 95% confidence interval, that will be relevant in the second part of this book).
+
+```{r}
+source("https://raw.githubusercontent.com/milesdwilliams15/death-destruction-data/refs/heads/main/helpers/other_helpers.R")
+
+final_dt |>
+  filter(year %in% 1820:1879) |>
+  group_by(year < 1850) |>
+  summarize(
+    mean_ci_boot(prop1, ci = .84)
+  )
+```
+
+If you look at the results, it seems that the average conflict rate from 1820 to 1849 was *lower* than the rate from 1850 to 1979, and that this difference is *statistically significant*. You can tell because the upper bound for the confidence interval for the pre-1850 average is less than the lower bound of the post-1950 average.
+
+This is much easier to see by getting R to produce a figure based on the results, which the below code does:
+
+```{r}
+#| fig-height: 3
+#| fig-width: 7
+
+final_dt |>
+  filter(year %in% 1820:1879) |>
+  group_by(year < 1850) |>
+  summarize(
+    mean_ci_boot(prop1, ci = .84)
+  ) |>
+  ggplot() +
+  aes(x = mean, xmin = lower, xmax = upper, y = `year < 1850`) +
+  geom_pointrange() +
+  scale_x_continuous(
+    labels = scales::percent
+  ) +
+  scale_y_discrete(
+    labels = c("1850-1879", "1820-1849")
+  ) +
+  labs(
+    title = "1820-1849 was more peaceful than 1850-1879",
+    subtitle = "% war propensity by period",
+    x = NULL,
+    y = NULL
+  )
+
+```
+
+To test the idea more generally that conflict over time has changed in an upward or downward direction, all you have to do is take the concept applied above and extend it to different periods in time, which is essentially what Braumoeller did in his own analysis; though, with a slightly different method. However, to keep things simple, let's just extend the above analysis to include the whole range of years in the dataset.
+
+The idea with the above example is to bin the data into discrete periods in time and then see if the average of war propensity in one period is statistically different than what it is in another. You can use bigger or smaller bins, which will change the results somewhat. Obviously, smaller bins will show more variation from one point in time to the next (but they also will be subject to more background noise). Conversely, bigger bins will give you more stable results (and be less subject to background noise), but this will come at the cost of glossing over potentially important and meaningful variation across shorter time intervals.
+
+Let me show you an example that breaks it down by 20 year intervals. I left some annotations in the code so you can see what is going on in the different steps. Essentially, it lumps the data into 20-year intervals and creates some sensible looking labels for each period. Then it calculates the average war propensity per period along with 84% confidence intervals using the first measure of war propensity (any new confrontation divided by PRDs). Finally, it gives the results to `ggplot()` for plotting.
+
+```{r}
+#| fig-height: 4
+#| fig-width: 7
+final_dt |>
+  # add numerical labels for each 20 year period
+  mutate(
+    period = round(1:n() / 20) * 20
+  ) |>
+  # add labels that specify the year range per period
+  group_by(period) |>
+  mutate(
+    period_label = paste0(min(year), "-", max(year))
+  ) |>
+  # make sure the labels are treated as an ordered category
+  ungroup() |>
+  mutate(
+    period_label = factor(
+      period,
+      levels = period,
+      labels = period_label
+    )
+  ) |>
+  # get the mean and CIs by period label
+  group_by(period_label) |>
+  summarize(
+    mean_ci_boot(prop1, ci = .84)
+  ) |>
+  # visualize the results
+  ggplot() +
+  aes(
+    x = period_label,
+    y = mean,
+    ymin = lower,
+    ymax = upper
+  ) +
+  geom_pointrange() +
+  scale_y_continuous(
+    labels = scales::percent
+  ) +
+  labs(
+    title = "War propensity peaked in the mid-20th century, but propensity today is about\nas high or higher than during the 1800s",
+    subtitle = "% war propensity by 20 year increments",
+    x = NULL,
+    y = NULL
+  ) +
+  theme(
+    axis.text.x = element_text(angle = 45, hjust = 1)
+  )
+```
+
+The results are consistent with a trend that is a bit more complicated than the one proposed by the decline of war thesis. It looks like the propensity for war increased between the early and mid to late 19th century. It then increased again in the early 20th century (likely due to WW1) before briefly returning to mid to late 19th century levels. There's a spike again in the mid 20th century due to WW2 and then a decline, yet again, to mid to late 19th century levels. One sensible conclusion you could draw from the data is that the most peaceful time in international politics was the early 19th century, but since then (aside from upswings during the world wars), war propensity tends to return to a stable rate of a little less than 0.75%, which was the norm for most of the 19th century and beginning of the 20th, the inter-war period between WW1 and WW2, and the early 21st century. It was slightly elevated during the Cold War, but the trend during this period just looks like a gradual decline back to the norm.
+
+In short, the typical conflict rate over the past two centuries has remained mostly stable, with the exception of the world wars, and the unusually peaceful period in the decades after the Napoleonic Wars. Braumoeller drew about the same conclusion using an older version of the MID dataset.
+
+This of course leaves open the question of how much the results change if you use one of the other measures of war propensity I included in the data. But I need to give you something to investigate on your own, so I'll leave it to you to figure out how fragile the findings are to the choice of measure.
 
 ## Summary
+
+In sum, Braumoeller leveled two methodological critiques on past efforts to test the decline of war thesis: (1) ill-conceived measures and (2) the failure to account for chance.
+
+In this chapter, I covered some of the conceptual hurdles that attend measurement, and showed you how, once you have some sensible measures, you can account for the role of random chance in explaining patterns in the data.
+
+With respect to an appropriate measure of conflict over time, the best approach is to calculate the frequency of new conflicts *per* the number of opportunities for new conflicts to arise. The overall conflict count can go up and down for a variety of reasons, but perhaps most strongly by variation in conflict opportunities. Only once this is accounted for can you make good comparisons in war propensity over time.
+
+With respect to the role of chance, statistical analysis provides the tools you need. The idea is to proceed as if the data you observe (war propensity over time) is the product of both a signal and random background noise. Statistical inference can help quantify how much variation you should expect due to background noise so you can more rigorously judge if a change over time can be easily explained by noise instead of a true signal (or meaningful change).
+
+Adopting a sensible measure of war propensity and applying statistical inference yields results that don't neatly align with the decline of war thesis (at least for one possible measure of war propensity). In short, there's little evidence of a systematic decline in the likelihood of war, at least over the last two centuries.
+
+But the chance of war is only half of the decline of war thesis. Its other major claim is that wars are now less deadly than in the past. Testing this proposition requires wrestling with a host of new conceptual and technical issues, all of which I'll discuss in the next chapter.
