@@ -1,0 +1,1150 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.5.57">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>3&nbsp; Is War Disappearing? – Death, Destruction, and Data</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<link href="./references.html" rel="next">
+<link href="./02_the_data.html" rel="prev">
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+</head>
+
+<body class="nav-sidebar floating">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./03_is_war_disappearing.html"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Is War Disappearing?</span></a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="./">Death, Destruction, and Data</a> 
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Preface</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./01_what_is_war.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">What is War?</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./02_the_data.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">The Data</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./03_is_war_disappearing.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Is War Disappearing?</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./references.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">References</span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#the-decline-of-war-thesis-why-it-matters" id="toc-the-decline-of-war-thesis-why-it-matters" class="nav-link active" data-scroll-target="#the-decline-of-war-thesis-why-it-matters"><span class="header-section-number">3.1</span> The Decline of War Thesis &amp; Why It Matters</a></li>
+  <li><a href="#braumoellers-critique" id="toc-braumoellers-critique" class="nav-link" data-scroll-target="#braumoellers-critique"><span class="header-section-number">3.2</span> Braumoeller’s Critique</a></li>
+  <li><a href="#what-you-count-matters" id="toc-what-you-count-matters" class="nav-link" data-scroll-target="#what-you-count-matters"><span class="header-section-number">3.3</span> What You Count Matters</a>
+  <ul class="collapse">
+  <li><a href="#measuring-incidents" id="toc-measuring-incidents" class="nav-link" data-scroll-target="#measuring-incidents"><span class="header-section-number">3.3.1</span> Measuring Incidents</a></li>
+  <li><a href="#measuring-opportunities" id="toc-measuring-opportunities" class="nav-link" data-scroll-target="#measuring-opportunities"><span class="header-section-number">3.3.2</span> Measuring Opportunities</a></li>
+  <li><a href="#measuring-war-propensity" id="toc-measuring-war-propensity" class="nav-link" data-scroll-target="#measuring-war-propensity"><span class="header-section-number">3.3.3</span> Measuring War Propensity</a></li>
+  <li><a href="#looking-at-the-trend" id="toc-looking-at-the-trend" class="nav-link" data-scroll-target="#looking-at-the-trend"><span class="header-section-number">3.3.4</span> Looking at the Trend</a></li>
+  </ul></li>
+  <li><a href="#accounting-for-random-chance-matters" id="toc-accounting-for-random-chance-matters" class="nav-link" data-scroll-target="#accounting-for-random-chance-matters"><span class="header-section-number">3.4</span> Accounting for Random Chance Matters</a></li>
+  <li><a href="#summary" id="toc-summary" class="nav-link" data-scroll-target="#summary"><span class="header-section-number">3.5</span> Summary</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Is War Disappearing?</span></h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<p><strong>Main ideas</strong>:</p>
+<ul>
+<li><p>The decline of war thesis is the argument that conflict is becoming less common and deadly, and that this trend is decades (if not centuries) old.</p></li>
+<li><p>A well-known criticism of this position was put forth by the political scientist Bear Braumoeller, first in a well-circulated conference paper <span class="citation" data-cites="braumoeller2013war">(<a href="references.html#ref-braumoeller2013war" role="doc-biblioref">Braumoeller 2013a</a>)</span>, and then in a well-received book that fleshed out his criticisms even more <span class="citation" data-cites="braumoeller2019only">(<a href="references.html#ref-braumoeller2019only" role="doc-biblioref">Braumoeller 2019</a>)</span>.</p></li>
+<li><p>Braumoeller raises many concerns with the decline of war thesis, but two key issues for him were: (1) paying attention to what quantities are counted over time and (2) accounting for the role of chance in war and peace.</p></li>
+<li><p>What you count over time concerns not just the numerator (conflict) but the denominator (how you adjust for changes in opportunities for countries to fight).</p></li>
+<li><p>Doing statistical inference matters because changes can occur over time that <em>look</em> like real changes, when in fact they could just as easily be the result of random chance.</p></li>
+</ul>
+<section id="the-decline-of-war-thesis-why-it-matters" class="level2" data-number="3.1">
+<h2 data-number="3.1" class="anchored" data-anchor-id="the-decline-of-war-thesis-why-it-matters"><span class="header-section-number">3.1</span> The Decline of War Thesis &amp; Why It Matters</h2>
+<p>In this section, I plan to introduce you to the <em>decline of war thesis</em>. But before I do, I have a meandering anecdote for you…</p>
+<p>I first learned about the decline of war thesis when I read Bear Braumoeller’s <span class="citation" data-cites="braumoeller2019only">(<a href="references.html#ref-braumoeller2019only" role="doc-biblioref">2019</a>)</span> book, <em>Only the Dead: The Persistence of War in the Modern Age</em>. I was starting my third year as a Ph.D.&nbsp;student, and I learned that Prof.&nbsp;Braumoeller would be visiting my school, the University of Illinois at Urbana-Champaign, to give a talk at the political science department about his book.</p>
+<p>I also learned that I’d been volunteered to pick him up from his hotel to take him to campus. I wanted to be prepared when I met Braumoeller for the first time, so I bought and read his book before he flew in from Columbus, OH where he was a professor at <em>The</em> Ohio State University. I think I read the whole thing, cover to cover, in just three days (including the R code in the book’s appendix for some of the analyses he did).</p>
+<p>I devoured the book this quickly for two reasons, neither of which were a pathological need to appear like a smart graduate student to a well-known and respected scholar (or so I tell myself).</p>
+<p>First, Braumoeller’s previous book, <em>The Great Powers and the International System: Systemic Theory in Empirical Perspective</em> <span class="citation" data-cites="braumoeller2013great">(<a href="references.html#ref-braumoeller2013great" role="doc-biblioref">2013b</a>)</span>, solidified my desire to study international relations for a living. He published it in 2013, and I read it in 2016 while working on my master’s. I had been wondering what would come next once I graduated. Reading Braumoeller’s book made my path very clear: I wanted to get my Ph.D.&nbsp;and do what Braumoeller was doing. I’ve been a fan of his work ever since. So, when I learned that the scholar whose work inspired me to go down the path of getting a Ph.D.&nbsp;to study international relations had just published another book, I couldn’t get my hands on it fast enough.</p>
+<p>Second, with this new book (much like his first) Braumoeller sought to answer a <em>big</em> question in international relations: <em>is war going away?</em> Braumoeller had a reputation for doing incredibly smart and cutting edge quantitative work in international relations. If he had applied this same aptitude to one of the most important issues in the field, I had to know what he found.</p>
+<p>Needless to say, I had really high expectations going into my first meeting with Braumoeller. That meant I also had a lot of nerves. Because of those nerves, I never directly asked him questions about his book while I drove him from his hotel to UIUC’s campus. Also, I thought I’d appear far too creepy expressing how inspiring his work was to me, so I never mentioned it. He asked me some questions about my own research interests, and I think my brain fell out of the back of my head when he did, because I neither sounded eloquent nor coherent as I explained the volatile brew of interconnected research questions percolating in my head.</p>
+<p>I kick myself every time I think back on this experience. I met my hero, and I was too star-struck to make the most of it.</p>
+<p>So, when I learned that I got a job at Denison, and that the suburb I would live in was the same that Braumoeller lived in (I promise this wasn’t on purpose), I thought I could try again. Instead, I got a tough lesson in not letting fear or nerves get in the way of the opportunities life gives you. When I first moved to the area, I learned Braumoeller was overseas on an extended leave doing further research, building on the work he did for <em>Only the Dead</em>. And then I learned some tragic news. In the summer of 2023 he unexpectedly passed away while abroad.</p>
+<p>I was shocked, as was seemingly the whole field of international relations and even those in political science more generally. I think nearly the whole discipline new him in some way. I also felt incredibly sad, because he had a wife and young daughter that he’d be leaving behind.</p>
+<p>I didn’t intend to stumble into some “real-talk” when I sat down to write this chapter, but you never truly know the thoughts working themselves out in your mind until you start writing. Consider this detour a nudge to meditate on the value of courage and of taking advantage of the chances life gives you. This nudge comes from a (<em>still</em>) young man who’s unfortunately already old enough to have accumulated some regrets in life. The experience that fueled this detour (and many others) serve as my own reminders that a little courage will take you a long way.</p>
+<p>As off topic as that story may seem, I think it helps me make a key point about studying war.</p>
+<p>It’s this: studying war with data has an ethical valence to it. Yes, the goal of a peace scientist is to be objective and quantitative about studying war, but because the object of this study is <em>war</em>, a life-and-death matter, it should be taken seriously. Above all, I think it requires some <em>courage</em> (I knew I could link this back to my anecdote in some way). To make claims about war, using data, is to make claims about the “iron dice” that, when rolled, may lead to no bloodshed and a quick resolution, or to thousands or (in rare cases) millions of deaths. You should make sure that you’re serious about the claims you make about war, but you also need to have the courage to make said claims if you think you’re right.</p>
+<p>In the next chapter I’ll talk about how war size can be incredibly volatile and hard to predict, which makes the content of this chapter that deals with the onset of conflict all the more important. If countries are more willing, or less, to roll the iron dice today than in the past, this has existential implications for human lives.</p>
+<p>The moral culpability of peace scientists enters the equation when considering how their findings can affect foreign policy and international politics. By making a claim that conflict is becoming rarer, more frequent, or as common as ever, they are making a policy recommendation whether they intend to or not. If the world is getting more peaceful, why should countries continue to invest in international institutions that help prevent conflict? If the world is getting more violent, shouldn’t major powers double-down on building up their military might, potentially diverting funds from domestic priorities?</p>
+<p>I don’t mean to imply that the arc of international relations pivots on the conclusions drawn from a single data analysis. But the goal of data analysis for many social scientists (including those in the peace science tradition) is to make convincing arguments using data. If enough people in a field are convinced of an idea, it can start to catch the attention of practitioners operating in the policy world. Even very niche ideas can attract the attention of a decision-maker. So, while minuscule, a single analysis is part of the body of knowledge and claims accumulated about a subject, and for that reason, it matters.</p>
+<p>This, in sum, is why the <em>decline of war thesis</em> deserves your attention. It is the argument, founded on a variety of data sources and theoretical propositions, that international conflict is becoming less likely <em>and</em> less deadly. Put another way, it’s the claim that countries are less apt to roll the iron dice today than decades or even a century ago, and that when the iron dice must roll, they are far less likely to land on another world war. You can imagine that an idea like this catching on can have tangle implications if enough people in the policy world think it’s true.</p>
+<p><em>If</em> true, this is great news. But if it’s false, it could be a “self-defeating prophesy” (the opposite of its equally devious twin of the self-fulfilling sort). Therefore, getting the decline of war issue right matters.</p>
+<p><span class="citation" data-cites="braumoeller2019only">Braumoeller (<a href="references.html#ref-braumoeller2019only" role="doc-biblioref">2019</a>)</span> disagreed with the decline of war thesis for a variety of reasons, including its self-defeating implications, but in the next section I want to introduce just two of his data-driven critiques, because these will be the basis for the applied examples that follow. Importantly, his data-driven critiques do not on their own disprove the decline of war thesis; they deal with methodological rigor rather than substantive findings. But, Braumoeller claimed that when he applied appropriate measures and methods, the argument in favor of the decline of war thesis looked much less convincing.</p>
+</section>
+<section id="braumoellers-critique" class="level2" data-number="3.2">
+<h2 data-number="3.2" class="anchored" data-anchor-id="braumoellers-critique"><span class="header-section-number">3.2</span> Braumoeller’s Critique</h2>
+<p>Many researchers fall into the decline of war camp, but Braumoeller directs the brunt of his critique at the Harvard Psychologist Steven Pinker who wrote two important books that made their way into the public discourse on war. The first was titled <em>Better Angels of Our Nature</em> <span class="citation" data-cites="pinker2012better">(<a href="references.html#ref-pinker2012better" role="doc-biblioref">Pinker 2012</a>)</span>, and the second was titled <em>Enlightenment Now</em> <span class="citation" data-cites="pinker2018enlightenment">(<a href="references.html#ref-pinker2018enlightenment" role="doc-biblioref">Pinker 2018</a>)</span>. In the first, Pinker makes a data-driven case that international war is on the decline and has been for centuries. In the second, Pinker builds on this argument and claims that the Enlightenment movement from the 17th and 18th centuries helps explain why war is going away. He makes the additional argument that the development of modern nation-states also played a role in fostering peace due to their “civilizing” effect on societies.</p>
+<p>Braumoeller takes issue with both the data Pinker used, and his theoretical rationales for why war is declining. With respect to the role of the nation-state in promoting peace, Braumoeller notes that the historical record is a mixed bag. On the one hand, when smaller polities organize themselves into larger states, there’s more internal peace. On the other hand, states can mobilize for war on a scale that small polities never could. States also have the capacity to commit mass atrocities (think of the Holocaust, or Stalinist USSR).</p>
+<p>Braumoeller similarly argues that the Enlightenment is a mixed bag. Some ideas, like valuing reason and respect for rights, are good, but some Enlightenment ideas have borne some rotten fruit. Karl Marx was just as much a product of the Enlightenment as Immanuel Kant, and many atrocities were committed in the name of Marx’s ideas, especially in the 20th century. But even seemingly less controversial ideas, like respect for rights, can become a basis for war. The Responsibility to Protect (R2P) was a policy supported by the United Nations (driven in part in response to tragedies like the Rwandan Genocide). Endorsed in 2005, it upholds the idea that if the government of a country is committing human rights violations or mass murder, other countries have a responsibility to intervene, <em>which</em> (counterintuitively) <em>can include using military force</em>.</p>
+<p>But these theoretical complaints about the decline of war thesis aren’t the focus of this chapter. Independent of these issues, Braumoeller raises two important methodological concerns about the analysis used to support the decline of war thesis.</p>
+<p>The first is that many prior analyses (including Pinker’s) measured conflict <em>frequency</em> over time, when in fact they should have measured the conflict <em>rate</em>. Frequencies are just raw counts, while rates are counts <em>per</em> some other quantity of interest. For example, GDP <em>per</em> capita is GDP divided by a country’s population. For Braumoeller, only counting conflicts over time misses half of the equation. As I’ll discuss more in the next section, Braumoeller argues that you need to divide conflict counts by the number of possible chances countries have to fight each other, which doesn’t remain constant over time.</p>
+<p>The second is that many prior analyses (again, including Pinker’s) don’t rely heavily, or at all, on statistical inference. Researchers use statistics to quantify the role of random chance in explaining patterns in data. In any variable that goes up and down over time, some of the hills and valleys might indicate a truly new trend in said variable. They could also just be the product of perfectly natural random fluctuations. If you don’t account for the role of chance, you might draw overly optimistic (or pessimistic) conclusions from data. I’ll discuss this more in the section after the one below.</p>
+</section>
+<section id="what-you-count-matters" class="level2" data-number="3.3">
+<h2 data-number="3.3" class="anchored" data-anchor-id="what-you-count-matters"><span class="header-section-number">3.3</span> What You Count Matters</h2>
+<p>In the last data analysis example I showed you in the previous chapter, I produced a monthly count of the number of militarized interstate events (MIEs) over time. While this plot provides some interesting fodder for conversation, it doesn’t pass Braumoeller’s test for a good measure of conflict occurrence. It only shows the frequency of conflict events; not the rate. Further, Braumoeller would probably take issue with counting all the events in the data.</p>
+<p>To measure conflict over time to test the decline of war thesis, you need a measure that accurately encodes two important quantities: (1) how often countries are willing to “roll the iron dice,” and (2) how often countries have a realistic chance of reaching each other to fight. If you have both quantities, you can then calculate the conflict rate.</p>
+<p>It’s probably a good idea to express this more formally, which (sorry) means I need to throw a little math your way (it’s sums and fractions, so don’t sweat it too much). Let me use <span class="math inline">\(P\)</span> to stand for the conflict rate, or what I could also call the <em>propensity</em> for war. Further, I’ll use <span class="math inline">\(I\)</span> to stand for conflict <em>initiations</em>, and <span class="math inline">\(O\)</span> to stand for <em>opportunities</em>.</p>
+<p>To calculate <span class="math inline">\(P\)</span> for a given point in time <span class="math inline">\(t\)</span>, I need to measure <span class="math inline">\(I\)</span> and <span class="math inline">\(O\)</span> at time <span class="math inline">\(t\)</span>. Theoretically, both are simple to get. <span class="math inline">\(I_t\)</span> is the sum of all conflict initiations at <span class="math inline">\(t\)</span>, and <span class="math inline">\(O_t\)</span> is the sum of all conflict opportunities at <span class="math inline">\(t\)</span>:</p>
+<p><span class="math display">\[
+I_t = \sum_{i = 1}^N I_{it}, \quad O_t = \sum_{i = 1}^N O_{it}
+\]</span></p>
+<p>In the above, <span class="math inline">\(I_{it}\)</span> is an indicator that is 1 if a country decides to roll the iron dice against another; 0 otherwise. <span class="math inline">\(O_{it}\)</span> is between 0 and 1, and it’s value represents whether a country can reach another to initiate a fight. The <span class="math inline">\(i\)</span> subscript represents a unique <em>pair</em> of countries. In the field of international relations, we call this a <em>dyad</em>.</p>
+<p>Once you have <span class="math inline">\(I_t\)</span> and <span class="math inline">\(O_t\)</span>, propensity for war is as simple as dividing the former by the latter:</p>
+<p><span class="math display">\[
+P_t = \frac{I_t}{O_t}
+\]</span></p>
+<p>That math looks temptingly easy, making it dangerous in the hands of someone who doesn’t yet know what they’re doing. The real challenge is that you, the researcher, need to make some judgment calls about how to get <span class="math inline">\(I_t\)</span> and <span class="math inline">\(O_t\)</span>. Should you count every instance of conflict or only the first instance between a pair of countries? Should threats or shows of force count, or only at minimum when a country decides to use actual military force? How should you measure the opportunity to fight? Maybe by whether countries border each other? But don’t some powerful countries have the ability to send their armed forces anywhere in the world? How should you handle that?</p>
+<p>Let me give you some possible answers these questions below.</p>
+<section id="measuring-incidents" class="level3" data-number="3.3.1">
+<h3 data-number="3.3.1" class="anchored" data-anchor-id="measuring-incidents"><span class="header-section-number">3.3.1</span> Measuring Incidents</h3>
+<p>First of all, in his own analysis, which includes his conference paper <span class="citation" data-cites="braumoeller2013war">(<a href="references.html#ref-braumoeller2013war" role="doc-biblioref">2013a</a>)</span> and book <span class="citation" data-cites="braumoeller2019only">(<a href="references.html#ref-braumoeller2019only" role="doc-biblioref">2019</a>)</span>, Braumoeller used the Militarized Interstate Disputes (MID) dataset, which at the time his book was published was in its fourth major iteration. Now, I just spent part of the last chapter talking about issues with the MID dataset, which the MIE (Militarized Interstate Events) dataset that we’ll use in this book claims to fix. At the time he did his analysis, though, the MID data was the best available. <span class="citation" data-cites="pinker2012better">Pinker (<a href="references.html#ref-pinker2012better" role="doc-biblioref">2012</a>)</span> used a variety of other datasets in his own analysis to give him longer historical coverage, but many of these have not seen widespread use in the peace science community due to concerns about data quality. Compared to everything available, the MID dataset was best-in-class when Braumoeller used it.</p>
+<p>Braumoeller didn’t just use the MID data because of its superior quality over other options; he also believed that the <em>concept</em> of the MID did the best job of capturing the willingness of countries to roll the iron dice. More specifically, he thought the onset or <em>initiation</em> of a MID should be what counts. Anything beyond the initiation of a MID he treated as difficult to predict <em>ex ante</em>. Recall that a MID reflects any threat to use force, display of force, or use of force short of war by one country against another. To him this seemed as good a way as any to empirically verify the willingness to risk war. If you recall the discussion in Chapter 1, the definition of a MID comes close to approximating Carl von Clausewitz’s definition of “real” war (that is, a continuation of politics by other means).</p>
+<p>However, there still is some debate over which MID-like cases should be counted. On the one hand, it makes sense to count everything, including threats and displays of force short of actual violence, because acting threatening is a form of aggression meant to <em>communicate</em> resolve and power. And, remember, that use of military force to communicate information about strength and the will to fight is an important part of the Clausewitzian way of understanding war. Such threats can also backfire.</p>
+<p>On the other hand, it makes sense to ignore any event short of use of force because use of force is the only action that empirically demonstrates a willingness to fight. Threats and displays of force might just be “cheap talk,” but using force reveals that a country will accept bloodshed to achieve its goals. Uses of force also risk reciprocation from the target far more than a threat. If you want to understand the risk of deadly war, you should focus on uses of force where the chance for escalation seems more likely.</p>
+<p>Both of these views have merit, which is why Braumoeller (consistent with the practice of many other peace scientists) used the more liberal approach of counting everything, and the more conservative one of ignoring threats and shows of force. The idea is to use both, since each has its merits, and see if it makes a big difference in the results. In many cases, it turns out the this choice actually doesn’t matter.</p>
+<p>So how can you measure the yearly frequency of conflict incidence using the MIE dataset that I introduced in the last chapter? In short, it’s going to require some work to whittle out irrelevant events.</p>
+<p>Let me show you a sensible way to proceed. First, I need to get the data, which I do in the below code. Note that the code is a bit different than before. I promised you that I’d provide some tools that make getting and cleaning the data easier, and now I’m delivering on that promise. The below code, like what I showed you before, opens up the packages I need in my R session (<code>{tidyverse}</code> and <code>{socsci}</code>), but then I use a function called <code>source()</code> to which I give a link for a .R file on my GitHub. This is an R “script” file (essentially one giant code block saved as a separate file). This script contains code that creates a function called <code>get_mie_data()</code> that performs a straightforward routine when I use it: it reads in the MIE .csv file from my GitHub and then implements the recodes I showed you in the last chapter before returning the data. This is a major time-saver and makes my code easier to read. After running the <code>source()</code> function on my R script I now can use the function called <code>get_mie_data()</code> and then save the output as an object (in this case, one called <code>dt</code>).</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="do">## set up</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning: package 'tidyverse' was built under R version 4.2.3</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning: package 'ggplot2' was built under R version 4.2.3</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning: package 'tibble' was built under R version 4.2.3</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning: package 'tidyr' was built under R version 4.2.3</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning: package 'readr' was built under R version 4.2.3</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning: package 'purrr' was built under R version 4.2.3</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning: package 'dplyr' was built under R version 4.2.3</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning: package 'stringr' was built under R version 4.2.3</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning: package 'forcats' was built under R version 4.2.3</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning: package 'lubridate' was built under R version 4.2.3</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──
+✔ dplyr     1.1.2     ✔ readr     2.1.4
+✔ forcats   1.0.0     ✔ stringr   1.5.0
+✔ ggplot2   3.5.0     ✔ tibble    3.2.1
+✔ lubridate 1.9.3     ✔ tidyr     1.3.0
+✔ purrr     1.0.2     
+── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
+✖ dplyr::filter() masks stats::filter()
+✖ dplyr::lag()    masks stats::lag()
+ℹ Use the conflicted package (&lt;http://conflicted.r-lib.org/&gt;) to force all conflicts to become errors</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(socsci)</span>
+<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a><span class="fu">source</span>(<span class="st">"https://raw.githubusercontent.com/milesdwilliams15/death-destruction-data/refs/heads/main/helpers/get_mie_data.R"</span>)</span>
+<span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-4"><a href="#cb13-4" aria-hidden="true" tabindex="-1"></a><span class="do">## get the cleaned up data</span></span>
+<span id="cb13-5"><a href="#cb13-5" aria-hidden="true" tabindex="-1"></a><span class="fu">get_mie_data</span>() <span class="ot">-&gt;</span> dt</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Rows: 28011 Columns: 18
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: ","
+chr  (1): version
+dbl (17): micnum, eventnum, ccode1, ccode2, stmon, stday, styear, endmon, en...
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.</code></pre>
+</div>
+</div>
+<p>Now that I have the data, I can start working on a measure of conflict incidents over time. While the data has a <code>date</code> variable that documents the unique month and year a conflict starts, most conflict research aggregates data to the year, so I’ll do the same. This approach has some practical advantages, like the fact that most variables people want to use to study conflict are only at the year level, and the fact that with nearly 200 years worth of data, monthly variation isn’t quite as important as yearly variation.</p>
+<p>But what, exactly, should I count per year? To capture what Braumoeller was after, I need to count up two quantities: (1) the total number of unique conflicts documented in the data—not <em>events</em>—and (2) the total number of unique conflicts that at minimum rise to the level of a use of force. Remember that the MIE dataset documents each an every event associated with a conflict (or <em>confrontation</em>, to use their terminology). This makes for a really rich dataset, but for the purpose of simply measuring war propensity, I need to cut some fat.</p>
+<p>The below code lets me extract the relevant quantities from the data. I start by grouping the data by <code>micnum</code> (the unique confrontation, or MIC, identifier). I then get the first year for which the MIC appeared, and the maximum hostility level observed. Next, I have to group the data by year to get a count of the unique number of MICs that occurred per year, and the sum of MICs that at least rose to the level of use of force. Finally, I use the <code>complete()</code> function to fill in gaps in the data (years that didn’t witness any MICs) with zero values. I then save the output as a new object called <code>incident_dt</code>. I annotated the code so you can see where each step takes place.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb15"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a>dt <span class="sc">|&gt;</span></span>
+<span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a>  <span class="co"># for each MIC get the start year and max hostlev</span></span>
+<span id="cb15-3"><a href="#cb15-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(micnum) <span class="sc">|&gt;</span></span>
+<span id="cb15-4"><a href="#cb15-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarize</span>(</span>
+<span id="cb15-5"><a href="#cb15-5" aria-hidden="true" tabindex="-1"></a>    <span class="at">year =</span> <span class="fu">min</span>(year),</span>
+<span id="cb15-6"><a href="#cb15-6" aria-hidden="true" tabindex="-1"></a>    <span class="at">hostlev =</span> <span class="fu">max</span>(hostlev)</span>
+<span id="cb15-7"><a href="#cb15-7" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">|&gt;</span></span>
+<span id="cb15-8"><a href="#cb15-8" aria-hidden="true" tabindex="-1"></a>  <span class="co"># for each year get total MICs and only MICs with &gt;= use of force</span></span>
+<span id="cb15-9"><a href="#cb15-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(year) <span class="sc">|&gt;</span></span>
+<span id="cb15-10"><a href="#cb15-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarize</span>(</span>
+<span id="cb15-11"><a href="#cb15-11" aria-hidden="true" tabindex="-1"></a>    <span class="at">incidents_any =</span> <span class="fu">n</span>(),</span>
+<span id="cb15-12"><a href="#cb15-12" aria-hidden="true" tabindex="-1"></a>    <span class="at">incidents_force =</span> <span class="fu">sum</span>(hostlev <span class="sc">&gt;=</span> <span class="st">"Use of force"</span>)</span>
+<span id="cb15-13"><a href="#cb15-13" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">|&gt;</span></span>
+<span id="cb15-14"><a href="#cb15-14" aria-hidden="true" tabindex="-1"></a>  <span class="co"># complete the series by filling in years without MICs with zeros</span></span>
+<span id="cb15-15"><a href="#cb15-15" aria-hidden="true" tabindex="-1"></a>  <span class="fu">complete</span>(</span>
+<span id="cb15-16"><a href="#cb15-16" aria-hidden="true" tabindex="-1"></a>    <span class="at">year =</span> <span class="fu">full_seq</span>(year, <span class="dv">1</span>),</span>
+<span id="cb15-17"><a href="#cb15-17" aria-hidden="true" tabindex="-1"></a>    <span class="at">fill =</span> <span class="fu">list</span>(<span class="at">incidents_any =</span> <span class="dv">0</span>, <span class="at">incidents_force =</span> <span class="dv">0</span>)</span>
+<span id="cb15-18"><a href="#cb15-18" aria-hidden="true" tabindex="-1"></a>  ) <span class="ot">-&gt;</span> incident_dt <span class="co"># save as incident_dt</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>If you print out the first 10 rows of the data, you can see that I now have a simple dataset. Each row is a year from 1816 to 2014, and for each year I have two counts of conflict incidents—one that counts every conflict regardless of its hostility level, and another that counts only conflicts that at minimum involved use of force. In short, I have everything I need for the numerator in the equation for war <em>propensity</em>, but that still leaves the other half of the equation.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb16"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="fu">slice_head</span>(incident_dt, <span class="at">n =</span> <span class="dv">10</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 10 × 3
+    year incidents_any incidents_force
+   &lt;dbl&gt;         &lt;int&gt;           &lt;int&gt;
+ 1  1816             1               1
+ 2  1817             0               0
+ 3  1818             1               1
+ 4  1819             0               0
+ 5  1820             0               0
+ 6  1821             4               2
+ 7  1822             1               1
+ 8  1823             0               0
+ 9  1824             0               0
+10  1825             0               0</code></pre>
+</div>
+</div>
+</section>
+<section id="measuring-opportunities" class="level3" data-number="3.3.2">
+<h3 data-number="3.3.2" class="anchored" data-anchor-id="measuring-opportunities"><span class="header-section-number">3.3.2</span> Measuring Opportunities</h3>
+<p>To accurately measure war propensity, a simple count of yearly conflict won’t do. I need to know how common new conflicts are relative to the opportunities that exist for new conflicts to arise.</p>
+<p>The problem (you knew there’d have to be a problem, right?) is that there isn’t one universally accepted definition of what counts as an opportunity. However, the basket of options is, thankfully, limited.</p>
+<p>The first option is to naively assume that all countries in the world can reach each other with equal ease, no matter geography or ability. If you want to make this assumption, your measure of opportunity is straightforward: just count up the total number of unique country pairs (<em>dyads</em>) that exist in the world at a given point in time. Put another way, assume that for a single country, like the United States, any other country in the world is fair game. This means that the U.S. has as many opportunities to go to war as there are countries in the world. Multiply that total by a count of all countries in the world and there’s your measure of opportunity.</p>
+<p>You can probably see that this approach has some conceptual problems, however. For argument’s sake, assume that the U.S. really can fight any other country it wants. Can you say the same of Zimbabwe? Or Jamaica? What about Switzerland? It seems silly to assume that any other country in the world is fair game for every country in the world.</p>
+<p>This takes me to the second option, which is on the opposite end of the spectrum. One idea, which <span class="citation" data-cites="braumoeller2013war">Braumoeller (<a href="references.html#ref-braumoeller2013war" role="doc-biblioref">2013a</a>)</span> explored in his conference paper, is to only count country pairs or dyads that are <em>contiguous</em>. This term just means that countries border each other (though some define it more broadly to include countries that are separated by no more than 400 miles of water). This definition of an opportunity to fight rules out the vast majority of other countries in the world for each individual country.</p>
+<p>While this approach seems sensible for some cases, it definitely doesn’t work in every case. For example, this approach would say that the U.S. has only three opportunities for war: Mexico, Canada, and Russia (Alaska is only separated from it by 50 miles of water). It should go without saying the U.S. has many more opportunities for war, as recent events attest.</p>
+<p>There is, thankfully, a middle ground between counting everything and only counting contiguous country pairs. The solution that most peace scientists use today involves a compromise: for some countries, only contiguity applies, while for others, any other country is on the table. The countries for whom every other country in the world is a possible target are called “major powers.” These are countries that, in theory, have sufficiently powerful armed forces and resources to project their military might anywhere in the world. At the moment, this list includes countries the United States, China, and Russia. This measure is known as <em>politically relevant dyads</em> (PRDs).</p>
+<p>Admittedly, this solution also has some issues because most sensible people would agree that the U.S. has very different capabilities than Russia. Nonetheless, it’s probably better than the alternatives. However, there is another option, which, funnily enough, also comes from Braumoeller along with his colleague Austin Carson <span class="citation" data-cites="braumoeller2011political">(<a href="references.html#ref-braumoeller2011political" role="doc-biblioref">2011</a>)</span>.</p>
+<p>Their approach bases opportunities on quantities generated from a sophisticated statistical model that uses major power status, contiguity, and the distance between countries to quantify the probability that one country could fight another (assuming it wanted to). The difference with this measure compared with the alternatives is that opportunities are probabilistic rather than deterministic. It also means that even geography can be a limiting factor for major powers. While the U.S. can certainly send its forces anywhere it wants, it is logistically harder to do so in Iran than in Venezuela. To keep things concise, I’ll just call this measure of opportunities <em>Braumoeller-Carson dyads</em> (or BCDs).</p>
+<p>There are issues with this measure, too. For instance, it still treats major powers equally, and it assumes that distance means the same thing to the U.S. that it does to Bolivia. However, it’s probably a stronger option than the other three, but given the prevalent use of the the previous one (PRDs), it’s wise to use both it and the Braumoeller-Carson measure to see if using one or the other makes a big difference.</p>
+<p>This hard to do without data, of course, so with some measures of opportunities identified (PRDs and BCDs) the next step is to actually get some data. Thankfully, because of the hard work of the peace science community, the relevant data and tools to access it only require writing a few lines of R code. I also did some leg work by creating another R script file that gives you a pre-canned routine for generating the data based on these other tools. All you need to do is run the <code>source()</code> function on the url address for the relevant script saved on my GitHub, and then you can use the function <code>get_opportunity_data()</code> to access yearly counts of conflict opportunities.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb18"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a><span class="fu">source</span>(<span class="st">"https://raw.githubusercontent.com/milesdwilliams15/death-destruction-data/refs/heads/main/helpers/peacesceincer_extras.R"</span>)</span>
+<span id="cb18-2"><a href="#cb18-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-3"><a href="#cb18-3" aria-hidden="true" tabindex="-1"></a><span class="fu">get_opportunity_data</span>() <span class="ot">-&gt;</span> opp_dt</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Joining with `by = join_by(ccode1, ccode2, year)`</code></pre>
+</div>
+</div>
+<p>If you take a peek at the object <code>opp_dt</code> created by the above code, you can see what’s in the data. For each year, it counts up opportunities using all four of the methods outlined above (I wanted to be comprehensive, even though I don’t recommend using all four). By looking across the rows you can see that these methods give very different values. As you’d expect, <code>dyads</code> (which counts every possible pairing per country) is the most liberal count, while <code>contdyads</code> (which only counts contiguous pairings per country) is the most conservative. Both the PRD and BCD measures are in the middle, with the latter a bit more conservative, which isn’t surprising since BCD is probabilistic rather than deterministic, and it also accounts for the distance between countries. For this reason, the BCD sum per year isn’t a whole number. Unlike the other measures, a pair of countries isn’t a 0 or 1, but something in between.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb20"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a><span class="fu">slice_head</span>(opp_dt, <span class="at">n =</span> <span class="dv">10</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 10 × 5
+    year dyads contdyads   prd   bcd
+   &lt;dbl&gt; &lt;int&gt;     &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt;
+ 1  1816   506       120   248  199.
+ 2  1817   506       120   248  199.
+ 3  1818   506       120   248  199.
+ 4  1819   506       120   248  199.
+ 5  1820   506       120   248  199.
+ 6  1821   506       120   248  199.
+ 7  1822   552       120   258  205.
+ 8  1823   552       120   258  205.
+ 9  1824   552       120   258  205.
+10  1825   600       126   272  215.</code></pre>
+</div>
+</div>
+</section>
+<section id="measuring-war-propensity" class="level3" data-number="3.3.3">
+<h3 data-number="3.3.3" class="anchored" data-anchor-id="measuring-war-propensity"><span class="header-section-number">3.3.3</span> Measuring War Propensity</h3>
+<p>Now that I’ve made a dataset of new conflict incidents per year, and another of conflict opportunities per year, I need to combine them together so that I can construct a measure of war propensity. This step is easy, because propensity is just the sum of incidents divided by the sum of opportunities.</p>
+<p>I do, however, have alternative measures for these different concepts. I have two ways of quantifying incidents, and another two sensible ways of quantifying opportunities. That gives me four alternative measures of war propensity.</p>
+<p>To create all four, I first need to combine the incidents and opportunity datasets together, which I can do easily with tools from the <code>{tidyverse}</code>. The below code uses a function called <code>full_join()</code> that joins the datasets together based on matches in the <code>year</code> column in each:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb22"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a><span class="fu">full_join</span>(</span>
+<span id="cb22-2"><a href="#cb22-2" aria-hidden="true" tabindex="-1"></a>  incident_dt,</span>
+<span id="cb22-3"><a href="#cb22-3" aria-hidden="true" tabindex="-1"></a>  opp_dt,</span>
+<span id="cb22-4"><a href="#cb22-4" aria-hidden="true" tabindex="-1"></a>  <span class="at">by =</span> <span class="st">"year"</span></span>
+<span id="cb22-5"><a href="#cb22-5" aria-hidden="true" tabindex="-1"></a>) <span class="ot">-&gt;</span> final_dt</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>I saved the combined data as an object called <code>final_dt</code>. If I print out the first 10 rows, I can confirm that the datasets merged together as intended:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb23"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a><span class="fu">slice_head</span>(final_dt, <span class="at">n =</span> <span class="dv">10</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 10 × 7
+    year incidents_any incidents_force dyads contdyads   prd   bcd
+   &lt;dbl&gt;         &lt;int&gt;           &lt;int&gt; &lt;int&gt;     &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt;
+ 1  1816             1               1   506       120   248  199.
+ 2  1817             0               0   506       120   248  199.
+ 3  1818             1               1   506       120   248  199.
+ 4  1819             0               0   506       120   248  199.
+ 5  1820             0               0   506       120   248  199.
+ 6  1821             4               2   506       120   248  199.
+ 7  1822             1               1   552       120   258  205.
+ 8  1823             0               0   552       120   258  205.
+ 9  1824             0               0   552       120   258  205.
+10  1825             0               0   600       126   272  215.</code></pre>
+</div>
+</div>
+<p>The next step is to modify the data by including columns for the four possible measures of war propensity. You can do this with the <code>mutate()</code> function, as I do below. This code will add four new columns to the dataset called <code>prop1</code> up to <code>prop4</code> that are made by taking one of the incidents measures and dividing by one of the opportunity measures. Now, you have all the data you need.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb25"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb25-1"><a href="#cb25-1" aria-hidden="true" tabindex="-1"></a>final_dt <span class="sc">|&gt;</span></span>
+<span id="cb25-2"><a href="#cb25-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(</span>
+<span id="cb25-3"><a href="#cb25-3" aria-hidden="true" tabindex="-1"></a>    <span class="at">prop1 =</span> incidents_any <span class="sc">/</span> prd,</span>
+<span id="cb25-4"><a href="#cb25-4" aria-hidden="true" tabindex="-1"></a>    <span class="at">prop2 =</span> incidents_force <span class="sc">/</span> prd,</span>
+<span id="cb25-5"><a href="#cb25-5" aria-hidden="true" tabindex="-1"></a>    <span class="at">prop3 =</span> incidents_any <span class="sc">/</span> bcd,</span>
+<span id="cb25-6"><a href="#cb25-6" aria-hidden="true" tabindex="-1"></a>    <span class="at">prop4 =</span> incidents_force <span class="sc">/</span> bcd</span>
+<span id="cb25-7"><a href="#cb25-7" aria-hidden="true" tabindex="-1"></a>  ) <span class="ot">-&gt;</span> final_dt</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+<section id="looking-at-the-trend" class="level3" data-number="3.3.4">
+<h3 data-number="3.3.4" class="anchored" data-anchor-id="looking-at-the-trend"><span class="header-section-number">3.3.4</span> Looking at the Trend</h3>
+<p>At long last, we have some data to measure variation in war propensity over time. So let’s take a look at the results.</p>
+<p>The below code will create a line plot showing, per year from 1816 to 2014, war propensity based on each of the four measures created in the previous section. As you can see, the measures aren’t identical, but they do move in parallel fairly well, which tells me the choice of measure may not have too much of an impact on the conclusions you draw about conflict over time.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb26"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb26-1"><a href="#cb26-1" aria-hidden="true" tabindex="-1"></a>final_dt <span class="sc">|&gt;</span></span>
+<span id="cb26-2"><a href="#cb26-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">pivot_longer</span>(prop1<span class="sc">:</span>prop4) <span class="sc">|&gt;</span></span>
+<span id="cb26-3"><a href="#cb26-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>() <span class="sc">+</span></span>
+<span id="cb26-4"><a href="#cb26-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">aes</span>(<span class="at">x =</span> year, <span class="at">y =</span> value, <span class="at">color =</span> name) <span class="sc">+</span></span>
+<span id="cb26-5"><a href="#cb26-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_line</span>(<span class="at">linewidth =</span> .<span class="dv">75</span>) <span class="sc">+</span></span>
+<span id="cb26-6"><a href="#cb26-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_color_manual</span>(</span>
+<span id="cb26-7"><a href="#cb26-7" aria-hidden="true" tabindex="-1"></a>    <span class="at">values =</span> <span class="fu">c</span>(<span class="st">"navy"</span>, <span class="st">"steelblue"</span>, <span class="st">"green4"</span>, <span class="st">"red3"</span>),</span>
+<span id="cb26-8"><a href="#cb26-8" aria-hidden="true" tabindex="-1"></a>    <span class="at">labels =</span> <span class="fu">c</span>(<span class="st">"Any per PRD"</span>, <span class="st">"Force per PRD"</span>, <span class="st">"Any per BCD"</span>, <span class="st">"Force per BCD"</span>)</span>
+<span id="cb26-9"><a href="#cb26-9" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">+</span></span>
+<span id="cb26-10"><a href="#cb26-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_y_continuous</span>(</span>
+<span id="cb26-11"><a href="#cb26-11" aria-hidden="true" tabindex="-1"></a>    <span class="at">labels =</span> scales<span class="sc">::</span>percent</span>
+<span id="cb26-12"><a href="#cb26-12" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">+</span></span>
+<span id="cb26-13"><a href="#cb26-13" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(</span>
+<span id="cb26-14"><a href="#cb26-14" aria-hidden="true" tabindex="-1"></a>    <span class="at">title =</span> <span class="st">"All four measures of war propensity move in similar directions"</span>,</span>
+<span id="cb26-15"><a href="#cb26-15" aria-hidden="true" tabindex="-1"></a>    <span class="at">subtitle =</span> <span class="st">"% war propensity, 1816-2014"</span>,</span>
+<span id="cb26-16"><a href="#cb26-16" aria-hidden="true" tabindex="-1"></a>    <span class="at">x =</span> <span class="cn">NULL</span>,</span>
+<span id="cb26-17"><a href="#cb26-17" aria-hidden="true" tabindex="-1"></a>    <span class="at">y =</span> <span class="cn">NULL</span>,</span>
+<span id="cb26-18"><a href="#cb26-18" aria-hidden="true" tabindex="-1"></a>    <span class="at">color =</span> <span class="st">"Measure"</span></span>
+<span id="cb26-19"><a href="#cb26-19" aria-hidden="true" tabindex="-1"></a>  )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="03_is_war_disappearing_files/figure-html/unnamed-chunk-9-1.png" class="img-fluid figure-img" width="576"></p>
+</figure>
+</div>
+</div>
+</div>
+<p>This just leaves us with with one final question: does the data support the decline of war thesis? Stated differently: are conflicts becoming less common over time?</p>
+<p>One way to answer this question is to simply look at the results in the above figure. This is what folks like Steven Pinker did, so why not do the same? However, as I’ll discuss in the next section, looking at the data is too subjective an approach. It’s much better to rely on statistical inference to help separate random noise from true signals in the data.</p>
+</section>
+</section>
+<section id="accounting-for-random-chance-matters" class="level2" data-number="3.4">
+<h2 data-number="3.4" class="anchored" data-anchor-id="accounting-for-random-chance-matters"><span class="header-section-number">3.4</span> Accounting for Random Chance Matters</h2>
+<p>Getting the right data and the right way to measure conflict over time is essential for testing the decline of war thesis, but for Braumoeller, this doesn’t go far enough. His other methodological critique of past work on the decline of war is the failure to account for the role of chance in war and peace. Statistical analysis can help solve this problem.</p>
+<p>There are many ways of defining statistics, but I think the most helpful is to think of it as a set of tools for reasoning about, and quantifying, the role of random chance in generating data.</p>
+<p>Imagine that when you measure something in the world, the final number that you record is the product of two things: (1) a signal and (2) some background noise. Statistics provides a way to quantify on average how much the recorded estimate might be expected to vary from one case to the next due to background noise.</p>
+<p>Beyond quantifying noise, when doing statistical analysis, researchers will apply certain thresholds of random variation to judge whether background noise can be rejected as the best explanation for a change or difference observed in data. These thresholds are called the <em>level of the test</em>, and they are pivotal to the practice of <em>hypothesis testing</em>. The idea is simple:</p>
+<ol type="1">
+<li>Start from the assumption that differences or changes you observe in data are the result of background noise.</li>
+<li>Estimate a quantity, or quantities, of interest (a difference, a change, maybe multiple estimates).</li>
+<li>Caculate how much you expect the quantity of interest to vary due to random noise.</li>
+<li>Reject the hypothesis that background noise explains the estimates you observe if a difference is bigger than a pre-specified threshold of random variation.</li>
+</ol>
+<p>If you’ve never taken a statistics course before, don’t worry. R will do all the math for you. If you can at least wrap your head around the point of doing statistical analysis, that will take you a long way.</p>
+<p>Let me help you out by showing you a quick example with the conflict dataset I put together in the last section (<code>final_dt</code>). Say I wanted to test whether the average conflict rate from 1820 to 1849 is statistically the same as the average conflict rate from 1850 to 1879. I would need to first calculate the observed average conflict rate in each of those periods, then I would need to use statistical tools to calculate intervals around those averages that capture how much variation I would see in the estimated average due to background noise. I can set the level of these intervals based on how high I want the threshold to be for ruling out background noise as the best explanation for any differences I observe between periods.</p>
+<p>The below code shows how I might go about doing this using the first war propensity measure (all new confrontations per PRDs). As I told you, I’ll provide a lot of tools to streamline the process of doing analysis, and this example is no exception. It starts by reading in a script file that creates a function called <code>boot_mean_ci()</code>, which does two things. First it calculates a mean for some numerical variable, then it computes intervals for that mean that reflect how much it might vary as a result of background noise. The method it uses to do this is called <a href="https://www.datacamp.com/tutorial/bootstrapping">bootstrapping</a>, which is a computational method for simulating the distribution of some estimate as a result of random noise. It then uses this distribution to calculate upper and lower bounds for <em>confidence intervals</em>. By using the <code>ci =</code> option I can control how wide I want these intervals to be. In this case, I set them to .84 (on a scale from 0 to 1) which means it will return 84% confidence intervals. Intervals of this size are the most common level chosen for checking if two quantities are different from each other based on whether the intervals for the quantities overlap. (There’s another interval that you might be more familiar with, the 95% confidence interval, that will be relevant in the second part of this book).</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb27"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb27-1"><a href="#cb27-1" aria-hidden="true" tabindex="-1"></a><span class="fu">source</span>(<span class="st">"https://raw.githubusercontent.com/milesdwilliams15/death-destruction-data/refs/heads/main/helpers/other_helpers.R"</span>)</span>
+<span id="cb27-2"><a href="#cb27-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-3"><a href="#cb27-3" aria-hidden="true" tabindex="-1"></a>final_dt <span class="sc">|&gt;</span></span>
+<span id="cb27-4"><a href="#cb27-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(year <span class="sc">%in%</span> <span class="dv">1820</span><span class="sc">:</span><span class="dv">1879</span>) <span class="sc">|&gt;</span></span>
+<span id="cb27-5"><a href="#cb27-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(year <span class="sc">&lt;</span> <span class="dv">1850</span>) <span class="sc">|&gt;</span></span>
+<span id="cb27-6"><a href="#cb27-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarize</span>(</span>
+<span id="cb27-7"><a href="#cb27-7" aria-hidden="true" tabindex="-1"></a>    <span class="fu">mean_ci_boot</span>(prop1, <span class="at">ci =</span> .<span class="dv">84</span>)</span>
+<span id="cb27-8"><a href="#cb27-8" aria-hidden="true" tabindex="-1"></a>  )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 2 × 4
+  `year &lt; 1850`    mean   lower   upper
+  &lt;lgl&gt;           &lt;dbl&gt;   &lt;dbl&gt;   &lt;dbl&gt;
+1 FALSE         0.00715 0.00626 0.00799
+2 TRUE          0.00466 0.00364 0.00573</code></pre>
+</div>
+</div>
+<p>If you look at the results, it seems that the average conflict rate from 1820 to 1849 was <em>lower</em> than the rate from 1850 to 1979, and that this difference is <em>statistically significant</em>. You can tell because the upper bound for the confidence interval for the pre-1850 average is less than the lower bound of the post-1950 average.</p>
+<p>This is much easier to see by getting R to produce a figure based on the results, which the below code does:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb29"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb29-1"><a href="#cb29-1" aria-hidden="true" tabindex="-1"></a>final_dt <span class="sc">|&gt;</span></span>
+<span id="cb29-2"><a href="#cb29-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(year <span class="sc">%in%</span> <span class="dv">1820</span><span class="sc">:</span><span class="dv">1879</span>) <span class="sc">|&gt;</span></span>
+<span id="cb29-3"><a href="#cb29-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(year <span class="sc">&lt;</span> <span class="dv">1850</span>) <span class="sc">|&gt;</span></span>
+<span id="cb29-4"><a href="#cb29-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarize</span>(</span>
+<span id="cb29-5"><a href="#cb29-5" aria-hidden="true" tabindex="-1"></a>    <span class="fu">mean_ci_boot</span>(prop1, <span class="at">ci =</span> .<span class="dv">84</span>)</span>
+<span id="cb29-6"><a href="#cb29-6" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">|&gt;</span></span>
+<span id="cb29-7"><a href="#cb29-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>() <span class="sc">+</span></span>
+<span id="cb29-8"><a href="#cb29-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">aes</span>(<span class="at">x =</span> mean, <span class="at">xmin =</span> lower, <span class="at">xmax =</span> upper, <span class="at">y =</span> <span class="st">`</span><span class="at">year &lt; 1850</span><span class="st">`</span>) <span class="sc">+</span></span>
+<span id="cb29-9"><a href="#cb29-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_pointrange</span>() <span class="sc">+</span></span>
+<span id="cb29-10"><a href="#cb29-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_x_continuous</span>(</span>
+<span id="cb29-11"><a href="#cb29-11" aria-hidden="true" tabindex="-1"></a>    <span class="at">labels =</span> scales<span class="sc">::</span>percent</span>
+<span id="cb29-12"><a href="#cb29-12" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">+</span></span>
+<span id="cb29-13"><a href="#cb29-13" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_y_discrete</span>(</span>
+<span id="cb29-14"><a href="#cb29-14" aria-hidden="true" tabindex="-1"></a>    <span class="at">labels =</span> <span class="fu">c</span>(<span class="st">"1850-1879"</span>, <span class="st">"1820-1849"</span>)</span>
+<span id="cb29-15"><a href="#cb29-15" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">+</span></span>
+<span id="cb29-16"><a href="#cb29-16" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(</span>
+<span id="cb29-17"><a href="#cb29-17" aria-hidden="true" tabindex="-1"></a>    <span class="at">title =</span> <span class="st">"1820-1849 was more peaceful than 1850-1879"</span>,</span>
+<span id="cb29-18"><a href="#cb29-18" aria-hidden="true" tabindex="-1"></a>    <span class="at">subtitle =</span> <span class="st">"% war propensity by period"</span>,</span>
+<span id="cb29-19"><a href="#cb29-19" aria-hidden="true" tabindex="-1"></a>    <span class="at">x =</span> <span class="cn">NULL</span>,</span>
+<span id="cb29-20"><a href="#cb29-20" aria-hidden="true" tabindex="-1"></a>    <span class="at">y =</span> <span class="cn">NULL</span></span>
+<span id="cb29-21"><a href="#cb29-21" aria-hidden="true" tabindex="-1"></a>  )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="03_is_war_disappearing_files/figure-html/unnamed-chunk-11-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+<p>To test the idea more generally that conflict over time has changed in an upward or downward direction, all you have to do is take the concept applied above and extend it to different periods in time, which is essentially what Braumoeller did in his own analysis; though, with a slightly different method. However, to keep things simple, let’s just extend the above analysis to include the whole range of years in the dataset.</p>
+<p>The idea with the above example is to bin the data into discrete periods in time and then see if the average of war propensity in one period is statistically different than what it is in another. You can use bigger or smaller bins, which will change the results somewhat. Obviously, smaller bins will show more variation from one point in time to the next (but they also will be subject to more background noise). Conversely, bigger bins will give you more stable results (and be less subject to background noise), but this will come at the cost of glossing over potentially important and meaningful variation across shorter time intervals.</p>
+<p>Let me show you an example that breaks it down by 20 year intervals. I left some annotations in the code so you can see what is going on in the different steps. Essentially, it lumps the data into 20-year intervals and creates some sensible looking labels for each period. Then it calculates the average war propensity per period along with 84% confidence intervals using the first measure of war propensity (any new confrontation divided by PRDs). Finally, it gives the results to <code>ggplot()</code> for plotting.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb30"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb30-1"><a href="#cb30-1" aria-hidden="true" tabindex="-1"></a>final_dt <span class="sc">|&gt;</span></span>
+<span id="cb30-2"><a href="#cb30-2" aria-hidden="true" tabindex="-1"></a>  <span class="co"># add numerical labels for each 20 year period</span></span>
+<span id="cb30-3"><a href="#cb30-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(</span>
+<span id="cb30-4"><a href="#cb30-4" aria-hidden="true" tabindex="-1"></a>    <span class="at">period =</span> <span class="fu">round</span>(<span class="dv">1</span><span class="sc">:</span><span class="fu">n</span>() <span class="sc">/</span> <span class="dv">20</span>) <span class="sc">*</span> <span class="dv">20</span></span>
+<span id="cb30-5"><a href="#cb30-5" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">|&gt;</span></span>
+<span id="cb30-6"><a href="#cb30-6" aria-hidden="true" tabindex="-1"></a>  <span class="co"># add labels that specify the year range per period</span></span>
+<span id="cb30-7"><a href="#cb30-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(period) <span class="sc">|&gt;</span></span>
+<span id="cb30-8"><a href="#cb30-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(</span>
+<span id="cb30-9"><a href="#cb30-9" aria-hidden="true" tabindex="-1"></a>    <span class="at">period_label =</span> <span class="fu">paste0</span>(<span class="fu">min</span>(year), <span class="st">"-"</span>, <span class="fu">max</span>(year))</span>
+<span id="cb30-10"><a href="#cb30-10" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">|&gt;</span></span>
+<span id="cb30-11"><a href="#cb30-11" aria-hidden="true" tabindex="-1"></a>  <span class="co"># make sure the labels are treated as an ordered category</span></span>
+<span id="cb30-12"><a href="#cb30-12" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ungroup</span>() <span class="sc">|&gt;</span></span>
+<span id="cb30-13"><a href="#cb30-13" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(</span>
+<span id="cb30-14"><a href="#cb30-14" aria-hidden="true" tabindex="-1"></a>    <span class="at">period_label =</span> <span class="fu">factor</span>(</span>
+<span id="cb30-15"><a href="#cb30-15" aria-hidden="true" tabindex="-1"></a>      period,</span>
+<span id="cb30-16"><a href="#cb30-16" aria-hidden="true" tabindex="-1"></a>      <span class="at">levels =</span> period,</span>
+<span id="cb30-17"><a href="#cb30-17" aria-hidden="true" tabindex="-1"></a>      <span class="at">labels =</span> period_label</span>
+<span id="cb30-18"><a href="#cb30-18" aria-hidden="true" tabindex="-1"></a>    )</span>
+<span id="cb30-19"><a href="#cb30-19" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">|&gt;</span></span>
+<span id="cb30-20"><a href="#cb30-20" aria-hidden="true" tabindex="-1"></a>  <span class="co"># get the mean and CIs by period label</span></span>
+<span id="cb30-21"><a href="#cb30-21" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(period_label) <span class="sc">|&gt;</span></span>
+<span id="cb30-22"><a href="#cb30-22" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarize</span>(</span>
+<span id="cb30-23"><a href="#cb30-23" aria-hidden="true" tabindex="-1"></a>    <span class="fu">mean_ci_boot</span>(prop1, <span class="at">ci =</span> .<span class="dv">84</span>)</span>
+<span id="cb30-24"><a href="#cb30-24" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">|&gt;</span></span>
+<span id="cb30-25"><a href="#cb30-25" aria-hidden="true" tabindex="-1"></a>  <span class="co"># visualize the results</span></span>
+<span id="cb30-26"><a href="#cb30-26" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>() <span class="sc">+</span></span>
+<span id="cb30-27"><a href="#cb30-27" aria-hidden="true" tabindex="-1"></a>  <span class="fu">aes</span>(</span>
+<span id="cb30-28"><a href="#cb30-28" aria-hidden="true" tabindex="-1"></a>    <span class="at">x =</span> period_label,</span>
+<span id="cb30-29"><a href="#cb30-29" aria-hidden="true" tabindex="-1"></a>    <span class="at">y =</span> mean,</span>
+<span id="cb30-30"><a href="#cb30-30" aria-hidden="true" tabindex="-1"></a>    <span class="at">ymin =</span> lower,</span>
+<span id="cb30-31"><a href="#cb30-31" aria-hidden="true" tabindex="-1"></a>    <span class="at">ymax =</span> upper</span>
+<span id="cb30-32"><a href="#cb30-32" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">+</span></span>
+<span id="cb30-33"><a href="#cb30-33" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_pointrange</span>() <span class="sc">+</span></span>
+<span id="cb30-34"><a href="#cb30-34" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_y_continuous</span>(</span>
+<span id="cb30-35"><a href="#cb30-35" aria-hidden="true" tabindex="-1"></a>    <span class="at">labels =</span> scales<span class="sc">::</span>percent</span>
+<span id="cb30-36"><a href="#cb30-36" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">+</span></span>
+<span id="cb30-37"><a href="#cb30-37" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(</span>
+<span id="cb30-38"><a href="#cb30-38" aria-hidden="true" tabindex="-1"></a>    <span class="at">title =</span> <span class="st">"War propensity peaked in the mid-20th century, but propensity today is about</span><span class="sc">\n</span><span class="st">as high or higher than during the 1800s"</span>,</span>
+<span id="cb30-39"><a href="#cb30-39" aria-hidden="true" tabindex="-1"></a>    <span class="at">subtitle =</span> <span class="st">"% war propensity by 20 year increments"</span>,</span>
+<span id="cb30-40"><a href="#cb30-40" aria-hidden="true" tabindex="-1"></a>    <span class="at">x =</span> <span class="cn">NULL</span>,</span>
+<span id="cb30-41"><a href="#cb30-41" aria-hidden="true" tabindex="-1"></a>    <span class="at">y =</span> <span class="cn">NULL</span></span>
+<span id="cb30-42"><a href="#cb30-42" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">+</span></span>
+<span id="cb30-43"><a href="#cb30-43" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme</span>(</span>
+<span id="cb30-44"><a href="#cb30-44" aria-hidden="true" tabindex="-1"></a>    <span class="at">axis.text.x =</span> <span class="fu">element_text</span>(<span class="at">angle =</span> <span class="dv">45</span>, <span class="at">hjust =</span> <span class="dv">1</span>)</span>
+<span id="cb30-45"><a href="#cb30-45" aria-hidden="true" tabindex="-1"></a>  )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="03_is_war_disappearing_files/figure-html/unnamed-chunk-12-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+<p>The results are consistent with a trend that is a bit more complicated than the one proposed by the decline of war thesis. It looks like the propensity for war increased between the early and mid to late 19th century. It then increased again in the early 20th century (likely due to WW1) before briefly returning to mid to late 19th century levels. There’s a spike again in the mid 20th century due to WW2 and then a decline, yet again, to mid to late 19th century levels. One sensible conclusion you could draw from the data is that the most peaceful time in international politics was the early 19th century, but since then (aside from upswings during the world wars), war propensity tends to return to a stable rate of a little less than 0.75%, which was the norm for most of the 19th century and beginning of the 20th, the inter-war period between WW1 and WW2, and the early 21st century. It was slightly elevated during the Cold War, but the trend during this period just looks like a gradual decline back to the norm.</p>
+<p>In short, the typical conflict rate over the past two centuries has remained mostly stable, with the exception of the world wars, and the unusually peaceful period in the decades after the Napoleonic Wars. Braumoeller drew about the same conclusion using an older version of the MID dataset.</p>
+<p>This of course leaves open the question of how much the results change if you use one of the other measures of war propensity I included in the data. But I need to give you something to investigate on your own, so I’ll leave it to you to figure out how fragile the findings are to the choice of measure.</p>
+</section>
+<section id="summary" class="level2" data-number="3.5">
+<h2 data-number="3.5" class="anchored" data-anchor-id="summary"><span class="header-section-number">3.5</span> Summary</h2>
+<p>In sum, Braumoeller leveled two methodological critiques on past efforts to test the decline of war thesis: (1) ill-conceived measures and (2) the failure to account for chance.</p>
+<p>In this chapter, I covered some of the conceptual hurdles that attend measurement, and showed you how, once you have some sensible measures, you can account for the role of random chance in explaining patterns in the data.</p>
+<p>With respect to an appropriate measure of conflict over time, the best approach is to calculate the frequency of new conflicts <em>per</em> the number of opportunities for new conflicts to arise. The overall conflict count can go up and down for a variety of reasons, but perhaps most strongly by variation in conflict opportunities. Only once this is accounted for can you make good comparisons in war propensity over time.</p>
+<p>With respect to the role of chance, statistical analysis provides the tools you need. The idea is to proceed as if the data you observe (war propensity over time) is the product of both a signal and random background noise. Statistical inference can help quantify how much variation you should expect due to background noise so you can more rigorously judge if a change over time can be easily explained by noise instead of a true signal (or meaningful change).</p>
+<p>Adopting a sensible measure of war propensity and applying statistical inference yields results that don’t neatly align with the decline of war thesis (at least for one possible measure of war propensity). In short, there’s little evidence of a systematic decline in the likelihood of war, at least over the last two centuries.</p>
+<p>But the chance of war is only half of the decline of war thesis. Its other major claim is that wars are now less deadly than in the past. Testing this proposition requires wrestling with a host of new conceptual and technical issues, all of which I’ll discuss in the next chapter.</p>
+
+
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list" style="display: none">
+<div id="ref-braumoeller2013war" class="csl-entry" role="listitem">
+Braumoeller, Bear F. 2013a. <span>“Is War Disappearing?”</span> In <em>APSA Chicago 2013 Meeting</em>.
+</div>
+<div id="ref-braumoeller2013great" class="csl-entry" role="listitem">
+———. 2013b. <em>The Great Powers and the International System: Systemic Theory in Empirical Perspective</em>. Cambridge University Press.
+</div>
+<div id="ref-braumoeller2019only" class="csl-entry" role="listitem">
+———. 2019. <em>Only the Dead: The Persistence of War in the Modern Age</em>. Oxford University Press.
+</div>
+<div id="ref-braumoeller2011political" class="csl-entry" role="listitem">
+Braumoeller, Bear F, and Austin Carson. 2011. <span>“Political Irrelevance, Democracy, and the Limits of Militarized Conflict.”</span> <em>Journal of Conflict Resolution</em> 55 (2): 292–320.
+</div>
+<div id="ref-pinker2012better" class="csl-entry" role="listitem">
+Pinker, Steven. 2012. <em>The Better Angels of Our Nature: Why Violence Has Declined</em>. Penguin books.
+</div>
+<div id="ref-pinker2018enlightenment" class="csl-entry" role="listitem">
+———. 2018. <em>Enlightenment Now: The Case for Reason, Science, Humanism, and Progress</em>. Viking.
+</div>
+</div>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const onCopySuccess = function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
+  });
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    // For code content inside modals, clipBoardJS needs to be initialized with a container option
+    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    });
+    clipboardModal.on('success', onCopySuccess);
+  }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="./02_the_data.html" class="pagination-link" aria-label="The Data">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">The Data</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="./references.html" class="pagination-link" aria-label="References">
+        <span class="nav-page-text">References</span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+
+
+
+
+</body></html>
