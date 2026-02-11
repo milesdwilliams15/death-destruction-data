@@ -12,7 +12,7 @@ library(peacesciencer)
 
 # get the data ------------------------------------------------------------
 
-get_war_data <- function() {
+get_war_data <- function(only_wars = T) {
   
   ## MIE data
   source("https://raw.githubusercontent.com/milesdwilliams15/death-destruction-data/refs/heads/main/helpers/get_mie_data.R")
@@ -58,8 +58,10 @@ get_war_data <- function() {
       by = "year"
     ) -> war_dt
   
-  war_dt |>
-    filter(hostlev == "War") -> war_dt
+  if(only_wars) {
+    war_dt |>
+      filter(hostlev == "War") -> war_dt
+  }
   
   ## return
   war_dt
