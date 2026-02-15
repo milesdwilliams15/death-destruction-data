@@ -16,10 +16,9 @@ get_war_data <- function(only_wars = T) {
   
   ## MIE data
   source("https://raw.githubusercontent.com/milesdwilliams15/death-destruction-data/refs/heads/main/helpers/get_mie_data.R")
-  get_mie_data() -> dt
+  suppressMessages(get_mie_data()) -> dt
   
   ## get NMC data (has population and military totals)
-  library(peacesciencer)
   create_dyadyears(subset_years = 1816:2014) |>
     add_nmc() -> ext_dt
   
@@ -40,11 +39,11 @@ get_war_data <- function(only_wars = T) {
       fatalmax = sum(fatalmax1 + fatalmax2),
       events = n(),
       duration = 1/12 + max(endyear + endmon / 12) - min(styear + stmon / 12),
-      bellig_pop = sum(tpop1[year == min(year)] + 
-                         tpop2[year == min(year)], na.rm = T) * 1000,
-      mili_pop = sum(milper1[year == min(year)] +
-                       milper2[year == min(year)], na.rm = T) * 1000
+      n_participants = c(unique(ccode1), unique(ccode2)) |> 
+        n_distinct()
     ) -> war_dt
+  
+  ## pop data
   ext_dt |>
     distinct(ccode1, year, tpop1) |>
     group_by(year) |>
@@ -55,6 +54,50 @@ get_war_data <- function(only_wars = T) {
   war_dt |>
     left_join(
       pop_dt, 
+      by = "year"
+    ) -> war_dt
+  
+  ## participant pop and mil data
+  dt |>
+    distinct(ccode1, ccode2, year, micnum, tpop1, tpop2, milper1, milper2, milex1, milex2) -> dst
+  dst |>
+    select(
+      year, micnum, ends_with("1")
+    ) -> dst1
+  dst |>
+    select(
+      year, micnum, ends_with("2")
+    ) -> dst2
+  bind_rows(
+    dst1 |> 
+      rename_with(~ str_remove_all(.x, "1")), 
+    dst2 |>
+      rename_with(~ str_remove_all(.x, "2"))
+  ) |>
+    distinct() |>
+    group_by(micnum, ccode) |>
+    filter(year == min(year)) |>
+    group_by(micnum) |>
+    summarize(
+      year = min(year),
+      bellig_pop = sum(tpop) * 1000,
+      mil_pop = sum(milper, na.rm = T) * 1000,
+      mil_exp = sum(milex, na.rm = T) * 1000
+    ) -> dst
+  
+  war_dt |>
+    left_join(
+      dst,
+      by = c("micnum", "year")
+    ) -> war_dt
+  
+  ## opportunity data
+  source("https://raw.githubusercontent.com/milesdwilliams15/death-destruction-data/refs/heads/main/helpers/peacesceincer_extras.R")
+  suppressMessages(get_opportunity_data()) -> opp_dt
+  
+  war_dt |>
+    left_join(
+      opp_dt,
       by = "year"
     ) -> war_dt
   
