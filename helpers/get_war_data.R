@@ -139,8 +139,21 @@ summarize_war_prop <- function(data, level = NULL, opp = NULL) {
       ) -> out
   }
   
-  ## expand and return
   out |>
-    complete(year = 1816:2014, fill = list(war_prop = 0))
+    mutate(
+      measure = ifelse(
+        level_filter, level, "All"
+      )
+    ) -> out
+  
+  ## expand and return
+  out %>%
+    complete(
+      year = 1816:2014, 
+      fill = list(
+        war_prop = 0,
+        measure = unique(.[["measure"]])
+      )
+    )
 }
 
