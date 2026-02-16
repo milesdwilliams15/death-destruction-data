@@ -157,3 +157,49 @@ summarize_war_prop <- function(data, level = NULL, opp = NULL) {
     )
 }
 
+
+# binning and bootstrapping -----------------------------------------------
+
+mean_ci_boot <- function(data, var, bin = 20, ci = .84) {
+  data |>
+    # add numerical labels for each 20 year period
+    mutate(
+      period_n = floor(1:n() / bin) * bin
+    ) |>
+    # add labels that specify the year range per period
+    group_by(period_n) |>
+    mutate(
+      period_label = paste0(min(year), "-", max(year))
+    ) |>
+    # make sure the labels are treated as an ordered category
+    ungroup() |>
+    mutate(
+      period = factor(
+        period_n,
+        levels = period_n,
+        labels = period_label
+      )
+    ) |>
+    # get the mean and CIs by period label
+    group_by(period) -> data
+  
+    mean.ci.boot <- function(var, ci) {
+      vbar <- mean(var, na.rm = T)
+      vboot <- replicate(
+        n = 1000,
+        expr = mean(sample(var, length(var), T), na.rm = T)
+      )
+      data.frame(
+        mean = vbar,
+        lower = quantile(vboot, .5 - ci / 2),
+        upper = quantile(vboot, .5 + ci / 2)
+      )
+    }
+    
+    data |>
+      group_by(period) |>
+      summarize(
+        mean.ci.boot(.data[[var]], ci = ci)
+      )
+}
+
