@@ -19,8 +19,8 @@ get_war_data <- function(only_wars = T) {
   suppressMessages(get_mie_data()) -> dt
   
   ## get NMC data (has population and military totals)
-  create_dyadyears(subset_years = 1816:2014) |>
-    add_nmc() -> ext_dt
+  suppressMessages(create_dyadyears(subset_years = 1816:2014) |>
+    add_nmc()) -> ext_dt
   
   ## merge with MIE data
   dt |>
@@ -109,3 +109,38 @@ get_war_data <- function(only_wars = T) {
   ## return
   war_dt
 }
+
+
+# compute yearly war propensity -------------------------------------------
+
+summarize_war_prop <- function(data, level = NULL, opp = NULL) {
+  
+  micnum_year <- any(colnames(data) == "micnum") &
+    any(colnames(data) == "year")
+  if(!micnum_year) stop("Columns 'micnum' and 'year' not detected.")
+  
+  level_filter <- !is.null(level)
+  opp_selected <- !is.null(opp)
+  
+  if(level_filter) data |>
+    filter(hostlev >= level) -> data
+  
+  if(opp_selected) {
+    data |>
+      group_by(year) |>
+      summarize(
+        war_prop = n() / unique(.data[[opp]])
+      ) -> out
+  } else {
+    data |>
+      group_by(year) |>
+      summarize(
+        war_prop = n() / unique(prd)
+      ) -> out
+  }
+  
+  ## expand and return
+  out |>
+    complete(year = 1816:2014, fill = list(war_prop = 0))
+}
+
