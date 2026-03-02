@@ -1,0 +1,1277 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.5.57">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>5&nbsp; Dyadic Models of Conflict – Death, Destruction, and Data</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<link href="./06_power.html" rel="next">
+<link href="./04_is_war_less_deadly.html" rel="prev">
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+</head>
+
+<body class="nav-sidebar floating">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./05_dyads.html"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Dyadic Models of Conflict</span></a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="./">Death, Destruction, and Data</a> 
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Preface</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./01_what_is_war.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">What is War?</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./02_the_data.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">The Data</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./03_is_war_disappearing.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Is War Disappearing?</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./04_is_war_less_deadly.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Is War Less Deadly?</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./05_dyads.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Dyadic Models of Conflict</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./06_power.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">The Balance of Power and War</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./references.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">References</span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#why-do-countries-fight" id="toc-why-do-countries-fight" class="nav-link active" data-scroll-target="#why-do-countries-fight"><span class="header-section-number">5.1</span> Why do countries fight?</a></li>
+  <li><a href="#studying-dyads" id="toc-studying-dyads" class="nav-link" data-scroll-target="#studying-dyads"><span class="header-section-number">5.2</span> Studying dyads</a></li>
+  <li><a href="#modeling-dyadic-data" id="toc-modeling-dyadic-data" class="nav-link" data-scroll-target="#modeling-dyadic-data"><span class="header-section-number">5.3</span> Modeling dyadic data</a></li>
+  <li><a href="#some-additional-recommendations" id="toc-some-additional-recommendations" class="nav-link" data-scroll-target="#some-additional-recommendations"><span class="header-section-number">5.4</span> Some additional recommendations</a></li>
+  <li><a href="#summary" id="toc-summary" class="nav-link" data-scroll-target="#summary"><span class="header-section-number">5.5</span> Summary</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Dyadic Models of Conflict</span></h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<p><strong>Main ideas</strong>:</p>
+<ul>
+<li><p><strong>The dyadic approach dominates peace science research:</strong> Most conflict research focuses on country-pairs (dyads) over time rather than macro-level trends, largely due to professional incentives, researcher degrees of freedom, and the massive number of data points dyadic datasets provide.</p></li>
+<li><p><strong>Building dyadic datasets with <code>{peacesciencer}</code>:</strong> The R package <code>{peacesciencer}</code> streamlines constructing valid directed or non-directed dyad-year datasets and merging in commonly used variables (contiguity, major power status, distance, MIDs, etc.).</p></li>
+<li><p><strong>Logistic regression (logit) is the standard model for dyadic conflict:</strong> Because conflict onset is a binary, rare event, the logit model is used to map predictors to probabilities of conflict while respecting the 0–1 bounds of probability.</p></li>
+<li><p><strong>Handling statistical dependence in dyadic data:</strong> Since dyads are observed repeatedly over time, standard errors need adjustment either via cluster-robust standard errors or by modeling dyadic random effects directly in the specification.</p></li>
+</ul>
+<section id="why-do-countries-fight" class="level2" data-number="5.1">
+<h2 data-number="5.1" class="anchored" data-anchor-id="why-do-countries-fight"><span class="header-section-number">5.1</span> Why do countries fight?</h2>
+<p>In the previous chapters, I spent a lot of time talking about how to measure war, and how to analyze macro-level trends in war propensity and severity over time. Despite how many chapters I dedicated to these subjects, the attention I paid to them isn’t proportionate to the attention peace scientists pay to them.</p>
+<p>This seems odd to me, because I think understanding macro trends in international conflict has a good deal of practical relevance to people, and is intrinsically interesting. But the field of peace science treats these issues as niche. The bulk of the field’s focus, instead, lies in trying to understand conflict at the level of the <em>dyad</em>, or country-pair.</p>
+<p>Because this is the main focus of peace research, best-practices and norms for what’s acceptable for studying conflict at the dyad-level are well-established, so much so that if you deviate from these best practices you have to do a lot of extra work to justify your unconventional choices.</p>
+<p>Because dyadic conflict research is so ubiquitous, and a narrow range of methodological choices are the norm, in this chapter I want to spend some time explaining the dyadic approach and the statistical model most commonly applied in peace science research. I’ll then walk you through a simple example and the R code that implements it.</p>
+<p>Mind you, because I can’t leave well enough alone, I’ll offer some of my own thoughts about how I might tweak existing approaches. And, I’ll test whether and how much this tweak alters conclusions from the replication analysis I’ll show you.</p>
+<p>But, before I get to that, let me talk a bit about the dyadic approach to conflict research.</p>
+</section>
+<section id="studying-dyads" class="level2" data-number="5.2">
+<h2 data-number="5.2" class="anchored" data-anchor-id="studying-dyads"><span class="header-section-number">5.2</span> Studying dyads</h2>
+<p>If I randomly sampled a peace science study on international conflict from the past few decades, odds are pretty good that the authors of that study conducted their analysis of conflict initiation between <em>pairs</em> of countries, or dyads, over time.</p>
+<p>I believe this kind of analysis dominates the field for two reasons. The first is that researchers really want to know why countries go to war. The second is that there’s a lot of untapped variation in dyadic conflict patterns left to explain. A rich set of theories are available to researchers to extend and modify to propose new predictions about which country dyads are at greatest risk of fighting. And new and improved measures get proposed all the time to time to test if old findings hold up with new data.</p>
+<p>In short, dyadic analyses of conflict initiation have a lot of “researcher degrees of freedom,” which creates space for lots of different theories and measures to get tested. It also leaves plenty of room for disagreement.</p>
+<p>Conversely, there’s much less space to make a novel contribution to research on global trends in conflict. Any budding peace scientist looking to publish their work has a much better chance of doing something novel with a dyadic analysis than one centered on global trends.</p>
+<p>Think about it, the best conflict datasets available, such as the MIE dataset introduced previously, only cover about 200 years worth of data. That means an analysis of global conflict trends over time will at best have up to 200 data points (perhaps 12 times that value if doing monthly trends). Meanwhile, a directed-dyad-year dataset covering the same period has 1,836,630 data points. If your goal is to explain variation in a dataset with <em>millions</em> of data points, there’s always a chance of finding something new.</p>
+<p>This isn’t necessarily a great, objective justification for focusing so much attention on dyadic studies. But peace scientists (and all scientists for that matter) <em>are</em> people who are subject to professional incentives and constraints. Often times, the research that gets done is the research that seems publishable. The more work that gets published in an area, the more publishable it seems, and then the more that kind of research gets published. On and on the cycle goes.</p>
+<p>This is the idea of “path dependence,” and because of it, if you want to make a contribution to peace science, the best place to start is with a dyadic study. But how exactly do you do a dyadic analysis in peace science?</p>
+<p>You need two things: (1) a dataset where each observation is a pair of countries in a given year and (2) a statistical model well-suited to taking a variety of different observed characteristics of country pairs and mapping them to probabilities of conflict initiation.</p>
+<p>Because this kind of analysis is so common, tools are widely available for streamlining the process.</p>
+<p>For a long time, many conflict scholars relied on tools such as <a href="https://eugenesoftware.la.psu.edu/what-is-eugene/">EUGene</a> for building their datasets. This tool provides a consistent way of defining the universe of cases you want to study, whether that’s individual countries or dyads over time. More recently, the political scientist Steve Miller made an R package called <code>{peacesciencer}</code> which makes the process of making and merging datasets much easier, and and possible to do directly in an R session on your computer <span class="citation" data-cites="peacesciencer-package">(<a href="references.html#ref-peacesciencer-package" role="doc-biblioref">Miller 2022</a>)</span>.</p>
+<p>I mentioned this package in a previous chapter, and some of the code I’ve had you use already uses <code>{peacesciencer}</code> under the hood to perform various routines. In this chapter, I want to introduce the package more formally, and talk about its advantages. I personally use <code>{peacesciencer}</code> a lot in my own research because of these advantages.</p>
+<p>While this package solves a lot of problems for doing peace science research, the most important problem it solves is making sure you have all the right units of observation in your dataset without duplicates or phantom cases, and without missing any relevant cases, too. If your unit of analysis in your data is fundamentally flawed, that’s bad news.</p>
+<p>The second, somewhat less important problem the package solves (though it’s still quite important) is the drudgery of accessing the wide variety of commonly used datasets by peace scientists for doing their research. While <code>{peacesciencer}</code> doesn’t give you access to everything you could possibly want, it does provide access to many of the most important “go-tos.” It also provides access to an eclectic sample of other interesting and novel datasets that you might want to explore (for a person like me, looking through the package documentation feels very kid-in-a-candy-shop-esque).</p>
+<p>I’ll talk more about different datasets that are available through the package in the coming chapters as I introduce different theoretical arguments for why countries go to war. For now, I just want to focus on the basic syntax the package provides for constructing a dataset with your desired universe of cases and then populating it with variables of interest.</p>
+<p>Here’s some R code to get started. <code>{peacesciencer}</code> is meant to fit nicely into the tidyverse approach to R programming, so any time I use the package, I open the <code>{tidyverse}</code> as well (as I do in the below code). The next thing I do is construct a dataset with the universe of cases I want to study. I can do this with a wide variety of <code>create_*()</code> functions. You can check out the package documentation to see all the available options. Below, because I’m interested in doing a dyadic conflict analysis, I’m going to use <code>create_dyadyears()</code> which creates a dataset where each row is a unique country pair observed in a given year.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="do">## open {tidyverse} and {peacesciencer}</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(peacesciencer)</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="do">## make a directed-dyad-year dataset</span></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="fu">create_dyadyears</span>(</span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>  <span class="at">subset_years =</span> <span class="dv">1816</span><span class="sc">:</span><span class="dv">2014</span></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>) <span class="ot">-&gt;</span> ddy</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>If you peek at the first few rows of the data, you can see what a dyad-year dataset looks like. <code>create_dyadyears()</code> returns a dataset with three columns: <code>ccode1</code>, <code>ccode2</code>, and <code>year</code>. The first is the Correlates of War (COW) country code for country 1 in the dyad, and the second is the COW code for country 2. The year column is the year a country pair is observed.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>ddy <span class="sc">|&gt;</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">slice_head</span>(<span class="at">n =</span> <span class="dv">5</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 5 × 3
+  ccode1 ccode2  year
+   &lt;dbl&gt;  &lt;dbl&gt; &lt;int&gt;
+1      2     20  1920
+2      2     20  1921
+3      2     20  1922
+4      2     20  1923
+5      2     20  1924</code></pre>
+</div>
+</div>
+<p>Importantly, when <code>create_dyadyears()</code> constructs this dataset, it only returns <em>valid</em> country pairs. That means both countries must be recognized as members of the COW state system in the relevant year. To check that the dataset isn’t just hallucinating invalid dyads, I can run some code to quickly check that the number of dyads in a given year changes over time. If it were constant, that’d be a sign that the dataset is falsely including country pairs that could not possibly have existed at one point in time.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>ddy <span class="sc">|&gt;</span></span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">count</span>(year) <span class="sc">|&gt;</span></span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>() <span class="sc">+</span></span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">aes</span>(year, n) <span class="sc">+</span></span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_line</span>() <span class="sc">+</span></span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(</span>
+<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a>    <span class="at">title =</span> <span class="st">"All looks good"</span>,</span>
+<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a>    <span class="at">x =</span> <span class="cn">NULL</span>,</span>
+<span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a>    <span class="at">y =</span> <span class="st">"Directed dyads"</span></span>
+<span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a>  )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="05_dyads_files/figure-html/unnamed-chunk-4-1.png" class="img-fluid figure-img" width="576"></p>
+</figure>
+</div>
+</div>
+</div>
+<p>Another important thing to note about the data <code>create_dyadyears()</code> produced is that it returned a <em>directed</em>-dyad-year dataset, which it does by default. Dyadic datasets usually take one of two forms: directed or <em>non</em>-directed. Which kind you use depends on what kind of question about conflict you want to answer.</p>
+<p>A directed dataset is one where a country pair in a given year appears <em>twice</em>, but the order of countries 1 and 2 is flipped in the dyad’s second appearance. For example, as the output from the below code shows, the U.S. (COW code of 2) and Canada (COW code of 20) dyad appears twice in 1920, but the U.S. and Canada switch sides depending on which directed dyad is observed.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>ddy <span class="sc">|&gt;</span></span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(ccode1 <span class="sc">%in%</span> <span class="fu">c</span>(<span class="dv">2</span>, <span class="dv">20</span>), ccode2 <span class="sc">%in%</span> <span class="fu">c</span>(<span class="dv">20</span>, <span class="dv">2</span>)) <span class="sc">|&gt;</span></span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">slice_min</span>(year, <span class="at">n =</span> <span class="dv">1</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 2 × 3
+  ccode1 ccode2  year
+   &lt;dbl&gt;  &lt;dbl&gt; &lt;int&gt;
+1      2     20  1920
+2     20      2  1920</code></pre>
+</div>
+</div>
+<p>This kind of dataset is called “directed” because it lets you analyze the <em>direction</em> of country behavior within a country pair. For example, say you were interested not just in understanding which country pairs are most prone to fighting, but which side in a country pair is most prone to initiating a conflict. In this case, you’d want to use a directed-dyad-year dataset.</p>
+<p>To produce a non-directed-dyad-year dataset, all you need to do is indicate <code>directed = FALSE</code> when you run <code>create_dyadyears()</code>:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="fu">create_dyadyears</span>(</span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>  <span class="at">subset_years =</span> <span class="dv">1816</span><span class="sc">:</span><span class="dv">2014</span>,</span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">directed =</span> <span class="cn">FALSE</span> </span>
+<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a>) <span class="ot">-&gt;</span> udy</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Joining with `by = join_by(ccode1, ccode2, year)`</code></pre>
+</div>
+</div>
+<p>Now, when I run the same code I applied to the directed dataset to check whether a dyad appears twice on the non-directed dataset, I can clearly see that the U.S.-Canada dyad only appears once in 1920. In such a dataset the order of the countries (usually) doesn’t matter.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>udy <span class="sc">|&gt;</span></span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(ccode1 <span class="sc">%in%</span> <span class="fu">c</span>(<span class="dv">2</span>, <span class="dv">20</span>), ccode2 <span class="sc">%in%</span> <span class="fu">c</span>(<span class="dv">20</span>, <span class="dv">2</span>)) <span class="sc">|&gt;</span></span>
+<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">slice_min</span>(year, <span class="at">n =</span> <span class="dv">1</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 1 × 3
+  ccode1 ccode2  year
+   &lt;dbl&gt;  &lt;dbl&gt; &lt;int&gt;
+1      2     20  1920</code></pre>
+</div>
+</div>
+<p>I hope this method of constructing a dataset sounds easy, because the process of getting the universe of valid cases right without a tool like this is incredibly painful, and much more error prone, which I know from personal experience.</p>
+<p>Of course, creating a dataset of cases is just the beginning. The next step is to start adding in variables. <code>{peacesciencer}</code>, thankfully, makes the process of getting common variables easy as well by providing you with a variety of <code>add_*()</code> functions that will add data from different commonly used datasets to your dataset.</p>
+<p>Let’s construct a really simple one for analysis. Say I wanted to test how the factors used to construct the Braumoeller-Carson dyad measure of relevance introduced a couple chapters ago predict conflict onset between countries. Recall that this measure uses a statistical procedure convert information about dyadic contiguity, major power status of one of the countries in the pair, and bilateral distance into probabilities that countries can reach each other to fight. I can use <code>{peacesciencer}</code> to quickly construct a relevant dataset to confirm that these factors do, indeed, predict a higher chance of conflict. Because I’m only interested in the chance of conflict between countries and not the factors that lead one of the countries to initiate a conflict versus the other, I need to construct a non-directed-dyad-year dataset. Observe:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="do">## start with non-directed-dyad-year base then pipe to add MIDs</span></span>
+<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a><span class="fu">create_dyadyears</span>(</span>
+<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">subset_years =</span> <span class="dv">1816</span><span class="sc">:</span><span class="dv">2014</span>,</span>
+<span id="cb11-4"><a href="#cb11-4" aria-hidden="true" tabindex="-1"></a>  <span class="at">directed =</span> <span class="cn">FALSE</span></span>
+<span id="cb11-5"><a href="#cb11-5" aria-hidden="true" tabindex="-1"></a>) <span class="sc">|&gt;</span></span>
+<span id="cb11-6"><a href="#cb11-6" aria-hidden="true" tabindex="-1"></a>  <span class="do">## add COW MIDs data then pipe</span></span>
+<span id="cb11-7"><a href="#cb11-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">add_cow_mids</span>() <span class="sc">|&gt;</span></span>
+<span id="cb11-8"><a href="#cb11-8" aria-hidden="true" tabindex="-1"></a>  <span class="do">## add peace spells then pipe</span></span>
+<span id="cb11-9"><a href="#cb11-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">add_spells</span>() <span class="sc">|&gt;</span></span>
+<span id="cb11-10"><a href="#cb11-10" aria-hidden="true" tabindex="-1"></a>  <span class="do">## add contiguity data then pipe</span></span>
+<span id="cb11-11"><a href="#cb11-11" aria-hidden="true" tabindex="-1"></a>  <span class="fu">add_contiguity</span>() <span class="sc">|&gt;</span></span>
+<span id="cb11-12"><a href="#cb11-12" aria-hidden="true" tabindex="-1"></a>  <span class="do">## add major power data then pipe</span></span>
+<span id="cb11-13"><a href="#cb11-13" aria-hidden="true" tabindex="-1"></a>  <span class="fu">add_cow_majors</span>() <span class="sc">|&gt;</span></span>
+<span id="cb11-14"><a href="#cb11-14" aria-hidden="true" tabindex="-1"></a>  <span class="do">## add distance data then save as "dt"</span></span>
+<span id="cb11-15"><a href="#cb11-15" aria-hidden="true" tabindex="-1"></a>  <span class="fu">add_cap_dist</span>() <span class="ot">-&gt;</span> dt</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>At the moment, <code>{peacesciencer}</code> doesn’t provide direct access to the MIE dataset, but it does offer access to the COW MIDs dataset by way of the function <code>add_cow_mids()</code>. As I discussed in a previous chapter, the COW MID dataset has some issues that were well-documented by the creators of the MIE dataset. But, for my purposes here, this dataset is good enough. <code>{peacesciencer}</code> also has functions that add contiguity data, major power status, and pair-wise distance between country capitals. Using a succession of relevant functions connected with the R pipe <code>|&gt;</code> operator, I can string together a dataset that includes variables from all the relevant datasets I need to do my statistical analysis. If I use the <code>glimpse()</code> function, I can quickly take a look at what’s in the final data:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb12"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="fu">glimpse</span>(dt)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Rows: 918,315
+Columns: 29
+$ ccode1        &lt;dbl&gt; 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2,…
+$ ccode2        &lt;dbl&gt; 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, …
+$ year          &lt;dbl&gt; 1920, 1921, 1922, 1923, 1924, 1925, 1926, 1927, 1928, 19…
+$ dispnum       &lt;dbl&gt; NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, …
+$ cowmidongoing &lt;dbl&gt; 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,…
+$ cowmidonset   &lt;dbl&gt; 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,…
+$ sidea1        &lt;dbl&gt; NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, …
+$ sidea2        &lt;dbl&gt; NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, …
+$ fatality1     &lt;dbl&gt; NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, …
+$ fatality2     &lt;dbl&gt; NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, …
+$ fatalpre1     &lt;dbl&gt; NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, …
+$ fatalpre2     &lt;dbl&gt; NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, …
+$ hiact1        &lt;dbl&gt; NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, …
+$ hiact2        &lt;dbl&gt; NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, …
+$ hostlev1      &lt;dbl&gt; NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, …
+$ hostlev2      &lt;dbl&gt; NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, …
+$ orig1         &lt;dbl&gt; NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, …
+$ orig2         &lt;dbl&gt; NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, …
+$ fatality      &lt;dbl&gt; NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, …
+$ hostlev       &lt;dbl&gt; NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, …
+$ mindur        &lt;dbl&gt; NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, …
+$ maxdur        &lt;dbl&gt; NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, …
+$ recip         &lt;dbl&gt; NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, …
+$ stmon         &lt;dbl&gt; NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, …
+$ cowmidspell   &lt;dbl&gt; 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16…
+$ conttype      &lt;dbl&gt; 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,…
+$ cowmaj1       &lt;dbl&gt; 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,…
+$ cowmaj2       &lt;dbl&gt; 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,…
+$ capdist       &lt;dbl&gt; 734.8694, 734.8694, 734.8694, 734.8694, 734.8694, 734.86…</code></pre>
+</div>
+</div>
+<p>The data has over 900,000 rows and 29 columns. It requires some extra cleaning to make the data more usable for a dyadic analysis, but let’s just take a second to appreciate how little code I needed to run to generate this. Just five years ago, it would have taken me hours to download each of the individual datasets I would have needed to make this dataset, and then merge them together, and check for errors. Using <code>{peacesciencer}</code>, in less than a minute I was able to write and run some code to accomplish the same goal.</p>
+<p>But, as I said, I need to do a bit more cleaning, and I do only mean a <em>bit</em>. I actually have most of what I need already, but I need to make a binary measure of contiguity and binary measure to indicate if either country in a dyad is a major power. At the moment the relevant column for contiguity, <code>conttype</code>, is just a series of numerical codes corresponding to different levels of contiguity. Based on what I know from the package documentation, I want to code all cases with a code of 1 or higher as contiguous (this is the most inclusive measure of continuity, encompassing countries that border each other and also those separated by less than 400 miles of water). For major powers, at the moment the relevant information is spread across two different columns. One is an indicator for if country 1 is a major power, and the other is an indicator for if country 2 is a major power. I need a measure that equals 1 if either of these columns equals 1. Finally, for reasons I’ll talk about in just a second, I want to create a unique dyad numerical code. Thankfully, it only takes me a bit of code to make these changes:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb14"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a>dt <span class="sc">|&gt;</span></span>
+<span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(</span>
+<span id="cb14-3"><a href="#cb14-3" aria-hidden="true" tabindex="-1"></a>    <span class="do">## if conttype != 0, code as contiguous</span></span>
+<span id="cb14-4"><a href="#cb14-4" aria-hidden="true" tabindex="-1"></a>    <span class="at">cont =</span> <span class="fu">ifelse</span>(conttype <span class="sc">&gt;</span> <span class="dv">0</span>, <span class="dv">1</span>, <span class="dv">0</span>),</span>
+<span id="cb14-5"><a href="#cb14-5" aria-hidden="true" tabindex="-1"></a>    <span class="do">## return the maximum major power indicator for each country</span></span>
+<span id="cb14-6"><a href="#cb14-6" aria-hidden="true" tabindex="-1"></a>    <span class="at">majpower =</span> <span class="fu">pmax</span>(cowmaj1, cowmaj2),</span>
+<span id="cb14-7"><a href="#cb14-7" aria-hidden="true" tabindex="-1"></a>    <span class="do">## dyad ID</span></span>
+<span id="cb14-8"><a href="#cb14-8" aria-hidden="true" tabindex="-1"></a>    <span class="at">dyad =</span> <span class="dv">1000</span> <span class="sc">*</span> ccode1 <span class="sc">+</span> ccode2</span>
+<span id="cb14-9"><a href="#cb14-9" aria-hidden="true" tabindex="-1"></a>  ) <span class="ot">-&gt;</span> dt</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>Now, finally, to make my life easier I can use some additional <code>{tidyverse}</code> tools, like <code>select()</code>, to pair my data down just to the columns I need for my analysis:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb15"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a>dt <span class="sc">|&gt;</span></span>
+<span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(</span>
+<span id="cb15-3"><a href="#cb15-3" aria-hidden="true" tabindex="-1"></a>    dyad, ccode1, ccode2, year, cowmidonset, cowmidspell, cont, majpower, capdist</span>
+<span id="cb15-4"><a href="#cb15-4" aria-hidden="true" tabindex="-1"></a>  ) <span class="ot">-&gt;</span> dt</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>Now, the data looks a bit more manageable:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb16"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a>dt <span class="sc">|&gt;</span></span>
+<span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">slice_head</span>(<span class="at">n =</span> <span class="dv">10</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 10 × 9
+    dyad ccode1 ccode2  year cowmidonset cowmidspell  cont majpower capdist
+   &lt;dbl&gt;  &lt;dbl&gt;  &lt;dbl&gt; &lt;dbl&gt;       &lt;dbl&gt;       &lt;dbl&gt; &lt;dbl&gt;    &lt;dbl&gt;   &lt;dbl&gt;
+ 1  2020      2     20  1920           0           0     1        1    735.
+ 2  2020      2     20  1921           0           1     1        1    735.
+ 3  2020      2     20  1922           0           2     1        1    735.
+ 4  2020      2     20  1923           0           3     1        1    735.
+ 5  2020      2     20  1924           0           4     1        1    735.
+ 6  2020      2     20  1925           0           5     1        1    735.
+ 7  2020      2     20  1926           0           6     1        1    735.
+ 8  2020      2     20  1927           0           7     1        1    735.
+ 9  2020      2     20  1928           0           8     1        1    735.
+10  2020      2     20  1929           0           9     1        1    735.</code></pre>
+</div>
+</div>
+<p>This finalized dataset has the following columns:</p>
+<ul>
+<li><code>dyad</code>: a 4-6 digit numerical code unique to each dyad pair.</li>
+<li><code>ccode1</code>: the COW code for country 1 in a dyad.</li>
+<li><code>ccode2</code>: the COW code for country 2 in a dyad.</li>
+<li><code>year</code>: the year a dyad exists.</li>
+<li><code>cowmidonset</code>: a 0-1 indicator for whether a MID (militarized interstate dispute) began in a given year between a country pair.</li>
+<li><code>cowmidspell</code>: a count of the number of years since the last ongoing MID between a pair of countries.</li>
+<li><code>cont</code>: a 0-1 indicator for whether a dyad is contiguous.</li>
+<li><code>majpower</code>: a 0-1 indicator for whether one of the countries in a dyad is a major power.</li>
+<li><code>capdist</code>: the distance in kilometers between country capitals.</li>
+</ul>
+<p>Alright, now that I have some data, now I need to model the chance of war, which is the subject of the next section.</p>
+</section>
+<section id="modeling-dyadic-data" class="level2" data-number="5.3">
+<h2 data-number="5.3" class="anchored" data-anchor-id="modeling-dyadic-data"><span class="header-section-number">5.3</span> Modeling dyadic data</h2>
+<p>If the dyadic dataset is the canvas for peace science research, the <em>logistic regression model</em>, also known as the <em>logit</em> model, is paint brush. If you’ve never heard of a regression model of any sort before, I highly recommend you check out <a href="https://milesdwilliams15.quarto.pub/data-and-research-design/03_model_data.html">some resources I written on regression models</a> for my DPR 201 course.</p>
+<p>While regression models, and statistical models in general, can seem intimidating to the uninitiated, they actually aren’t too complicated. They are tools for measuring how one or several different factors explain variation in an outcome of interest, and they often express this relationship as a linear function, sometimes with a non-linear transformation applied.</p>
+<p>For example, a linear regression model specifies that an outcome variable is just a linear additive function of separate explanatory variables and random noise:</p>
+<p><span class="math display">\[
+\overbrace{y_i}^\text{outcome} = \underbrace{\beta_0 + \beta_1 x_i + \beta_2 z_i}_\text{linear function} + \overbrace{\epsilon_i}^\text{noise}
+\]</span></p>
+<p>A logit model is just a variation on this idea. It has some of the same moving pieces, but also has some important differences that are tailored to solving a specific problem with data. Here’s what a logit model looks like:</p>
+<p><span class="math display">\[
+\Pr(y_i = 1) = \Lambda(\beta_0 + \beta_1 x_i + \beta_2 z_i)
+\]</span></p>
+<p>The <span class="math inline">\(\Lambda()\)</span> represents the <em>logistic</em> function, which when written explicitly, looks like this:</p>
+<p><span class="math display">\[
+\Lambda(x) = \frac{e^x}{e^x + 1}
+\]</span></p>
+<p>The logistic function is where the logit model, or <em>logistic</em> regression model, gets its name. But what’s the point of this transformation? Why do peace scientists, with rare exceptions, use the logit model to study war?</p>
+<p>The answer is simple: (1) conflict onset between a pair of countries is a <em>binary</em> variable that can only take the values 0 or 1, and (2) conflict between countries is rare enough that using a linear model will lead to erroneous linear predictions of the probability of conflict. The latter problem is especially important. Probabilities are restricted to the unit interval (a fancy way of saying they can’t be less than 0 or greater than 1). Linear regression models don’t abide by this limitation. Logit models, to the contrary, do.</p>
+<p>Here’s why. The logistic transformation can take any continuous variable <span class="math inline">\(x\)</span> and restrict it to the unit interval (between 0 and 1). Let me show you with some simple R code:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb18"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a><span class="do">## create the logistic function and some x values</span></span>
+<span id="cb18-2"><a href="#cb18-2" aria-hidden="true" tabindex="-1"></a>L <span class="ot">&lt;-</span> <span class="cf">function</span>(x) <span class="fu">exp</span>(x) <span class="sc">/</span> (<span class="fu">exp</span>(x) <span class="sc">+</span> <span class="dv">1</span>)</span>
+<span id="cb18-3"><a href="#cb18-3" aria-hidden="true" tabindex="-1"></a>x <span class="ot">&lt;-</span> <span class="fu">seq</span>(<span class="sc">-</span><span class="dv">5</span>, <span class="dv">5</span>, <span class="at">by =</span> .<span class="dv">01</span>)</span>
+<span id="cb18-4"><a href="#cb18-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-5"><a href="#cb18-5" aria-hidden="true" tabindex="-1"></a><span class="do">## plot how L(x) varies given x</span></span>
+<span id="cb18-6"><a href="#cb18-6" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>() <span class="sc">+</span></span>
+<span id="cb18-7"><a href="#cb18-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">aes</span>(x, <span class="fu">L</span>(x)) <span class="sc">+</span></span>
+<span id="cb18-8"><a href="#cb18-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_line</span>() <span class="sc">+</span></span>
+<span id="cb18-9"><a href="#cb18-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_hline</span>(</span>
+<span id="cb18-10"><a href="#cb18-10" aria-hidden="true" tabindex="-1"></a>    <span class="at">yintercept =</span> <span class="dv">0</span><span class="sc">:</span><span class="dv">1</span>,</span>
+<span id="cb18-11"><a href="#cb18-11" aria-hidden="true" tabindex="-1"></a>    <span class="at">lty =</span> <span class="dv">2</span></span>
+<span id="cb18-12"><a href="#cb18-12" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">+</span></span>
+<span id="cb18-13"><a href="#cb18-13" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(</span>
+<span id="cb18-14"><a href="#cb18-14" aria-hidden="true" tabindex="-1"></a>    <span class="at">title =</span> <span class="st">"The logistic function in action"</span>,</span>
+<span id="cb18-15"><a href="#cb18-15" aria-hidden="true" tabindex="-1"></a>    <span class="at">subtitle =</span> <span class="st">"The classic 'S' or 'sigmoid' logistic transformation"</span></span>
+<span id="cb18-16"><a href="#cb18-16" aria-hidden="true" tabindex="-1"></a>  )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="05_dyads_files/figure-html/unnamed-chunk-13-1.png" class="img-fluid figure-img" width="576"></p>
+</figure>
+</div>
+</div>
+</div>
+<p>The above example shows what the logistic function does. It’s a sigmoid or s-shaped function that takes numerical data with any real numbered value and forces it to fit between 0 and 1. You can see why it would be used to model probabilities.</p>
+<p>Let’s apply the logit model specifically to the problem of modeling dyadic conflict onset with the data I created above. I might write out the following formal model specification to represent what I plan to do with my statistical software:</p>
+<p><span class="math display">\[
+\Pr(\text{MID}_{dt} = 1) = \Lambda[\beta_0 + \beta_1 \text{contiguity}_{dt} + \beta_2 \text{major}_{dt} + \beta_3 \ln(\text{distance}_{dt}) + \tau(\text{spell}_{dt})]
+\]</span></p>
+<p>The above model, in English, says that the probability that a militarized interstate dispute (MID) breaks out between a dyad <span class="math inline">\(d\)</span> in year <span class="math inline">\(t\)</span> is predicted by dyadic contiguity, whether one of the countries is a major power, and the natural log of the distance between them (distance is a skewed variable, so researchers commonly take the log of distance to shrink in big outliers). The <span class="math inline">\(\tau(\text{spell}_{dt})\)</span> expression is shorthand for a cubic peace spell trend. This is a term that ends up in nearly all peace science logit models. It helps adjust for the the history of peace versus conflict between a pair of countries. A peace spell is just the number of years since the last ongoing conflict between a pair of countries.</p>
+<p>Note that in the logit model, each of the predictors of interest is multiplied by a <em>coefficient</em>, denoted by <span class="math inline">\(\beta\)</span>. The direction and magnitude of this coefficient controls how much and in which direction the probability of conflict onset changes based on that predictor. The problem is that these coefficients are unknown. They need to be estimated. How?</p>
+<p>All models require two things for estimation: (1) an objective function and (2) an estimator. An objective function provides a measure of how well different combinations of unknown parameters fit the data. An estimator is a rule for identifying the best set of parameters in light of the objective function.</p>
+<p>For the logit model, the objective function is a likelihood function specified as:</p>
+<p><span class="math display">\[
+\sum_i\Lambda(\beta_0 + \beta_1 x_i)^{y_i} \times [1 - \Lambda(\beta_0 + \beta_1 x_i)]^{1 - y_i}
+\]</span></p>
+<p>The best parameters are the ones that maximize this likelihood function. Thankfully, in practice, you don’t have to solve this maximization problem. Your software will do it for you.</p>
+<p>Executing this model in R is quite easy to do. R is a statistical programming language after all, and this is a statistical model. Here’s simple code for estimating the regression model I specified earlier:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb19"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a><span class="fu">glm</span>(</span>
+<span id="cb19-2"><a href="#cb19-2" aria-hidden="true" tabindex="-1"></a>  cowmidonset <span class="sc">~</span> cont <span class="sc">+</span> majpower <span class="sc">+</span> <span class="fu">log</span>(capdist) <span class="sc">+</span> <span class="fu">poly</span>(cowmidspell, <span class="dv">3</span>),</span>
+<span id="cb19-3"><a href="#cb19-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">data =</span> dt,</span>
+<span id="cb19-4"><a href="#cb19-4" aria-hidden="true" tabindex="-1"></a>  <span class="at">family =</span> binomial</span>
+<span id="cb19-5"><a href="#cb19-5" aria-hidden="true" tabindex="-1"></a>) <span class="ot">-&gt;</span> fit</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>The function <code>glm()</code> stands for <em>generalized</em> linear model. It can be used to estimate linear models, but also models such as logit that apply a non-linear transformation to the right-hand side of the model equation to force the data to better fit certain characteristics of the outcome.</p>
+<p>The first thing I gave <code>glm()</code> was details about my regression model using R’s formula syntax. This lets me tell it what I want my outcome variable to be and which variables in my data I want to use to predict it.</p>
+<p>I then tell <code>glm()</code> the dataset it needs to go looking in to find these variables by writing <code>data = dt</code>.</p>
+<p>Finally, I specify <code>family = binomial</code> to indicate that I want to estimate a logit model. This syntax is actually shorthand for saying <code>family = binomial(link = "logit")</code>.</p>
+<p>If I want to take a look at the model results, I can use the <code>summary()</code> function on the model object called <code>fit</code> I created in the code above:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb20"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(fit)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+Call:
+glm(formula = cowmidonset ~ cont + majpower + log(capdist) + 
+    poly(cowmidspell, 3), family = binomial, data = dt)
+
+Deviance Residuals: 
+    Min       1Q   Median       3Q      Max  
+-1.0670  -0.0663  -0.0412  -0.0299   6.0427  
+
+Coefficients:
+                        Estimate Std. Error z value Pr(&gt;|z|)    
+(Intercept)             -4.22455    0.17067 -24.753   &lt;2e-16 ***
+cont                     2.13119    0.05247  40.620   &lt;2e-16 ***
+majpower                 1.67629    0.03652  45.897   &lt;2e-16 ***
+log(capdist)            -0.32679    0.01991 -16.410   &lt;2e-16 ***
+poly(cowmidspell, 3)1 -633.63571   31.81307 -19.917   &lt;2e-16 ***
+poly(cowmidspell, 3)2   99.72789   52.44293   1.902   0.0572 .  
+poly(cowmidspell, 3)3 -733.55661   39.22941 -18.699   &lt;2e-16 ***
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 45541  on 918314  degrees of freedom
+Residual deviance: 33636  on 918308  degrees of freedom
+AIC: 33650
+
+Number of Fisher Scoring iterations: 10</code></pre>
+</div>
+</div>
+<p>There’s a lot of info that this function returns, but most of the action is under the <code>Coefficients:</code> heading. This is a table that, for each explanatory variable in the model, reports the coefficient, standard error, test statistic (known as a z-statistic), and p-value. The coefficient is a measure of how much the chance of conflict changes based on a change in the explanatory variable. The remaining values capture statistical uncertainty (the role of random noise) in generating these coefficients. If the p-value is less than 0.05, this means that the coefficient value is statistically significant. That is, the null hypothesis that the coefficient should be zero can be rejected. Looking at the results above, it looks like contiguity, major power status, and distance all have a statistically significant relationship with the probability of a MID between a pair of countries. Based on what you know about the Braumoeller-Carson measure of opportunities for war, these values make sense. The coefficients for contiguity and major power status are positive, meaning contiguous dyads and those where at least one is a major power have a higher probability of fighting. The coefficient for the log of distance is negative, meaning dyads where countries are farther apart have a lower probability of fighting.</p>
+<p>These results can be more accessibly summarized in a coefficient plot, as I do in the below code. Coefficient plots summarize model output by reporting the coefficient as a point and summarizing statistical significance using 95% confidence intervals, which have the appropriate coverage for determining if an estimate is statistically different from some value of interest (in this case, zero). The below code will make a coefficient plot specifically for the three factors of interest: contiguity, major power status, and distance.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb22"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a>fit <span class="sc">|&gt;</span></span>
+<span id="cb22-2"><a href="#cb22-2" aria-hidden="true" tabindex="-1"></a>  broom<span class="sc">::</span><span class="fu">tidy</span>() <span class="sc">|&gt;</span></span>
+<span id="cb22-3"><a href="#cb22-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(</span>
+<span id="cb22-4"><a href="#cb22-4" aria-hidden="true" tabindex="-1"></a>    <span class="at">lower =</span> estimate <span class="sc">-</span> <span class="fl">1.96</span> <span class="sc">*</span> std.error,</span>
+<span id="cb22-5"><a href="#cb22-5" aria-hidden="true" tabindex="-1"></a>    <span class="at">upper =</span> estimate <span class="sc">+</span> <span class="fl">1.96</span> <span class="sc">*</span> std.error</span>
+<span id="cb22-6"><a href="#cb22-6" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">|&gt;</span></span>
+<span id="cb22-7"><a href="#cb22-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">slice</span>(<span class="dv">2</span><span class="sc">:</span><span class="dv">4</span>) <span class="sc">|&gt;</span></span>
+<span id="cb22-8"><a href="#cb22-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>() <span class="sc">+</span></span>
+<span id="cb22-9"><a href="#cb22-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">aes</span>(estimate, term, <span class="at">xmin =</span> lower, <span class="at">xmax =</span> upper) <span class="sc">+</span></span>
+<span id="cb22-10"><a href="#cb22-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_pointrange</span>() <span class="sc">+</span></span>
+<span id="cb22-11"><a href="#cb22-11" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_vline</span>(</span>
+<span id="cb22-12"><a href="#cb22-12" aria-hidden="true" tabindex="-1"></a>    <span class="at">xintercept =</span> <span class="dv">0</span>,</span>
+<span id="cb22-13"><a href="#cb22-13" aria-hidden="true" tabindex="-1"></a>    <span class="at">lty =</span> <span class="dv">2</span></span>
+<span id="cb22-14"><a href="#cb22-14" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">+</span></span>
+<span id="cb22-15"><a href="#cb22-15" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_y_discrete</span>(</span>
+<span id="cb22-16"><a href="#cb22-16" aria-hidden="true" tabindex="-1"></a>    <span class="at">labels =</span> <span class="fu">c</span>(<span class="st">"Contiguity"</span>, <span class="st">"Distance (km, log)"</span>, <span class="st">"Major Power"</span>)</span>
+<span id="cb22-17"><a href="#cb22-17" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">+</span></span>
+<span id="cb22-18"><a href="#cb22-18" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(</span>
+<span id="cb22-19"><a href="#cb22-19" aria-hidden="true" tabindex="-1"></a>    <span class="at">title =</span> <span class="st">"Logit estimates with 95% confidence intervals"</span>,</span>
+<span id="cb22-20"><a href="#cb22-20" aria-hidden="true" tabindex="-1"></a>    <span class="at">x =</span> <span class="st">"Coefficient"</span>,</span>
+<span id="cb22-21"><a href="#cb22-21" aria-hidden="true" tabindex="-1"></a>    <span class="at">y =</span> <span class="cn">NULL</span></span>
+<span id="cb22-22"><a href="#cb22-22" aria-hidden="true" tabindex="-1"></a>  )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="05_dyads_files/figure-html/unnamed-chunk-16-1.png" class="img-fluid figure-img" width="576"></p>
+</figure>
+</div>
+</div>
+</div>
+<p>Beyond noting statistical significance and the direction of relationships, the raw output from logit models isn’t very intuitive to understand. Because of the nature of the logistic transformation, the coefficient for a given predictor represents the change in the logged odds of the outcome taking the value 1 per a unit change in the predictor. I don’t know about you, but I don’t really know what that means in practical terms.</p>
+<p>For this reason, it’s often recommended that you report simulated predicted values from logit models rather than only report the raw model coefficients. This task is easy to do in R as well, with the help of the <code>{ggeffects}</code> package. Check out the below code. It uses the <code>ggpredict()</code> function from the <code>{ggeffects}</code> package to get predicted values for MID onset from the logit model based on contiguity while keeping the other model factors fixed at their mean values (this is the default. You can change this if you want.). These values can then be plotted however you want using <code>ggplot()</code>.</p>
+<p>The below code shows the conditional probabilities of conflict based on contiguity. Note that when I show two or more conditional probabilities from a logit model, I use 84% CIs instead of 95% CIs. As I discussed in a previous chapter, I can use the overlap or non-overlap of 84% CIs to judge statistical significance, just as I can use 95% CIs to judge statistical significance based on the overlap or non-overlap of these intervals with zero.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb23"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a><span class="do">## open {ggeffects}</span></span>
+<span id="cb23-2"><a href="#cb23-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(ggeffects)</span>
+<span id="cb23-3"><a href="#cb23-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb23-4"><a href="#cb23-4" aria-hidden="true" tabindex="-1"></a><span class="do">## get predictions</span></span>
+<span id="cb23-5"><a href="#cb23-5" aria-hidden="true" tabindex="-1"></a><span class="fu">ggpredict</span>(fit, <span class="at">terms =</span> <span class="st">"cont"</span>, <span class="at">ci_level =</span> .<span class="dv">84</span>) <span class="sc">|&gt;</span> </span>
+<span id="cb23-6"><a href="#cb23-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">as_tibble</span>() <span class="ot">-&gt;</span> preds</span>
+<span id="cb23-7"><a href="#cb23-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb23-8"><a href="#cb23-8" aria-hidden="true" tabindex="-1"></a><span class="do">## plot results</span></span>
+<span id="cb23-9"><a href="#cb23-9" aria-hidden="true" tabindex="-1"></a>preds <span class="sc">|&gt;</span></span>
+<span id="cb23-10"><a href="#cb23-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(</span>
+<span id="cb23-11"><a href="#cb23-11" aria-hidden="true" tabindex="-1"></a>    <span class="at">x =</span> <span class="fu">ifelse</span>(x <span class="sc">==</span> <span class="dv">1</span>, <span class="st">"Contiguous"</span>, <span class="st">"Non-contiguous"</span>)</span>
+<span id="cb23-12"><a href="#cb23-12" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">|&gt;</span></span>
+<span id="cb23-13"><a href="#cb23-13" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>() <span class="sc">+</span></span>
+<span id="cb23-14"><a href="#cb23-14" aria-hidden="true" tabindex="-1"></a>  <span class="fu">aes</span>(x, predicted, <span class="at">ymin =</span> conf.low, <span class="at">ymax =</span> conf.high) <span class="sc">+</span></span>
+<span id="cb23-15"><a href="#cb23-15" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_pointrange</span>() <span class="sc">+</span></span>
+<span id="cb23-16"><a href="#cb23-16" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_y_continuous</span>(</span>
+<span id="cb23-17"><a href="#cb23-17" aria-hidden="true" tabindex="-1"></a>    <span class="at">labels =</span> scales<span class="sc">::</span>percent</span>
+<span id="cb23-18"><a href="#cb23-18" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">+</span></span>
+<span id="cb23-19"><a href="#cb23-19" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(</span>
+<span id="cb23-20"><a href="#cb23-20" aria-hidden="true" tabindex="-1"></a>    <span class="at">title =</span> <span class="st">"Contiguous dyads are more likely to fight"</span>,</span>
+<span id="cb23-21"><a href="#cb23-21" aria-hidden="true" tabindex="-1"></a>    <span class="at">subtitle =</span> <span class="st">"Estimated prediction from a logit model"</span>,</span>
+<span id="cb23-22"><a href="#cb23-22" aria-hidden="true" tabindex="-1"></a>    <span class="at">x =</span> <span class="cn">NULL</span>,</span>
+<span id="cb23-23"><a href="#cb23-23" aria-hidden="true" tabindex="-1"></a>    <span class="at">y =</span> <span class="st">"% Chance"</span></span>
+<span id="cb23-24"><a href="#cb23-24" aria-hidden="true" tabindex="-1"></a>  )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="05_dyads_files/figure-html/unnamed-chunk-17-1.png" class="img-fluid figure-img" width="576"></p>
+</figure>
+</div>
+</div>
+</div>
+<p>You can do a similar process for each of the other covariates, but depending on whether the predictor is binary or continuous, the execution will be a bit different. For example, here’s how this process would look for distance, which is continuous:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb24"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggpredict</span>(fit, <span class="st">"capdist"</span>, <span class="fl">0.84</span>) <span class="sc">|&gt;</span></span>
+<span id="cb24-2"><a href="#cb24-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">as_tibble</span>() <span class="sc">|&gt;</span></span>
+<span id="cb24-3"><a href="#cb24-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>() <span class="sc">+</span></span>
+<span id="cb24-4"><a href="#cb24-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">aes</span>(x, predicted, <span class="at">ymin =</span> conf.low, <span class="at">ymax =</span> conf.high) <span class="sc">+</span></span>
+<span id="cb24-5"><a href="#cb24-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_line</span>() <span class="sc">+</span></span>
+<span id="cb24-6"><a href="#cb24-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_ribbon</span>(</span>
+<span id="cb24-7"><a href="#cb24-7" aria-hidden="true" tabindex="-1"></a>    <span class="at">alpha =</span> <span class="fl">0.3</span></span>
+<span id="cb24-8"><a href="#cb24-8" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">+</span></span>
+<span id="cb24-9"><a href="#cb24-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_x_log10</span>(</span>
+<span id="cb24-10"><a href="#cb24-10" aria-hidden="true" tabindex="-1"></a>    <span class="at">labels =</span> scales<span class="sc">::</span>comma</span>
+<span id="cb24-11"><a href="#cb24-11" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">+</span></span>
+<span id="cb24-12"><a href="#cb24-12" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_y_continuous</span>(</span>
+<span id="cb24-13"><a href="#cb24-13" aria-hidden="true" tabindex="-1"></a>    <span class="at">labels =</span> scales<span class="sc">::</span>percent</span>
+<span id="cb24-14"><a href="#cb24-14" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">+</span></span>
+<span id="cb24-15"><a href="#cb24-15" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(</span>
+<span id="cb24-16"><a href="#cb24-16" aria-hidden="true" tabindex="-1"></a>    <span class="at">title =</span> <span class="st">"Distance lowers the chance of conflict"</span>,</span>
+<span id="cb24-17"><a href="#cb24-17" aria-hidden="true" tabindex="-1"></a>    <span class="at">subtitle =</span> <span class="st">"Estimated prediction from a logit model"</span>,</span>
+<span id="cb24-18"><a href="#cb24-18" aria-hidden="true" tabindex="-1"></a>    <span class="at">x =</span> <span class="st">"Bilateral distance in km (log scale)"</span>,</span>
+<span id="cb24-19"><a href="#cb24-19" aria-hidden="true" tabindex="-1"></a>    <span class="at">y =</span> <span class="st">"% Chance"</span></span>
+<span id="cb24-20"><a href="#cb24-20" aria-hidden="true" tabindex="-1"></a>  )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="05_dyads_files/figure-html/unnamed-chunk-18-1.png" class="img-fluid figure-img" width="576"></p>
+</figure>
+</div>
+</div>
+</div>
+<p>All in all, the data offers some good confirmation of the logic beyond the Braumoeller-Carson measure of conflict opportunities. The countries most prone to “rolling the iron dice,” to resurrect a metaphor I introduced in previous chapters, are those that are neighbors, major powers, or those that are relatively close geographically.</p>
+</section>
+<section id="some-additional-recommendations" class="level2" data-number="5.4">
+<h2 data-number="5.4" class="anchored" data-anchor-id="some-additional-recommendations"><span class="header-section-number">5.4</span> Some additional recommendations</h2>
+<p>The model results shown above nearly conform to the best practices in peace science research, but one big factor remains: robust inference. Logit models don’t on their own account for the fact that dyads interact over time, which means one dyad in a given year is also correlated with the same dyad in other years. Controlling for peace spells, as I did in the model, helps a bit, but not perfectly, because the problem has to do with the uncertainty created by repeated interactions over time.</p>
+<p>There are two ways around this problem. The first is to simply estimate standard errors that adjust for this, known as cluster-robust standard errors. The second is to model this feature of the data directly in your logit specification. My preference is the second, but the first is more the norm, mainly because it’s easier to do.</p>
+<p>Before I tell you how to implement each approach, let me quickly explain why I like the second one better.</p>
+<p>As I teach my 201 students, an assumption like independence of observations (the idea that no two or more data points influence each other) only matters when you’re doing statistical inference for linear regression models. Independence has no bearing on the linear model estimates themselves. This isn’t the case with many <em>generalized</em> linear models which make stronger assumptions of the data. In the case of logit models, a violation of independence (e.g., the fact that one dyad in one year is correlated with this same dyad in other years) means that your model estimates (coefficients) will be biased in addition to your standard errors. Therefore, taking your model coefficients as is and then applying robust standard errors after the fact only fixes half of the problem.</p>
+<p>Modeling dependence directly fixes both problems at once. Importantly, using this approach doesn’t guarantee that everything is fine. You still can get biased results if you have a poorly specified model. But in practice I think it offers better precision in model estimates and reduces bias in your model coefficients if done well.</p>
+<p>Because this is just my preference, let me show you how to implement both approaches. As you’ll see, in both cases I need to use the dyad identifier column I added to the data to indicate which observations should be treated as clustered (dependent).</p>
+<p>First, robust standard errors:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb25"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb25-1"><a href="#cb25-1" aria-hidden="true" tabindex="-1"></a><span class="do">## open {lmtest} and {sandwich}</span></span>
+<span id="cb25-2"><a href="#cb25-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(lmtest)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Loading required package: zoo</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>
+Attaching package: 'zoo'</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>The following objects are masked from 'package:base':
+
+    as.Date, as.Date.numeric</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb29"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb29-1"><a href="#cb29-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(sandwich)</span>
+<span id="cb29-2"><a href="#cb29-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb29-3"><a href="#cb29-3" aria-hidden="true" tabindex="-1"></a><span class="do">## rerun coefficient test with robust standard errors clustered by dyad</span></span>
+<span id="cb29-4"><a href="#cb29-4" aria-hidden="true" tabindex="-1"></a>fit <span class="sc">|&gt;</span></span>
+<span id="cb29-5"><a href="#cb29-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">coeftest</span>(</span>
+<span id="cb29-6"><a href="#cb29-6" aria-hidden="true" tabindex="-1"></a>    <span class="at">vcov. =</span> <span class="fu">vcovHC</span>(fit, <span class="at">clusters =</span> dt<span class="sc">$</span>dyad)</span>
+<span id="cb29-7"><a href="#cb29-7" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">|&gt;</span> </span>
+<span id="cb29-8"><a href="#cb29-8" aria-hidden="true" tabindex="-1"></a>  broom<span class="sc">::</span><span class="fu">tidy</span>() <span class="sc">|&gt;</span></span>
+<span id="cb29-9"><a href="#cb29-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(</span>
+<span id="cb29-10"><a href="#cb29-10" aria-hidden="true" tabindex="-1"></a>    <span class="at">lower =</span> estimate <span class="sc">-</span> <span class="fl">1.96</span> <span class="sc">*</span> std.error,</span>
+<span id="cb29-11"><a href="#cb29-11" aria-hidden="true" tabindex="-1"></a>    <span class="at">upper =</span> estimate <span class="sc">+</span> <span class="fl">1.96</span> <span class="sc">*</span> std.error,</span>
+<span id="cb29-12"><a href="#cb29-12" aria-hidden="true" tabindex="-1"></a>    <span class="at">Method =</span> <span class="st">"Robust SE"</span></span>
+<span id="cb29-13"><a href="#cb29-13" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">|&gt;</span></span>
+<span id="cb29-14"><a href="#cb29-14" aria-hidden="true" tabindex="-1"></a>  <span class="fu">slice</span>(<span class="dv">2</span><span class="sc">:</span><span class="dv">4</span>) <span class="ot">-&gt;</span> app1</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>Second, here’s how to model dyadic dependence directly. To implement this approach, I need to use the <code>gam()</code> function from the <code>{mgcv}</code> package, and then include <code>s(dyad, bs = "re")</code> in the formula. This tells <code>gam()</code> that I want to include <em>dyadic random effects</em> in the model. These let me account for between dyad differences, and within dyad dependence simultaneously, while also allowing me to make partial comparisons between dyads for my other model predictors. When I use this approach, I can use the standard errors directly produced from the model:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb30"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb30-1"><a href="#cb30-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(mgcv)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning: package 'mgcv' was built under R version 4.2.3</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Loading required package: nlme</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>
+Attaching package: 'nlme'</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>The following object is masked from 'package:dplyr':
+
+    collapse</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>This is mgcv 1.9-0. For overview type 'help("mgcv-package")'.</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb36"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb36-1"><a href="#cb36-1" aria-hidden="true" tabindex="-1"></a><span class="fu">gam</span>(</span>
+<span id="cb36-2"><a href="#cb36-2" aria-hidden="true" tabindex="-1"></a>  cowmidonset <span class="sc">~</span> cont <span class="sc">+</span> majpower <span class="sc">+</span> <span class="fu">log</span>(capdist) <span class="sc">+</span> <span class="fu">poly</span>(cowmidspell, <span class="dv">3</span>) <span class="sc">+</span></span>
+<span id="cb36-3"><a href="#cb36-3" aria-hidden="true" tabindex="-1"></a>    <span class="fu">s</span>(dyad, <span class="at">bs =</span> <span class="st">"re"</span>),</span>
+<span id="cb36-4"><a href="#cb36-4" aria-hidden="true" tabindex="-1"></a>  <span class="at">data =</span> dt,</span>
+<span id="cb36-5"><a href="#cb36-5" aria-hidden="true" tabindex="-1"></a>  <span class="at">family =</span> binomial</span>
+<span id="cb36-6"><a href="#cb36-6" aria-hidden="true" tabindex="-1"></a>) <span class="ot">-&gt;</span> new_fit</span>
+<span id="cb36-7"><a href="#cb36-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb36-8"><a href="#cb36-8" aria-hidden="true" tabindex="-1"></a>new_fit <span class="sc">|&gt;</span></span>
+<span id="cb36-9"><a href="#cb36-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">coeftest</span>() <span class="sc">|&gt;</span></span>
+<span id="cb36-10"><a href="#cb36-10" aria-hidden="true" tabindex="-1"></a>  broom<span class="sc">::</span><span class="fu">tidy</span>() <span class="sc">|&gt;</span></span>
+<span id="cb36-11"><a href="#cb36-11" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(</span>
+<span id="cb36-12"><a href="#cb36-12" aria-hidden="true" tabindex="-1"></a>    <span class="at">lower =</span> estimate <span class="sc">-</span> <span class="fl">1.96</span> <span class="sc">*</span> std.error,</span>
+<span id="cb36-13"><a href="#cb36-13" aria-hidden="true" tabindex="-1"></a>    <span class="at">upper =</span> estimate <span class="sc">+</span> <span class="fl">1.96</span> <span class="sc">*</span> std.error,</span>
+<span id="cb36-14"><a href="#cb36-14" aria-hidden="true" tabindex="-1"></a>    <span class="at">Method =</span> <span class="st">"Random Effects"</span></span>
+<span id="cb36-15"><a href="#cb36-15" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">|&gt;</span></span>
+<span id="cb36-16"><a href="#cb36-16" aria-hidden="true" tabindex="-1"></a>  <span class="fu">slice</span>(<span class="dv">2</span><span class="sc">:</span><span class="dv">4</span>) <span class="ot">-&gt;</span> app2</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>Once I have the results I can compare them:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb37"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb37-1"><a href="#cb37-1" aria-hidden="true" tabindex="-1"></a><span class="fu">bind_rows</span>(app1, app2) <span class="sc">|&gt;</span></span>
+<span id="cb37-2"><a href="#cb37-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>() <span class="sc">+</span></span>
+<span id="cb37-3"><a href="#cb37-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">aes</span>(estimate, term, <span class="at">xmin =</span> lower, <span class="at">xmax =</span> upper) <span class="sc">+</span></span>
+<span id="cb37-4"><a href="#cb37-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_pointrange</span>(</span>
+<span id="cb37-5"><a href="#cb37-5" aria-hidden="true" tabindex="-1"></a>    <span class="fu">aes</span>(<span class="at">color =</span> Method),</span>
+<span id="cb37-6"><a href="#cb37-6" aria-hidden="true" tabindex="-1"></a>    <span class="at">position =</span> <span class="fu">position_dodge</span>(<span class="sc">-</span>.<span class="dv">5</span>),</span>
+<span id="cb37-7"><a href="#cb37-7" aria-hidden="true" tabindex="-1"></a>    <span class="at">size =</span> .<span class="dv">1</span></span>
+<span id="cb37-8"><a href="#cb37-8" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">+</span></span>
+<span id="cb37-9"><a href="#cb37-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_vline</span>(</span>
+<span id="cb37-10"><a href="#cb37-10" aria-hidden="true" tabindex="-1"></a>    <span class="at">xintercept =</span> <span class="dv">0</span>, <span class="at">lty =</span> <span class="dv">2</span></span>
+<span id="cb37-11"><a href="#cb37-11" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">+</span></span>
+<span id="cb37-12"><a href="#cb37-12" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_y_discrete</span>(</span>
+<span id="cb37-13"><a href="#cb37-13" aria-hidden="true" tabindex="-1"></a>    <span class="at">labels =</span> <span class="fu">c</span>(</span>
+<span id="cb37-14"><a href="#cb37-14" aria-hidden="true" tabindex="-1"></a>      <span class="st">"Contiguity"</span>,</span>
+<span id="cb37-15"><a href="#cb37-15" aria-hidden="true" tabindex="-1"></a>      <span class="st">"Distance (km, log)"</span>,</span>
+<span id="cb37-16"><a href="#cb37-16" aria-hidden="true" tabindex="-1"></a>      <span class="st">"Major Power"</span></span>
+<span id="cb37-17"><a href="#cb37-17" aria-hidden="true" tabindex="-1"></a>    )</span>
+<span id="cb37-18"><a href="#cb37-18" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">+</span></span>
+<span id="cb37-19"><a href="#cb37-19" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(</span>
+<span id="cb37-20"><a href="#cb37-20" aria-hidden="true" tabindex="-1"></a>    <span class="at">title =</span> <span class="st">"The difference between methods"</span>,</span>
+<span id="cb37-21"><a href="#cb37-21" aria-hidden="true" tabindex="-1"></a>    <span class="at">subtitle =</span> <span class="st">"Robust standard errors vs. dyadic random effects"</span>,</span>
+<span id="cb37-22"><a href="#cb37-22" aria-hidden="true" tabindex="-1"></a>    <span class="at">x =</span> <span class="st">"Coefficient"</span>,</span>
+<span id="cb37-23"><a href="#cb37-23" aria-hidden="true" tabindex="-1"></a>    <span class="at">y =</span> <span class="cn">NULL</span></span>
+<span id="cb37-24"><a href="#cb37-24" aria-hidden="true" tabindex="-1"></a>  )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning: `position_dodge()` requires non-overlapping x intervals.</code></pre>
+</div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="05_dyads_files/figure-html/unnamed-chunk-21-1.png" class="img-fluid figure-img" width="576"></p>
+</figure>
+</div>
+</div>
+</div>
+<p>The differences aren’t substantial, but they do exist, and depending on what all you include in your model, differences can be potentially more substantial. I’ve personally seen variables shift from being statistically significant to not (and vice versa), and some variable estimates shift direction. Going forward, I’ll primarily use the robust standard error approach since this is more the norm, but I wanted to make sure you knew about a different option that I think offers some important advantages (useful to keep in mind for a final project).</p>
+</section>
+<section id="summary" class="level2" data-number="5.5">
+<h2 data-number="5.5" class="anchored" data-anchor-id="summary"><span class="header-section-number">5.5</span> Summary</h2>
+<p>I covered a lot of ground in this chapter. For that I’m sorry. To do peace science requires understanding some more -than-basic statistical tools. But the good news is that few peace science studies deviate very far from the methods I used here. You can take what you learn from here and apply it general to nearly any international conflict study you can conceive.</p>
+<p>However, while the methods change very little from one study to the next, as you’ll see in the coming chapters when I introduce different theoretical arguments for why countries fight, the real art of peace science is measuring sometimes difficult to measure concepts so that you can plug them into a statistical model like logit. This requires making difficult judgment calls and an ability to <em>write</em> a compelling argument that convinces other researchers that your theoretical and empirical contribution to the field is sound and worth publishing.</p>
+
+
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list" style="display: none">
+<div id="ref-peacesciencer-package" class="csl-entry" role="listitem">
+Miller, Steven V. 2022. <span>“<span class="nocase">peacesciencer</span>: An r Package for Quantitative Peace Science Research.”</span> <em>Conflict Management and Peace Science</em>. <a href="http://svmiller.com/peacesciencer/">http://svmiller.com/peacesciencer/</a>.
+</div>
+</div>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const onCopySuccess = function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
+  });
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    // For code content inside modals, clipBoardJS needs to be initialized with a container option
+    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    });
+    clipboardModal.on('success', onCopySuccess);
+  }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="./04_is_war_less_deadly.html" class="pagination-link" aria-label="Is War Less Deadly?">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Is War Less Deadly?</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="./06_power.html" class="pagination-link" aria-label="The Balance of Power and War">
+        <span class="nav-page-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">The Balance of Power and War</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+
+
+
+
+</body></html>

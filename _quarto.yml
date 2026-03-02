@@ -12,6 +12,8 @@ book:
     - 02_the_data.qmd
     - 03_is_war_disappearing.qmd
     - 04_is_war_less_deadly.qmd
+    - 05_dyads.qmd
+    - 06_power.qmd
     - references.qmd
 
 bibliography: references.bib
