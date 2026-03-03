@@ -92,7 +92,7 @@ get_war_data <- function(only_wars = T) {
     ) -> war_dt
   
   ## opportunity data
-  source("https://raw.githubusercontent.com/milesdwilliams15/death-destruction-data/refs/heads/main/helpers/peacesceincer_extras.R")
+  source("https://raw.githubusercontent.com/milesdwilliams15/death-destruction-data/refs/heads/main/helpers/peacesciencer_extras.R")
   suppressMessages(get_opportunity_data()) -> opp_dt
   
   war_dt |>
