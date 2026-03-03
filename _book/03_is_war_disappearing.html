@@ -413,7 +413,7 @@ P_t = \frac{I_t}{O_t}
 <p>There are issues with this measure, too. For instance, it still treats major powers equally, and it assumes that distance means the same thing to the U.S. that it does to Bolivia. However, it’s probably a stronger option than the other three, but given the prevalent use of the the previous one (PRDs), it’s wise to use both it and the Braumoeller-Carson measure to see if using one or the other makes a big difference.</p>
 <p>This hard to do without data, of course, so with some measures of opportunities identified (PRDs and BCDs) the next step is to actually get some data. Thankfully, because of the hard work of the peace science community, the relevant data and tools to access it only require writing a few lines of R code. I also did some leg work by creating another R script file that gives you a pre-canned routine for generating the data based on these other tools. All you need to do is run the <code>source()</code> function on the url address for the relevant script saved on my GitHub, and then you can use the function <code>get_opportunity_data()</code> to access yearly counts of conflict opportunities.</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">source</span>(<span class="st">"https://raw.githubusercontent.com/milesdwilliams15/death-destruction-data/refs/heads/main/helpers/peacesceincer_extras.R"</span>)</span>
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">source</span>(<span class="st">"https://raw.githubusercontent.com/milesdwilliams15/death-destruction-data/refs/heads/main/helpers/peacesciencer_extras.R"</span>)</span>
 <span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a><span class="fu">get_opportunity_data</span>() <span class="ot">-&gt;</span> opp_dt</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stderr">
@@ -546,8 +546,8 @@ P_t = \frac{I_t}{O_t}
 <pre><code># A tibble: 2 × 4
   `year &lt; 1850`    mean   lower   upper
   &lt;lgl&gt;           &lt;dbl&gt;   &lt;dbl&gt;   &lt;dbl&gt;
-1 FALSE         0.00715 0.00623 0.00800
-2 TRUE          0.00466 0.00374 0.00569</code></pre>
+1 FALSE         0.00715 0.00625 0.00802
+2 TRUE          0.00466 0.00368 0.00578</code></pre>
 </div>
 </div>
 <p>If you look at the results, it seems that the average conflict rate from 1820 to 1849 was <em>lower</em> than the rate from 1850 to 1979, and that this difference is <em>statistically significant</em>. You can tell because the upper bound for the confidence interval for the pre-1850 average is less than the lower bound of the post-1950 average.</p>

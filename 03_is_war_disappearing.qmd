@@ -179,7 +179,7 @@ There are issues with this measure, too. For instance, it still treats major pow
 This hard to do without data, of course, so with some measures of opportunities identified (PRDs and BCDs) the next step is to actually get some data. Thankfully, because of the hard work of the peace science community, the relevant data and tools to access it only require writing a few lines of R code. I also did some leg work by creating another R script file that gives you a pre-canned routine for generating the data based on these other tools. All you need to do is run the `source()` function on the url address for the relevant script saved on my GitHub, and then you can use the function `get_opportunity_data()` to access yearly counts of conflict opportunities.
 
 ```{r}
-source("https://raw.githubusercontent.com/milesdwilliams15/death-destruction-data/refs/heads/main/helpers/peacesceincer_extras.R")
+source("https://raw.githubusercontent.com/milesdwilliams15/death-destruction-data/refs/heads/main/helpers/peacesciencer_extras.R")
 
 get_opportunity_data() -> opp_dt
 ```

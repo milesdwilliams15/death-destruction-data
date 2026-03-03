@@ -294,7 +294,7 @@ div.csl-indent {
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(peacesciencer)</span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="fu">source</span>(</span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>  here<span class="sc">::</span><span class="fu">here</span>(<span class="st">"helpers"</span>, <span class="st">"peacesciencer_extras.R"</span>)</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>  <span class="st">"https://raw.githubusercontent.com/milesdwilliams15/death-destruction-data/refs/heads/main/helpers/peacesciencer_extras.R"</span></span>
 <span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>The first thing I need to do is make a dataset. When it comes to doing peace science research, remember that most studies use dyadic data, but I have to make a choice. Should the data be <em>directed</em> or <em>non</em>-directed?</p>
@@ -421,9 +421,10 @@ div.csl-indent {
 </div>
 </div>
 <p>Amazingly, in a non-directed dyad analysis, the data supports PT rather than BoP. Country pairs where there’s a bigger imbalance of power are less likely to fight. What’s going on here?</p>
-<p>I have to confess that I don’t really know, but this slight, seemingly innocuous tweak that gave me statistically significant results that contradict the first set of findings, should raise alarm bells. And this is the point I wanted to make. My goal in this exercise wasn’t to test BoP and PT head-to-head and declare a victor; it was to demonstrate that it’s possible to analyze the data in such a way that supports either theory.</p>
+<p>I have to confess that I don’t really know, but this slight, seemingly innocuous tweak that gave me statistically significant results that contradict the first set of findings, should raise alarm bells. And this is the point I wanted to make: it’s possible to analyze the data in such a way that supports either theory.</p>
 <p>This is the most important challenge associated with peace science (and social science generally), and it demonstrates why you shouldn’t just start cobbling together a grab-bag of variables and running analyses without first thinking very carefully about the choices you’re making and why. I think this point is even more important now in an age of pattern-engine-driven workflows, where AI agents can easily make subtle choices, against your wishes, or on their own without your input, that dramatically affect results. For this reason, even if down the road a tool like Claude ends up writing and running 99% of your code, you still need to understand what it’s doing, and <em>you</em> need to be in the driver’s seat. Control the tool; don’t let it control you.</p>
 <p>If all you remember from this exercise is that subtle choices make big differences, that will be enough for me.</p>
+<p>And one more thing before I wrap up. In addition to the results appearing contradictory, they also have little practical significance. The below code will produce a prediction plot based on the model fit with the directed dyad dataset, and the results appear below. The predicted change in the probability of side 1 in a country pair initiating a conflict with side 2 is negligible.</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="fu">tibble</span>(</span>
 <span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>  <span class="at">ratio =</span> <span class="fu">seq</span>(<span class="fu">min</span>(dt<span class="sc">$</span>ratio), <span class="fu">max</span>(dt<span class="sc">$</span>ratio), <span class="at">len =</span> <span class="dv">10</span>),</span>
@@ -457,6 +458,7 @@ div.csl-indent {
 </div>
 </div>
 </div>
+<p>The same is true for the non-directed model. The below code produces another prediction plot like the first, but this time for the model fit with the non-directed dyad data. Again, you can see that the balance of power predicts a negligible difference in the chance of conflict between a pair of countries. What this tells me is that BoP and PT, if they are useful theories, have limited utility in explaining most of the variation in international conflict.</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="fu">tibble</span>(</span>
 <span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>  <span class="at">ratio =</span> <span class="fu">seq</span>(<span class="fu">min</span>(ndt<span class="sc">$</span>ratio), <span class="fu">max</span>(ndt<span class="sc">$</span>ratio), <span class="at">len =</span> <span class="dv">10</span>),</span>
@@ -493,6 +495,9 @@ div.csl-indent {
 </section>
 <section id="summary" class="level2" data-number="6.4">
 <h2 data-number="6.4" class="anchored" data-anchor-id="summary"><span class="header-section-number">6.4</span> Summary</h2>
+<p>Social science research involves tough judgment calls and subjective choices where there isn’t one correct option. This becomes an issue when your findings depend on your choices. Ideally, you want to see findings that aren’t so brittle. When it comes to BoP and PT, unfortunately, the results are brittle indeed.</p>
+<p>This doesn’t mean all is lost. As a social scientist, seeing contradictory findings is an invitation to solve a puzzle. The question you should ask about BoP and PT is: <em>why</em> are the results contradictory? A good follow up would be: is something else going on?</p>
+<p>These are the kinds of questions that can become the basis for new research. Maybe you’re the one to start looking for answers.</p>
 
 
 <div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list" style="display: none">
