@@ -14,12 +14,13 @@ x_spell <- function(x) {
     if(i == 1) {
       nx[i] <- nx[i]
     } else {
-      nx[i] <- (nx[i] + nx[i - 1]) * (1 - x[i])
+      nx[i] <- (1 + nx[i-1]) * (1 - x[i]) +
+        x[i] * (1 - x[i-1]) * (1 + nx[i - 1])
+      if(x[i] == 0 & x[i-1] == 1) nx[i] <- 1
     }
   }
   ifelse(nx > 0, nx - 1, nx)
 }
-
 # add_icd_mics() ----------------------------------------------------------
 
 add_icd_mics <- function(
@@ -95,7 +96,6 @@ add_icd_mics <- function(
       ccode1, 
       ccode2, 
       year, 
-      starts_with("gml_"), 
       everything()
     ) -> dt
   
@@ -117,12 +117,17 @@ add_icd_mics <- function(
     
     # compute peace spell
     dt |>
-      group_by(ccode1, ccode2) |>
-      arrange(year) |>
-      mutate(
-        micspell = x_spell(micongoing)
+      mutate(id = paste0(ccode1, "-", ccode2)) |>
+      stevemisc::ps_spells(
+        micongoing,
+        year,
+        id,
+        ongoing = FALSE
       ) |>
-      ungroup() -> dt
+      rename(
+        micspell = spell
+      ) |>
+      select(-id) -> dt
     
     # preserve attributes
     attributes(dt)$ps_data_type <- "dyad_year"
@@ -161,12 +166,17 @@ add_icd_mics <- function(
     
     # compute peace spell
     dt |>
-      group_by(ccode) |>
-      arrange(year) |>
-      mutate(
-        micspell = x_spell(micongoing)
+      mutate(id = paste0(ccode1, "-", ccode2)) |>
+      stevemisc::ps_spells(
+        micongoing,
+        year,
+        id,
+        ongoing = FALSE
       ) |>
-      ungroup() -> dt
+      rename(
+        micspell = spell
+      ) |>
+      select(-id) -> dt
     
     ## preserve attributes
     attributes(dt)$ps_data_type <- "state_year"
@@ -292,14 +302,6 @@ coef_plot <- function(tidy_fit, coef_map) {
 
 
 # sim_pred() --------------------------------------------------------------
-
-sim_pred <- function(model, term) {
-  fit <- attributes(model)$fit
-  vcv <- attributes(model)$vcv
-  ggeffects::ggpredict(
-    fit, term, 0.84, vcov_fun = vcv
-  ) |> as_tibble()
-}
 
 sim_pred <- function(model, newdata, its = 1000) {
   if(missing(newdata)) stop("Missing 'newdata'.")
