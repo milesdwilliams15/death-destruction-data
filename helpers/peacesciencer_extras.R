@@ -166,11 +166,10 @@ add_icd_mics <- function(
     
     # compute peace spell
     dt |>
-      mutate(id = paste0(ccode1, "-", ccode2)) |>
       stevemisc::ps_spells(
         micongoing,
         year,
-        id,
+        ccode,
         ongoing = FALSE
       ) |>
       rename(
