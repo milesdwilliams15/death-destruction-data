@@ -174,8 +174,7 @@ add_icd_mics <- function(
       ) |>
       rename(
         micspell = spell
-      ) |>
-      select(-id) -> dt
+      ) -> dt
     
     ## preserve attributes
     attributes(dt)$ps_data_type <- "state_year"
