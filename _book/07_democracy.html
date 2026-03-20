@@ -1,0 +1,952 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.5.57">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>7&nbsp; The Democratic Peace – Death, Destruction, and Data</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<link href="./08_trade.html" rel="next">
+<link href="./06_power.html" rel="prev">
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+</head>
+
+<body class="nav-sidebar floating">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./07_democracy.html"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">The Democratic Peace</span></a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="./">Death, Destruction, and Data</a> 
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Preface</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./01_what_is_war.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">What is War?</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./02_the_data.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">The Data</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./03_is_war_disappearing.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Is War Disappearing?</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./04_is_war_less_deadly.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Is War Less Deadly?</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./05_dyads.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Dyadic Models of Conflict</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./06_power.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">The Balance of Power and War</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./07_democracy.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">The Democratic Peace</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./08_trade.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">The Trading Peace</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./references.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">References</span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#what-is-the-democratic-peace" id="toc-what-is-the-democratic-peace" class="nav-link active" data-scroll-target="#what-is-the-democratic-peace"><span class="header-section-number">7.1</span> What is the Democratic Peace?</a></li>
+  <li><a href="#measuring-democracy" id="toc-measuring-democracy" class="nav-link" data-scroll-target="#measuring-democracy"><span class="header-section-number">7.2</span> Measuring Democracy</a></li>
+  <li><a href="#testing-the-democratic-peace" id="toc-testing-the-democratic-peace" class="nav-link" data-scroll-target="#testing-the-democratic-peace"><span class="header-section-number">7.3</span> Testing the Democratic Peace</a></li>
+  <li><a href="#summary" id="toc-summary" class="nav-link" data-scroll-target="#summary"><span class="header-section-number">7.4</span> Summary</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">The Democratic Peace</span></h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<p><strong>Main ideas</strong>:</p>
+<ul>
+<li><p><strong>Democratic Peace:</strong> Democracies rarely fight each other, though they fight non-democracies at normal rates. This empirical pattern is one of the most widely accepted findings in conflict research.</p></li>
+<li><p><strong>Debate Over Causes:</strong> Scholars disagree about why the democratic peace exists. Some argue democracy itself promotes peace through accountability, audience costs, or shared norms, while others argue peace is driven by correlated factors like economic interdependence (the “capitalist peace”).</p></li>
+</ul>
+<!-- -->
+<ul>
+<li><strong>Measuring Democracy:</strong> Researchers use different datasets to measure democracy—such as the Polity 2 index, the V-Dem polyarchy index, and the extended Unified Democracy Scores (eUDS)—which capture different aspects of democratic governance but generally correlate with one another.</li>
+</ul>
+<!-- -->
+<ul>
+<li><strong>Empirical Testing:</strong> A directed-dyad-year dataset can be used to test whether the likelihood of conflict depends on the democracy levels of both countries, but to test the complex and condition relationship implied by the democratic peace, this requires estimating an <em>interaction model</em>.</li>
+</ul>
+<!-- -->
+<ul>
+<li><strong>Key Finding and Puzzle:</strong> Evidence supports the democratic peace (democracies avoid fighting each other), but results can also suggest a “non-democratic peace,” raising questions about measurement, model specification, and alternative explanations for peace.</li>
+</ul>
+<section id="what-is-the-democratic-peace" class="level2" data-number="7.1">
+<h2 data-number="7.1" class="anchored" data-anchor-id="what-is-the-democratic-peace"><span class="header-section-number">7.1</span> What is the Democratic Peace?</h2>
+<p>I don’t recall when I first learned about the “democratic peace,” or even when I first heard the term. For most peace scientists narrowly, and political scientists generally, the democratic peace is common knowledge and one of the few regularities in the social sciences that occurs with <em>law-like</em> consistency. It belongs in the pantheon of laws in the natural and hard sciences, placed squarely between the law of gravity and the second law of thermodynamics.</p>
+<p>I’m being hyperbolic, but only a little. The democratic peace is a persistent pattern that shows up in the data, and few question its empirical accuracy.</p>
+<p>So what is the <em>democratic peace</em>? Dean <span class="citation" data-cites="babst1964elective">Babst (<a href="references.html#ref-babst1964elective" role="doc-biblioref">1964</a>)</span> coined the term decades ago, and it describes the fact that democracies rarely fight each other, even while they fight other countries just as much as everyone else. This finding persists across a wide range of datasets and definitions of conflict and measures of democracy.</p>
+<p>The irony with the democratic peace is that, while widely accepted as an empirical fact, little agreement exists on exactly <em>why</em>. An entire cottage industry of research has coalesced around trying to explain the democratic peace. It’s a subject written about so much that once a graduate school professor of mine told me not to do a project on it because it’d been beaten like a dead horse. As of March 2026, a Google Scholar search for “Democratic Peace” returns over 6,400 articles and books published since 2022. If I extend my search to articles published any time, the number of pieces found totals almost 45,000. A dead horse indeed.</p>
+<p>So much work exists on the subject because the implications for global peace are profound. Could spreading democracy reduce the chance of war? Or is democracy correlated with something else that seems to profoundly lower the chances of conflict between countries?</p>
+<p>Each of these questions gestures toward two main schools of thought that have developed around the democratic peace. The first argues that democracy itself is the cause. The second argues that democracy and peace are both correlated with other factors that are actually the cause of peace.</p>
+<p>Work in the first school tends to theorize that the leaders of democratic regimes pay attention to the regime of other countries when making a determination about whether to go to war. This idea helps answer why the democratic peace is localized specifically to democratic dyads. Other accounts emphasize the idea that democracies are less apt to go to war because citizens would bear most of the costs of fighting. Elected leaders have to pay attention to the interests of their constituents, and this moderates their aggression toward other countries. However, this argument fails to account for the fact that democracies fight non-democracies at normal rates. Clearly, if democracy is the cause of peace, part of the mechanism must be that democracies pay attention to the regimes of potential targets.</p>
+<p>Even among those who accept that leaders base decisions on the regimes of other countries, further disagreement exists on exactly why. Some argue that leaders of democracies have to be more reliant on popular support for their policies, which makes them more formidable adversaries in a conflict when they actually go to war. Others argue that leaders in democracies face <em>audience costs</em> if they back down from a threat or conflict, which increases their resolve. The idea is that citizens will punish their leaders at the ballot box for appearing weak on the global stage. Since democracies know this about each other, they are less apt to provoke fellow democracies who will face strong domestic pressure to respond to international threats.</p>
+<p>Others argue that democracies behave differently toward each other because of shared norms. Negotiation and compromise (theoretically) are central to the democratic process domestically. Therefore, the argument goes, democracies extend these same domestic norms to their interactions with other democracies. Conversely, democracies don’t apply these norms to countries they view as non-democratic.</p>
+<p>Unfortunately, while these arguments make a lot of sense, definitive evidence that any of these mechanisms is at work remains elusive. This creates space for alternative arguments which posit that democracy and peace are simply correlated with other confounding factors. One prominent alternative explanation, which I’ll introduce in greater detail in the next chapter, centers on trade. Many democracies also tend to be important trading partners, and this could explain why democracies rarely fight each other. This school of thought is more closely aligned with the “capitalist peace,” which argues financial and economic interdependence reduces the chance of war. This idea isn’t inherently in conflict with the democratic peace (both could be true at the same time), but some invoke the capitalist peace as competing explanation rather than a complementary one.</p>
+<p>Nonetheless, plenty of researchers remain committed to the idea that democracy itself promotes peace (at least among democratic countries), and in the applied example below I’ll introduce you to a particular approach to analyzing the data that reveals the conditional nature of the democratic peace: namely, that democracies appear to behave differently toward fellow democracies compared to everyone else.</p>
+<p>But first, I think it’s important to spend some time thinking about democracy as a concept and how to measure it.</p>
+</section>
+<section id="measuring-democracy" class="level2" data-number="7.2">
+<h2 data-number="7.2" class="anchored" data-anchor-id="measuring-democracy"><span class="header-section-number">7.2</span> Measuring Democracy</h2>
+<p>Just as the democratic peace is a hotly debated and widely written about subject, so is democracy itself. An R package called <code>{democracyData}</code> provides access to 39 distinct datasets that measure democracy, and on Google Scholar a search for the term “Democracy” returns almost 5 <em>million</em> results.</p>
+<p>With so much literature to contend with, knowing where to start is hard to do. To keep things simple, I’ll introduce you to just three distinct measures of democracy that are directly accessible using the <code>{peacesciencer}</code> package. Compared to many of the alternatives, these three measures are among the most commonly used.</p>
+<p>First, there’s the Polity 2 Index from the Polity IV Project <span class="citation" data-cites="marshalletal2017p">(<a href="references.html#ref-marshalletal2017p" role="doc-biblioref">Marshall, Gurr, and Jaggers 2017</a>)</span>. Only recently has Polity advanced to the Polity 5 Project, but as of now <code>{peacesciencer}</code> only provides access to version IV. This isn’t really a big deal, though, because little has actually changed, and version IV provides sufficient data coverage for the time-frame covered by the Militarized Interstate Events (MIE) dataset I’ve been using to measure international conflict in previous chapters <span class="citation" data-cites="gibler2024mie">(<a href="references.html#ref-gibler2024mie" role="doc-biblioref">Gibler and Miller 2024</a>)</span>.</p>
+<p>Polity’s approach to measuring democracy emphasizes constraints on country executives (presidents or prime ministers in democracies, and “supreme leaders” of one sort or another in non-democracies). Countries receive numerical scores across a range of dimensions by expert coders for things such as how executives are selected, whether and to what extent they can act without impunity, and whether and to what extent other governing bodies can check their power. Once all the relevant scores are noted, they’re added up. The result a score from -10 to 10 which quantifies how democratic or autocratic a country is. This score is known as the the Polity 2 Index. A 10 on the scale is as democratic as a country can possibly be, while a -10 is as autocratic as one can be.</p>
+<p>One of the chief competitors with Polity’s measure of democracy is the Variety of Democracy (V-Dem) Project’s polyarchy index <span class="citation" data-cites="coppedgeetal2020vdem">(<a href="references.html#ref-coppedgeetal2020vdem" role="doc-biblioref">Coppedge et al. 2020</a>)</span>. Much like Polity 2 scores, the polyarchy index quantifies quality of democracy on a single numerical scale. In this case, scores range from 0 to 1, where 1 is as democratic as a country can be, and 0 is as autocratic as a country can be. However, the difference between V-Dem and Polity’s measures extends well beyond a difference in scale. V-Dem has an entirely different approach to measuring democracy.</p>
+<p>The first main difference is reliance on expert surveys rather than a team of dedicated in-house coders. V-Dem regularly reaches out to a sample of democracy or country/area specialists and asks them questions about the regimes of specific countries.</p>
+<p>The second main difference is that V-Dem takes into consideration a broader set of issues than Polity when quantifying democracy’s quality, such as the extent to which laws constrain who has the right to vote in elections, freedom of expression, and other factors many people would associate with “liberal” societies (and “liberal” <span class="math inline">\(\neq\)</span> “progressive” in this context, but in the broader sense, rooted in liberal ideals such as individual rights, rule of law, freedom of speech and assembly, and so on).</p>
+<p>The final measure accessible with <code>{peacesciencer}</code> is the Unified Democracy Scores index originally created by <span class="citation" data-cites="pemsteinetal2010dc">Pemstein, Meserve, and Melton (<a href="references.html#ref-pemsteinetal2010dc" role="doc-biblioref">2010</a>)</span> and later extended by <span class="citation" data-cites="marquez2016qme">Marquez (<a href="references.html#ref-marquez2016qme" role="doc-biblioref">2016</a>)</span>. The extended UDS (eUDS) index takes yet another philosophical approach to quantifying the quality of democracy. It is actually based on a combination of different unique democracy indexes, and it’s constructed via a Bayesian model that creates a novel <em>latent</em> democracy score based on the range of unique democracy scores countries have across a range of different datasets. You can think of eUDS as a compromise or pragmatic approach that treats different prominent democracy measures as potentially equally informative about a country’s quality of democracy at a given point in time while not giving any single measure pride of place.</p>
+<p>These three measures (Polity 2, polyarchy, and eUDS) have their pros and cons. Which you select might depend on the kind of research question you want to answer. For example, if you’re most concerned about the impact of leader constraints, you might have a preference for using Polity 2. Alternatively, if you care about other dimensions of democracy, you might prefer to use V-Dem’s polyarchy index.</p>
+<p>Whichever measure you choose, you should be aware of two important features of the data. The first is that these measures of democracy are closely correlated with each other, which should tell you that, whatever their differences in philosophy, they’re all picking up similar trends. You can see this in the plot below which shows the correlation between each of these three measures of democracy in 2018.</p>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="07_democracy_files/figure-html/unnamed-chunk-1-1.png" class="img-fluid figure-img" width="576"></p>
+</figure>
+</div>
+</div>
+</div>
+<p>The other thing you should be aware of is that these measures can diverge in potentially substantial and important ways, especially the farther back you go in time. This can happen, not just for marginal cases, but very important ones such as the United States. The below plot shows the trend in America’s quality of democracy based on the three measures I’ve been discussing. I put them all on a common scale so that values could be easily compared. The farther back in time you go, the more discrepancy you can see between these measures in their evaluation of America’s quality of democracy. They really only start to converge after 1950, and in the 1800s the gaps are substantial. According to Polity’s measure, the US has been as strong as a democracy can possibly be for most of its history, but according to V-Dem’s measure, the US was closer to being an autocracy than a democracy for all of the 19th century and the early decades of the 20th century. This shows just how much the different emphases these measure place on dimensions of democratic rule can influence the results.</p>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="07_democracy_files/figure-html/unnamed-chunk-2-1.png" class="img-fluid figure-img" width="576"></p>
+</figure>
+</div>
+</div>
+</div>
+<p>Given the similarities and differences across measures of democracy, you should be careful about how you proceed in your analysis. Think carefully about what you consider to be essential elements of democratic rule, or more narrowly about the elements you consider relevant to your research. Behind each measure of democracy is a theory of democracy and a set of value judgments about what matters for judging democracy’s quality.</p>
+</section>
+<section id="testing-the-democratic-peace" class="level2" data-number="7.3">
+<h2 data-number="7.3" class="anchored" data-anchor-id="testing-the-democratic-peace"><span class="header-section-number">7.3</span> Testing the Democratic Peace</h2>
+<p>The <code>{peacesciencer}</code> package doesn’t provide you access to every measure of democracy that exists, but it does give you access to three measures that capture a range of approaches to quantifying democracy. At one extreme you have Polity 2, which places substantial emphasis on chief executives. At the other extreme you have V-Dem’s polyarchy index, which considers a range of issues many consider essential to “liberal” democracy broadly defined. In the middle there’s the extended UDS index which relies on a wide variety of democracy measures (including Polity 2 and polyarchy, and many others) to generate a single measure of democracy.</p>
+<p>Let’s take one of these measures for a test drive to see if it supports the democratic peace. Since I’m asking you to consider it the “compromise” measure, I think it makes sense to use extended UDS. I’ll leave it to you to think about the alternatives and to figure out on your own if they offer complementary or conflicting findings.</p>
+<p>I’ll start with some code to create the data. Because the theories that explain the democratic peace argue that democracies behave differently toward fellow democracies versus non-democracies, a <em>directed</em>-dyad-year dataset makes sense. The goal is to test how countries with certain characteristics modify their behavior toward others based on their characteristics. The below code does this and saves the output as an object called <code>dt</code>. Note the use of the <code>add_democracy()</code> function. This is the <code>{peacesciencer}</code> function that populates a dataset with information about country democracy scores based on the three approaches discussed in the previous section.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="do">## packages and tools</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(peacesciencer)</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="fu">source</span>(</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>  <span class="st">"https://raw.githubusercontent.com/milesdwilliams15/death-destruction-data/refs/heads/main/helpers/peacesciencer_extras.R"</span></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="do">## make the data</span></span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="fu">create_dyadyears</span>(</span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>  <span class="at">subset_years =</span> <span class="dv">1816</span><span class="sc">:</span><span class="dv">2014</span></span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>) <span class="sc">|&gt;</span></span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>  <span class="fu">add_icd_mics</span>() <span class="sc">|&gt;</span></span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>  <span class="fu">add_democracy</span>() <span class="sc">|&gt;</span></span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a>  <span class="fu">add_contiguity</span>() <span class="sc">|&gt;</span></span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a>  <span class="fu">add_cow_majors</span>() <span class="sc">|&gt;</span></span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a>  <span class="fu">add_cap_dist</span>() <span class="ot">-&gt;</span> dt</span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a><span class="do">## clean up the controls</span></span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a>dt <span class="sc">|&gt;</span></span>
+<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a>  <span class="do">## controls</span></span>
+<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(</span>
+<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a>    <span class="at">cont =</span> <span class="fu">ifelse</span>(conttype <span class="sc">&gt;</span> <span class="dv">0</span>, <span class="dv">1</span>, <span class="dv">0</span>),</span>
+<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a>    <span class="at">major =</span> <span class="fu">pmax</span>(cowmaj1, cowmaj2),</span>
+<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a>    <span class="at">ldist =</span> <span class="fu">log</span>(capdist),</span>
+<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a>    <span class="at">dyad =</span> <span class="dv">1000</span> <span class="sc">*</span> <span class="fu">pmin</span>(ccode1, ccode2) <span class="sc">+</span> <span class="fu">pmax</span>(ccode1, ccode2)</span>
+<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a>  ) <span class="ot">-&gt;</span> dt</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>If you look at the democracy measures in the dataset, you’ll see 8 in total. Four for country 1 in the dyad, and four for country 2. There are four for each because there are two versions of the extended UDS measure. One has the raw scores, which are on a continuous scaled normalized to standard deviation units (<code>euds1</code> and <code>euds2</code>). The other is adjusted so that zero is the mean (<code>aeuds1</code> and <code>aeuds2</code>). It doesn’t really matter which you use, but as a matter of personal taste I prefer standardized measures that are centered around zero, so this is the measure I’ll go with in my analysis.</p>
+<p>As in the previous chapter, to analyze the data I’ll use a logit model that controls for contiguity, major power status, and the distance between countries, along with a cubic peace years trend. However, to test the democratic peace, I need to do something more complicated than just throw measures of democracy in the model.</p>
+<p>The democratic peace holds that the relationship between democracy and war is somewhat complicated. It proposes that the more democratic country 1 is, the less likely it is to initiate a conflict with country 2, <em>conditional</em> on how democratic country 2 is. This kind of hypothesized relationship calls for what’s called an <em>interaction</em> model. In such models, the relationship between one predictor and the outcome is allowed to vary systematically as a function of another predictor in the model. The below formal logit specification shows what this implies:</p>
+<p><span class="math display">\[
+\Pr(\text{MIC}_{dt} = 1) = \Lambda(\beta_0 + \beta_1 \text{eUDS1}_{dt} + \beta_2 \text{eUDS2}_{dt} + \beta_3 \text{eUDS1}_{dt} \times \text{eUDS2}_{dt} + ...)
+\]</span></p>
+<p>The “…” in the above just is a stand in for the standard set of controls I’ve used in all subsequent analyses (contiguity, major powers, distance logged, and cubic peace years). The thing I want you to pay attention to is the fact that democracy scores enter the equation in three different places. First, country 1’s democracy score enters on its own, then country 2’s enters on its own, and finally the product of both is included. This kind of model makes it possible to detect a more complex relationship between democracy and the chance that country 1 initiates a fight with country 2. It ensures that the predicted change in the probability of conflict initiation based on country 1’s democracy score isn’t just determined by a single slope parameter <span class="math inline">\(\beta_1\)</span>; it’s also determined by <span class="math inline">\(\beta_3\)</span>.</p>
+<p>To spell it out more clearly, in this model, the change in the probability that country 1 initiates a conflict with country 2 is determined by:</p>
+<p><span class="math display">\[
+\beta_1 + \beta_3 \text{eUDS2}_{dt}
+\]</span></p>
+<p>The coefficient <span class="math inline">\(\beta_1\)</span> tells you a baseline relationship between country 1’s eUDS index and the chance that it starts a fight with country 2. The coefficient <span class="math inline">\(\beta_3\)</span> tells you how much this relationship changes up or down depending on country 2’s eUDS index.</p>
+<p>Here’s how to estimate this model in R. The below code uses the <code>glm_robust()</code> function to estimate the chance that country 1 initiates a militarized interstate confrontation (MIC) with country 2 based on each country’s democracy score, controlling for their opportunities to fight and peace years. All should look familiar, except note the use of the <code>*</code> symbol between <code>aeuds1</code> and <code>aeuds2</code>. These are country 1 and country 2’s democracy scores according to the extended UDS measure, respectively. This syntax is shorthand for specifying an interaction between a set of variables. It specifies the model I formally laid out above that includes each measure of democracy as a separate term, and their product, as predictors in the model.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="do">## using "*" introduces an interaction term</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="fu">glm_robust</span>(</span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>  miconset_init1 <span class="sc">~</span> aeuds1 <span class="sc">*</span> aeuds2 <span class="sc">+</span></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>    cont <span class="sc">+</span> major <span class="sc">+</span> ldist <span class="sc">+</span></span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>    micspell <span class="sc">+</span> <span class="fu">I</span>(micspell<span class="sc">^</span><span class="dv">2</span>) <span class="sc">+</span> <span class="fu">I</span>(micspell<span class="sc">^</span><span class="dv">3</span>),</span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>  <span class="at">data =</span> dt,</span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>  <span class="at">clusters =</span> <span class="st">"dyad"</span></span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>) <span class="ot">-&gt;</span> fit</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>You can see the results in the below coefficient plot. I just pulled out the estimates for democracy from the model. You can see the point estimate and its 95% confidence interval for each of the individual democracy measures, and for their product.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>fit <span class="sc">|&gt;</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(</span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>    <span class="fu">str_detect</span>(term, <span class="st">"aeuds"</span>)</span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">|&gt;</span></span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">coef_plot</span>(</span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>    <span class="at">coef_map =</span> <span class="fu">c</span>(<span class="st">"eUDS1"</span>, <span class="st">"eUDS2"</span>, <span class="st">"eUDS1 x eUDS2"</span>)</span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">+</span></span>
+<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(</span>
+<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a>    <span class="at">title =</span> <span class="st">"Evidence of the democratic peace"</span>,</span>
+<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a>    <span class="at">subtitle =</span> <span class="st">"Logit estimates for main and interaction terms of country democracy"</span></span>
+<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a>  )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="07_democracy_files/figure-html/unnamed-chunk-5-1.png" class="img-fluid figure-img" width="576"></p>
+</figure>
+</div>
+</div>
+</div>
+<p>When dealing with an interaction model, there are some things you need to keep in mind when interpreting the results. First, you need to be careful about making too much of the estimates for the individual measures that you interacted. In an interaction model these estimates have a very narrow interpretation. They tell you what the relationship is between one predictor and the outcome when the other predictor is zero. Many people mistakenly treat these as an overall average effect. Second, the estimate for the interaction term tells you how much each of the individual estimates will change as the other increases.</p>
+<p>In the case of the results shown above, the estimates tell you that when country 2’s democracy score is equal to zero (which is also equivalent to the mean democracy score, since the measure is centered around zero), the chance that country 1 initiates a MIC with country 2 goes down the more democratic country 1 is. Further, when country 1’s score is zero (or average), as country 2 becomes more democratic the odds that country 1 initiates a MIC with 2 goes down as well. Further, the estimate for the interaction term (the product of country democracy scores) is negative, meaning the more democratic one or both of the countries is, the more this pulls the relationship between one country’s democracy score and the chance country 1 initiates a MID with 2 in a negative direction.</p>
+<p>All of that is quite complicated and unintuitive, which is why it’s much better to simulate some predictions from interaction models to better understand how relationships differ under certain scenarios. The below code will generate a conditional prediction plot from the logit model I estimated above. It does so for two scenarios. First, it shows the probability that country 1 initiates a MIC with country 2 based on 1’s democracy score holding country 2’s fixed at -2 (because of the way the eUDS measure is constructed, this is equivalent to 2 standard deviations below the average eUDS score in the data). Second, it shows the probability that country 1 initiates a MIC with country 2 based on 1’s democracy score holding country 2’s fixed at +2 (or two standard deviations above the mean). The results clearly show that when country 2 is a non-democracy, the probability that it’s attacked by country 1 <em>increases</em> the more democratic country 1 is. Conversely, if country 2 is a democracy, the probability that it’s attacked by country 1 <em>decreases</em> the more democratic country 1 is.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">sim_pred</span>(</span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>  fit,</span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">newdata =</span> <span class="fu">expand_grid</span>(</span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>    <span class="at">aeuds1 =</span> <span class="fu">seq</span>(<span class="sc">-</span><span class="dv">2</span>, <span class="dv">2</span>, <span class="at">by =</span> .<span class="dv">2</span>),</span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>    <span class="at">aeuds2 =</span> <span class="fu">c</span>(<span class="sc">-</span><span class="dv">2</span>, <span class="dv">2</span>),</span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a>    <span class="at">cont =</span> <span class="fu">mean</span>(dt<span class="sc">$</span>cont),</span>
+<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a>    <span class="at">major =</span> <span class="fu">mean</span>(dt<span class="sc">$</span>major),</span>
+<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a>    <span class="at">ldist =</span> <span class="fu">mean</span>(dt<span class="sc">$</span>ldist),</span>
+<span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a>    <span class="at">micspell =</span> <span class="fu">mean</span>(dt<span class="sc">$</span>micspell)</span>
+<span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a>  )</span>
+<span id="cb4-11"><a href="#cb4-11" aria-hidden="true" tabindex="-1"></a>) <span class="ot">-&gt;</span> preds</span>
+<span id="cb4-12"><a href="#cb4-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-13"><a href="#cb4-13" aria-hidden="true" tabindex="-1"></a>preds <span class="sc">|&gt;</span></span>
+<span id="cb4-14"><a href="#cb4-14" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(aeuds1, aeuds2) <span class="sc">|&gt;</span></span>
+<span id="cb4-15"><a href="#cb4-15" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarize</span>(</span>
+<span id="cb4-16"><a href="#cb4-16" aria-hidden="true" tabindex="-1"></a>    <span class="at">mean =</span> <span class="fu">mean</span>(p),</span>
+<span id="cb4-17"><a href="#cb4-17" aria-hidden="true" tabindex="-1"></a>    <span class="at">lower =</span> <span class="fu">quantile</span>(p, <span class="fl">0.08</span>),</span>
+<span id="cb4-18"><a href="#cb4-18" aria-hidden="true" tabindex="-1"></a>    <span class="at">upper =</span> <span class="fu">quantile</span>(p, <span class="fl">0.92</span>)</span>
+<span id="cb4-19"><a href="#cb4-19" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">|&gt;</span></span>
+<span id="cb4-20"><a href="#cb4-20" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>() <span class="sc">+</span></span>
+<span id="cb4-21"><a href="#cb4-21" aria-hidden="true" tabindex="-1"></a>  <span class="fu">aes</span>(aeuds1, mean, <span class="at">ymin =</span> lower, <span class="at">ymax =</span> upper, </span>
+<span id="cb4-22"><a href="#cb4-22" aria-hidden="true" tabindex="-1"></a>      <span class="at">color =</span> <span class="fu">as.factor</span>(aeuds2)) <span class="sc">+</span></span>
+<span id="cb4-23"><a href="#cb4-23" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_line</span>() <span class="sc">+</span></span>
+<span id="cb4-24"><a href="#cb4-24" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_ribbon</span>(<span class="at">alpha =</span> .<span class="dv">3</span>) <span class="sc">+</span></span>
+<span id="cb4-25"><a href="#cb4-25" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(</span>
+<span id="cb4-26"><a href="#cb4-26" aria-hidden="true" tabindex="-1"></a>    <span class="at">title =</span> <span class="st">"The practical significance of the democratic peace"</span>,</span>
+<span id="cb4-27"><a href="#cb4-27" aria-hidden="true" tabindex="-1"></a>    <span class="at">subtitle =</span> <span class="st">"Logit model predictions holding other factors fixed"</span>,</span>
+<span id="cb4-28"><a href="#cb4-28" aria-hidden="true" tabindex="-1"></a>    <span class="at">x =</span> <span class="st">"Country 1 Extended UDS Score"</span>,</span>
+<span id="cb4-29"><a href="#cb4-29" aria-hidden="true" tabindex="-1"></a>    <span class="at">y =</span> <span class="st">"Pr(Initiation = 1)"</span>,</span>
+<span id="cb4-30"><a href="#cb4-30" aria-hidden="true" tabindex="-1"></a>    <span class="at">color =</span> <span class="st">"Country 2</span><span class="sc">\n</span><span class="st">Score"</span></span>
+<span id="cb4-31"><a href="#cb4-31" aria-hidden="true" tabindex="-1"></a>  )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>`summarise()` has grouped output by 'aeuds1'. You can override using the
+`.groups` argument.</code></pre>
+</div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="07_democracy_files/figure-html/unnamed-chunk-6-1.png" class="img-fluid figure-img" width="576"></p>
+</figure>
+</div>
+</div>
+</div>
+<p>In short, the model shows that democracies are less likely to attack fellow democracies compared to other countries, consistent with the democratic peace. But it also supports another conclusion that doesn’t perfectly fit the conventional democratic peace story. The model shows that non-democracies are less likely to attack non-democracies than they are to attack democracies. That is, it also supports a <em>non</em>-democratic peace. Essentially, there are two pockets of peace, one among democracies and another among non-democracies.</p>
+<p>Here’s yet another puzzle to consider, which you either will find exciting or frustrating. What could be driving this? It could be that the eUDS measure is biasing the result. Maybe if you used one of the alternative democracy measures you’d see a pattern in the data that better aligns with the democratic peace.</p>
+<p>It could also be that the model is mis-specified. Sometimes interaction terms can introduce unforeseen biases into an analysis. That could be going on here. Relatedly, it could also be the case that the model doesn’t adequately control for confounding factors. While the logit model I estimated controls for sensible things (opportunities to fight and peace spells), it’s fairly bare-bones by today’s standards (which is on purpose since my goal is just to teach you something rather than engage in an exhaustive and rigorous analysis).</p>
+<p>A third explanation is that democracy is picking up shared norms or common interests between democracies, on the one hand, and non-democracies, on the other hand. If this is true, it suggests there’s room for modifying democratic peace theory.</p>
+<p>Whatever the explanation, some follow-up analysis is needed. The work of the peace scientist is never done.</p>
+</section>
+<section id="summary" class="level2" data-number="7.4">
+<h2 data-number="7.4" class="anchored" data-anchor-id="summary"><span class="header-section-number">7.4</span> Summary</h2>
+<p>The democratic peace is probably the most ubiquitous and enduring finding in conflict research (the somewhat surprising results in my own example above notwithstanding). The central puzzle with the democratic peace centers on why it exists. The fact that it’s real is generally accepted. The central tension in the literature is about whether democracy itself is the cause of peace, or if something else that both democracy and peace are correlated with is the actual cause. While many have tried to resolve this debate, definitive answers remain elusive.</p>
+<p>Many other factors beyond democracy might offer more compelling, or at the very least, equally interesting explanations for why countries go to war as well. There is, of course, <em>power</em> which I talked about in the previous chapter, but another is economic interdependence (e.g., <em>trade</em>), which is the subject of the next chapter.</p>
+
+
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list" style="display: none">
+<div id="ref-babst1964elective" class="csl-entry" role="listitem">
+Babst, Dean V. 1964. <span>“Elective Governments: A Force for Peace.”</span> <em>The Wisconsin Sociologist</em> 3 (1): 9–14.
+</div>
+<div id="ref-coppedgeetal2020vdem" class="csl-entry" role="listitem">
+Coppedge, Michael, John Gerring, Carl Henrik Knutsen, Staffan I. Lindberg, Jan Teorell, David Altman, Michael Bernhard, et al. 2020. <span>“V-Dem Codebook V10.”</span>
+</div>
+<div id="ref-gibler2024mie" class="csl-entry" role="listitem">
+Gibler, Douglas M, and Steven V Miller. 2024. <span>“The Militarized Interstate Events (MIE) Dataset, 1816–2014.”</span> <em>Conflict Management and Peace Science</em> 41 (4): 463–81.
+</div>
+<div id="ref-marquez2016qme" class="csl-entry" role="listitem">
+Marquez, Xavier. 2016. <span>“A Quick Method for Extending the <span>U</span>nified <span>D</span>emocracy <span>S</span>cores.”</span> <a href="http://dx.doi.org/10.2139/ssrn.2753830">http://dx.doi.org/10.2139/ssrn.2753830</a>.
+</div>
+<div id="ref-marshalletal2017p" class="csl-entry" role="listitem">
+Marshall, Monty G., Ted Robert Gurr, and Keith Jaggers. 2017. <span>“Polity <span>IV</span> Project: Political Regime Characteristics and Transitions, 1800-2016.”</span>
+</div>
+<div id="ref-pemsteinetal2010dc" class="csl-entry" role="listitem">
+Pemstein, Daniel, Stephen A. Meserve, and James Melton. 2010. <span>“Democratic Compromise: A Latent Variable Analysis of Ten Measures of Regime Type.”</span> <em>Political Analysis</em> 18 (4): 426–49.
+</div>
+</div>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const onCopySuccess = function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
+  });
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    // For code content inside modals, clipBoardJS needs to be initialized with a container option
+    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    });
+    clipboardModal.on('success', onCopySuccess);
+  }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="./06_power.html" class="pagination-link" aria-label="The Balance of Power and War">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">The Balance of Power and War</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="./08_trade.html" class="pagination-link" aria-label="The Trading Peace">
+        <span class="nav-page-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">The Trading Peace</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+
+
+
+
+</body></html>

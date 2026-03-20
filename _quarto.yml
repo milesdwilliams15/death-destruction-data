@@ -5,7 +5,7 @@ book:
   title: "Death, Destruction, and Data"
   subtitle: "An Intro to Using Data to Study International Conflict"
   author: "Miles D. Williams"
-  date: "1/18/2026"
+  date: "3/20/2026"
   chapters:
     - index.qmd
     - 01_what_is_war.qmd
@@ -14,6 +14,8 @@ book:
     - 04_is_war_less_deadly.qmd
     - 05_dyads.qmd
     - 06_power.qmd
+    - 07_democracy.qmd
+    - 08_trade.qmd
     - references.qmd
 
 bibliography: references.bib
